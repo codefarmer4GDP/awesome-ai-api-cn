@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-快照时间：2026-10-09 13:36 UTC（本轮 GitHub API 快照）。
+快照时间：2026-10-09 13:53 UTC（本轮 GitHub API 快照）。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -54,6 +54,14 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 英文入口发布后，已更新原有工具申请 [#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) 的正文与建议收录行，注明中英文界面和共享计算逻辑；未新建重复申请或提交 PR。GitHub API 核对正文与本地更新稿一致；状态仍为 open、未分配、0 条评论。
 
 Awesome-LLMOps 允许逐项提交 PR。阅读贡献规则并查重后，在其 Optimizations 表格按字母顺序新增一条 `AI API Two-Plan Cost Estimator`，介绍同任务量、用户自填报价、充值费用与赠送额度的比较，以及英文/中文界面、参数分享和 JSON 导出。PR 正文披露 TokenDos 关系、虚构默认价格与未进行交互验证；GitHub API 核对只有 README 一行新增，正文与本地稿件一致。申请待审核，不代表已收录。
+
+## 会员共享专题
+
+新增[中文会员共享选型指南](guides/member-session-sharing.md)与[英文版](guides/member-session-sharing.en.md)，中英文 README、网页与 llms.txt 同步入口。专题区分周期套餐、团队额度、自建订阅代理与供应方远程会话，并说明实际路由、在线供给、数据处理、消费成本和供应方成本分摊。
+
+本轮读取了 TokenDos 渲染后的公开 SESSION 教程正文，确认其文档描述的双方 Agent、本机登录客户端、供应端执行、API / SESSION 选路与临时数据留存机制；这解决了此前只能获取 SPA 壳页、不能重新核验教程正文的限制。仍未完成消费、供应接单、结算或提现实测。2026-10-09 13:44:53–54 UTC 的公开 CODEX_SESSION 与 CLAUDE_SESSION 过滤查询均 HTTP 200、`total: 0`、空列表，不能据教程或 Agent 聊天成功确认当时有可交易的共享供给。
+
+专题同时引用 Sub2API 与 CLIProxyAPI 的公开软件能力，不作“全网独家”结论；供应方收益例子明确为虚构核算，公开鹈鹕样本不作为模型身份认证或 SESSION 交易证明。新增内容没有改变此前投稿的待审状态，也未产生已核实的 Star 增长。
 
 ## 周刊自荐修订
 
