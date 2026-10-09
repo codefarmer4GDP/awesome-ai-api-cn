@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-09T16:47:14.492380+00:00",
+  "local_date": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "scope": "Three distribution candidates examined using repository metadata, README/contribution rules, author submission search and six latest closed PRs. No new external submissions or messages.",
+  "candidates": [
+    {
+      "repository": "amusi/awesome-ai-awesomeness",
+      "description": "A curated list of awesome awesomeness about artificial intelligence",
+      "stars": 1001,
+      "pushed_at": "2023-08-31T10:08:03Z",
+      "archived": false,
+      "default_branch": "master",
+      "existing_author_submissions": 0,
+      "recent_closed_prs": [
+        {
+          "number": 5,
+          "url": "https://github.com/amusi/awesome-ai-awesomeness/pull/5",
+          "state": "closed",
+          "merged_at": null,
+          "updated_at": "2025-08-03T10:45:43Z",
+          "title": "Add awesome AI tools"
+        },
+        {
+          "number": 2,
+          "url": "https://github.com/amusi/awesome-ai-awesomeness/pull/2",
+          "state": "closed",
+          "merged_at": "2020-01-27T08:24:54Z",
+          "updated_at": "2020-01-27T08:24:54Z",
+          "title": "Fixed dead link."
+        }
+      ],
+      "decision": "defer",
+      "reason": "README welcomes pull requests, but the repository has no push since 2023-08-31. The latest visible closed PR #5 was not merged; the visible merged PR #2 dates to 2020. No inclusion or response time can be inferred.",
+      "submitted": false,
+      "sources": {
+        "repository": "https://github.com/amusi/awesome-ai-awesomeness",
+        "readme": "https://github.com/amusi/awesome-ai-awesomeness/blob/master/README.md",
+        "prior_author_search": "https://github.com/amusi/awesome-ai-awesomeness/issues?q=author%3Acodefarmer4GDP"
+      }
+    },
+    {
+      "repository": "mrtnrocks/awesome-ai-coding-on-a-budget",
+      "description": "Coding on a budget. Free. Cheap.Curated list of open-source tools, free-tier strategies, and local runtimes for cost-efficient AI- assisted coding. Covers LLM model selection, API gateway routing, token compression (up to 90% reduction), MCP context servers, agent quality guardrails, self-hosted inference, and pricing intelligence with grants.",
+      "stars": 2,
+      "pushed_at": "2026-08-03T12:21:39Z",
+      "archived": false,
+      "default_branch": "main",
+      "existing_author_submissions": 0,
+      "recent_closed_prs": [
+        {
+          "number": 11,
+          "url": "https://github.com/mrtnrocks/awesome-ai-coding-on-a-budget/pull/11",
+          "state": "closed",
+          "merged_at": null,
+          "updated_at": "2026-08-20T09:07:12Z",
+          "title": "Add SandBase CLI cost visibility"
+        }
+      ],
+      "decision": "defer",
+      "reason": "Budget/pricing content is relevant, but the observed closed PR #11 was not merged. Its README warns against reseller/shared-subscription routes. A general cost resource might fit, but this is not evidence that a TokenDos service entry would fit.",
+      "submitted": false,
+      "sources": {
+        "repository": "https://github.com/mrtnrocks/awesome-ai-coding-on-a-budget",
+        "readme": "https://github.com/mrtnrocks/awesome-ai-coding-on-a-budget/blob/main/README.md",
+        "prior_author_search": "https://github.com/mrtnrocks/awesome-ai-coding-on-a-budget/issues?q=author%3Acodefarmer4GDP"
+      }
+    },
+    {
+      "repository": "cuihuan/awesome-ai-gateway",
+      "description": "⚡ Awesome AI Gateway — pick an AI gateway from 160+ (LiteLLM, OpenRouter, Portkey, Kong, Higress, new-api, Bifrost) by cost, security & compliance, see what consolidated in 2026, learn how they actually work from an 8-chapter handbook, and verify every number yourself. Reproducible benchmarks, bilingual, updated daily.",
+      "stars": 127,
+      "pushed_at": "2026-10-09T09:15:34Z",
+      "archived": false,
+      "default_branch": "main",
+      "existing_author_submissions": 0,
+      "recent_closed_prs": [
+        {
+          "number": 78,
+          "url": "https://github.com/cuihuan/awesome-ai-gateway/pull/78",
+          "state": "closed",
+          "merged_at": null,
+          "updated_at": "2026-09-14T08:04:24Z",
+          "title": "Add HeFu to New & unverified relays"
+        },
+        {
+          "number": 83,
+          "url": "https://github.com/cuihuan/awesome-ai-gateway/pull/83",
+          "state": "closed",
+          "merged_at": null,
+          "updated_at": "2026-09-14T07:42:51Z",
+          "title": "Add OrcaReplay under 📊 Observability & cost tracking"
+        },
+        {
+          "number": 77,
+          "url": "https://github.com/cuihuan/awesome-ai-gateway/pull/77",
+          "state": "closed",
+          "merged_at": null,
+          "updated_at": "2026-09-14T06:38:21Z",
+          "title": "add: APICLAN (hosted OpenAI-compatible gateway)"
+        },
+        {
+          "number": 75,
+          "url": "https://github.com/cuihuan/awesome-ai-gateway/pull/75",
+          "state": "closed",
+          "merged_at": null,
+          "updated_at": "2026-09-14T06:38:17Z",
+          "title": "Add Argolink to hosted gateways"
+        },
+        {
+          "number": 73,
+          "url": "https://github.com/cuihuan/awesome-ai-gateway/pull/73",
+          "state": "closed",
+          "merged_at": null,
+          "updated_at": "2026-09-14T06:38:13Z",
+          "title": "add: cocodot (Cost-first, new & unverified)"
+        },
+        {
+          "number": 76,
+          "url": "https://github.com/cuihuan/awesome-ai-gateway/pull/76",
+          "state": "closed",
+          "merged_at": null,
+          "updated_at": "2026-09-14T06:37:35Z",
+          "title": "Add AIgateway (hosted OpenAI-compatible aggregator)"
+        }
+      ],
+      "decision": "reference-first",
+      "reason": "The README has related lists, while CONTRIBUTING requires primary entries to be gateways on the request path and excludes private reverse-engineered APIs/stolen quota. This guide is not a gateway. No product entry or related-list request was submitted; public documentation alone does not certify every supplier channel.",
+      "submitted": false,
+      "sources": {
+        "repository": "https://github.com/cuihuan/awesome-ai-gateway",
+        "readme": "https://github.com/cuihuan/awesome-ai-gateway/blob/main/README.md",
+        "prior_author_search": "https://github.com/cuihuan/awesome-ai-gateway/issues?q=author%3Acodefarmer4GDP",
+        "contribution_rules": "https://github.com/cuihuan/awesome-ai-gateway/blob/main/CONTRIBUTING.md"
+      }
+    }
+  ],
+  "limitations": [
+    "Star totals are discovery signals, not evidence of organic growth.",
+    "Recent pushes can be automated and do not establish human review activity.",
+    "Six latest closed PRs are a bounded sample, not full contribution history.",
+    "Repository rules are not an independent review of TokenDos or its supplier channels."
+  ]
+}

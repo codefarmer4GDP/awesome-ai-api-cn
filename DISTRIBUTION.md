@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-指标复核时间：2026-10-09 16:24 UTC；本次同时核对 Awesome-AITools PR #1225。其他申请保留各自观察时间；六项申请的清理结果截至 15:40 UTC。原始字段、逐项观察时间与公开来源见[机器可读运营快照](data/operations/2026-10-09.json)。
+指标复核时间：2026-10-09 16:39 UTC（北京时间 2026-10-10 00:39）。本次逐项复查此前记录的 31 项申请，并查询仓库 Issue、Discussion 及两项既有 CI 检查。版本与 Pages 状态在发布后另外核对；逐项观察时间与来源见[本次运营快照](data/operations/2026-10-10.json)，旧记录保留在[2026-10-09 快照](data/operations/2026-10-09.json)。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -12,25 +12,25 @@
 | Fork | 0 | `forks_count` |
 | 最近 14 天 Views | 0 | GitHub Traffic API；新仓库数据可能延迟 |
 | 最近 14 天 Clones | 0 | GitHub Traffic API |
-| 最新发布 | v0.3.0 | 在线目录、成本计算器与公开运营记录 |
+| 最新发布 | [v0.4.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.4.0) | 引用信息、维护关系与证据日期说明 |
 | 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
 
-这些数字只描述查询时的状态，不构成增长预测。Pages API 已确认提交 `7675d4f` 于 15:50 UTC 构建成功；本次未观察到 Star 增长，PR #1225 尚未合并。
+这些数字只描述查询时的状态，不构成增长预测。Pages API 已确认 v0.4.0 提交 `97662b5` 于 2026-10-09 16:43:49 UTC 构建成功。相关既有 PR 均未合并；PR #1225 仍只有 1 条机器人回执、0 条人工评论、0 次 review，链接检查通过。Discussion #2 与 Issue #1 均没有评论。
 
-15:40 UTC 的清理修正两项保留申请、关闭四项申请，当时没有新增投稿或催审评论。搜索与逐项 API 查询覆盖 30 项当前及历史记录，当时 22 项 open、8 项 closed；这包含本仓库 Issue 和历史集成申请，不能当作 22 个待审导航渠道。现补记随后提交的 PR #1225，机器记录共 31 项，其他申请仍以各自观察时间为准。以下表格列明导航运营相关申请。
+本次 31 项状态为 23 项 open、8 项 closed，包含本仓库 Issue、历史集成和 API 描述申请，不能解释成 23 个待审导航渠道。2026-10-09 15:40 UTC 的清理曾修正两项保留申请并关闭四项申请，本次没有新增投稿或催审评论。以下表格列明导航运营相关申请，2026-10-10 的状态复查没有观察到合并。
 
 ## TokenDos 服务收录申请
 
 以下申请均使用无邀请参数的官方仓库或服务链接；开放状态不代表已经收录。
 
-| 目录 | 申请 | 状态（2026-10-09） |
+| 目录 | 申请 | 状态（北京时间 2026-10-10 复查） |
 | --- | --- | --- |
 | [carrot](https://github.com/xx025/carrot) | [#1027](https://github.com/xx025/carrot/issues/1027) | open；已修正；重复 #1048 已撤回 |
 | [relayAPI](https://github.com/zzsting88/relayAPI) | [#74](https://github.com/zzsting88/relayAPI/issues/74) | open |
 | [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | open，未合并 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) | open |
 | [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) | [PR #2353](https://github.com/mahseema/awesome-ai-tools/pull/2353) | open，未合并，0 条评论 |
-| [Awesome-AITools](https://github.com/ikaijua/Awesome-AITools) | [PR #1225](https://github.com/ikaijua/Awesome-AITools/pull/1225) | 16:24 UTC 核对：open，未合并，1 条机器人回执，0 条人工评论；更新后的链接检查通过 |
+| [Awesome-AITools](https://github.com/ikaijua/Awesome-AITools) | [PR #1225](https://github.com/ikaijua/Awesome-AITools/pull/1225) | open，未合并，1 条机器人回执，0 条人工评论，0 次 review；链接检查通过 |
 | [Claws-ZH/awesome-ai-api](https://github.com/Claws-ZH/awesome-ai-api) | [PR #50](https://github.com/Claws-ZH/awesome-ai-api/pull/50) | open，候选待审，未合并，0 条评论 |
 | [mn-api/awesome-ai-proxy](https://github.com/mn-api/awesome-ai-proxy) | [#63](https://github.com/mn-api/awesome-ai-proxy/issues/63) | open；已修正；重复 #53 已撤回 |
 | [ai-api-gongyi-nav](https://github.com/bubblevv/ai-api-gongyi-nav) | [#16](https://github.com/bubblevv/ai-api-gongyi-nav/issues/16) | open，0 条评论 |
@@ -48,7 +48,7 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 
 ## 指南与成本工具分发
 
-| 目录 | 投稿对象与申请 | 状态（2026-10-09） |
+| 目录 | 投稿对象与申请 | 状态（北京时间 2026-10-10 复查） |
 | --- | --- | --- |
 | [awesome-generative-ai-apis](https://github.com/foss42/awesome-generative-ai-apis) | 双方案成本估算工具，[#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) | open，等待维护者确认范围及分配；尚未提交 PR 或收录 |
 | [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) | 双方案成本估算工具，[PR #925](https://github.com/tensorchord/Awesome-LLMOps/pull/925) | open，未合并，0 条评论；DCO 通过 |
@@ -166,6 +166,20 @@ PR 在 General LLM Applications 的 OpenRouter 后添加 TokenDos，修改中英
 16:24 UTC 的 GitHub API 记录显示 PR 仍 open、未合并，只有 1 条机器人回执、0 条人工评论、0 次 review。更新后的 `link-check` 于 16:23:49 UTC 返回 `success`；这说明链接检查通过，内容仍待维护者审核。仓库指标仍为 0 Star、0 Fork、最近 14 天 Views 0、Clones 0。
 
 同轮明确代码许可：原创文档与比较表继续使用 [CC BY 4.0](LICENSE)，`assets/` 下原创 JavaScript 与 CSS 使用 [MIT](LICENSE-CODE)。中英文 README 同步说明，成本计算逻辑可按许可复用。未修改计算逻辑，未运行项目测试、构建或交互验证。
+
+## v0.4.0 与候选渠道复查
+
+北京时间 2026-10-10 发布 [v0.4.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.4.0)：增加 `CITATION.cff` 与中英文引用入口，把 TokenDos 维护关系移到 README 开头，区分资料版本与条目证据日期。没有新增性能排名、跨平台实测或第三方体验结论。三个文件的远端 blob 与本地内容一致；Pages API 已确认相应提交构建成功。未运行项目测试、构建或开发服务。
+
+本次检索并阅读三个候选目录的 README、可用贡献规则与近期关闭 PR，搜索未发现本账号已有申请。记录见[候选渠道快照](data/operations/distribution-candidates-2026-10-10.json)。
+
+| 候选目录 | 判断与后续依据 |
+| --- | --- |
+| [awesome-ai-awesomeness](https://github.com/amusi/awesome-ai-awesomeness) | README 欢迎 PR，但最近 push 为 2023-08-31，可见的最新合并 PR 在 2020 年；暂缓投稿，不能根据 1,001 Star 推断当前审核活跃。 |
+| [awesome-ai-coding-on-a-budget](https://github.com/mrtnrocks/awesome-ai-coding-on-a-budget) | 成本核算主题相关，但其 README 明确警示共享订阅和转售代理，可见的 PR #11 未合并；本次没有把 TokenDos 服务条目投进去。 |
+| [awesome-ai-gateway](https://github.com/cuihuan/awesome-ai-gateway) | 持续更新并提供贡献规则、证据表与 related lists；主目录收录的是实际请求路径上的网关，指南不属于这一类。本次作为比较资料参考，未提交服务条目或互链申请。 |
+
+这些判断仅用于选择分发渠道，不构成对目录内容或 TokenDos 的第三方背书。最近 push、Star 总数和单个 PR 的状态也不能证明自然增长或审核速度。后续若介绍本指南，应按相关资源范围投稿，并继续披露运营关系。
 
 ## 分发规则
 

@@ -1,0 +1,827 @@
+{
+  "schema_version": "1.1",
+  "captured_at": "2026-10-09T16:39:36.254020+00:00",
+  "local_date": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "scope": "Refreshed previously recorded submissions and repository metrics. Public activity and CI status do not prove human acceptance or service quality. No new external submissions in this snapshot.",
+  "metrics": {
+    "repository": "codefarmer4GDP/awesome-ai-api-cn",
+    "stars": 0,
+    "forks": 0,
+    "open_issue_and_pr_count": 1,
+    "views_14_days": 0,
+    "unique_visitors_14_days": 0,
+    "clones_14_days": 0,
+    "unique_cloners_14_days": 0,
+    "observed_at": "2026-10-09T16:39:24.960798+00:00"
+  },
+  "main_sha_at_capture": "2e60ae946dc501f14b30c903ec9fcebe8b559da0",
+  "pages_at_capture": {
+    "status": "built",
+    "commit": "2e60ae946dc501f14b30c903ec9fcebe8b559da0",
+    "created_at": "2026-10-09T16:27:03Z",
+    "updated_at": "2026-10-09T16:27:40Z",
+    "error": {
+      "message": null
+    }
+  },
+  "release_at_capture": {
+    "tag_name": "v0.3.0",
+    "html_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.3.0",
+    "published_at": "2026-10-09T12:08:55Z",
+    "target_commitish": "main"
+  },
+  "submissions": [
+    {
+      "repository": "APIs-guru/openapi-directory",
+      "number": 2831,
+      "kind": "issue",
+      "url": "https://github.com/APIs-guru/openapi-directory/issues/2831",
+      "title": "Add \"TokenDos\" API",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-07-14T09:41:38Z",
+      "updated_at": "2026-07-14T09:41:38Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:25.630624+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "APIs-guru/openapi-directory",
+      "number": 2835,
+      "kind": "issue",
+      "url": "https://github.com/APIs-guru/openapi-directory/issues/2835",
+      "title": "Add \"TokenDos\" API",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-07-15T06:40:00Z",
+      "updated_at": "2026-07-15T06:40:00Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:25.653682+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "AetherCore-Dev/relay-radar",
+      "number": 14,
+      "kind": "issue",
+      "url": "https://github.com/AetherCore-Dev/relay-radar/issues/14",
+      "title": "评测候选：TokenDos - 面向中文开发者的 AI 大模型 API 中转与共享平台",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T03:01:36Z",
+      "updated_at": "2026-10-09T06:19:33Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:25.677371+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "CherryHQ/cherry-studio",
+      "number": 21402,
+      "kind": "pull_request",
+      "url": "https://github.com/CherryHQ/cherry-studio/pull/21402",
+      "title": "feat(provider): add TokenDos provider",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T05:55:32Z",
+      "updated_at": "2026-10-09T06:38:37Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:26.883240+00:00",
+      "merged_at": null,
+      "review_comments": 0,
+      "head_sha": "c53e824034d393ac4c423ab75e0ade6f98d3babd"
+    },
+    {
+      "repository": "Claws-ZH/awesome-ai-api",
+      "number": 50,
+      "kind": "pull_request",
+      "url": "https://github.com/Claws-ZH/awesome-ai-api/pull/50",
+      "title": "Add: TokenDos",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T15:05:08Z",
+      "updated_at": "2026-10-09T15:05:08Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:26.653107+00:00",
+      "merged_at": null,
+      "review_comments": 0,
+      "head_sha": "275d3412fa3911c6c7cf4aa613db88debe0a09df"
+    },
+    {
+      "repository": "WangRongsheng/awesome-LLM-resources",
+      "number": 256,
+      "kind": "pull_request",
+      "url": "https://github.com/WangRongsheng/awesome-LLM-resources/pull/256",
+      "title": "docs: add AI API cost calculation guide",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T14:08:13Z",
+      "updated_at": "2026-10-09T14:08:13Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:26.647631+00:00",
+      "merged_at": null,
+      "review_comments": 0,
+      "head_sha": "32b78ab57b40d00bc90f5dfae10d4a4184c89c85"
+    },
+    {
+      "repository": "bubblevv/ai-api-gongyi-nav",
+      "number": 16,
+      "kind": "issue",
+      "url": "https://github.com/bubblevv/ai-api-gongyi-nav/issues/16",
+      "title": "收录申请：TokenDos（Claude 3.7 / Cursor / DeepSeek 国内直连中转聚合，多节点实时比价）",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T02:28:06Z",
+      "updated_at": "2026-10-09T02:28:06Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:26.397852+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "cfrs2005/awesome-claude-code-relay",
+      "number": 11,
+      "kind": "issue",
+      "url": "https://github.com/cfrs2005/awesome-claude-code-relay/issues/11",
+      "title": "申请收录：TokenDos（Claude/GPT 双协议中转，公开价格与可用性监测）",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-09-18T07:07:33Z",
+      "updated_at": "2026-09-18T07:07:33Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:26.739977+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "chatboxai/chatbox",
+      "number": 3981,
+      "kind": "issue",
+      "url": "https://github.com/chatboxai/chatbox/issues/3981",
+      "title": "[Feature] Add TokenDos as a built-in model provider (面向中文开发者免翻直连 API 平台)",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T05:44:57Z",
+      "updated_at": "2026-10-09T06:18:57Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:26.399439+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "codefarmer4GDP/awesome-ai-api-cn",
+      "number": 1,
+      "kind": "issue",
+      "url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/1",
+      "title": "[运营] 首期收录与事实修订征集",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T10:45:36Z",
+      "updated_at": "2026-10-09T10:45:36Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:27.139345+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "deverzh/ai-api-proxy-list",
+      "number": 12,
+      "kind": "pull_request",
+      "url": "https://github.com/deverzh/ai-api-proxy-list/pull/12",
+      "title": "feat: add TokenDos to provider list",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-08T03:43:42Z",
+      "updated_at": "2026-10-08T03:43:42Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:27.473056+00:00",
+      "merged_at": null,
+      "review_comments": 0,
+      "head_sha": "2614d5cc59ddf83e1ef457d1382fd13c328d7ae3"
+    },
+    {
+      "repository": "dimthink/PriceAI",
+      "number": 20,
+      "kind": "issue",
+      "url": "https://github.com/dimthink/PriceAI/issues/20",
+      "title": "API 中转站公开资料补充 - TokenDos (tokendos.com)",
+      "state": "closed",
+      "comments": 0,
+      "created_at": "2026-09-18T00:37:40Z",
+      "updated_at": "2026-09-18T10:18:23Z",
+      "closed_at": "2026-09-18T10:18:23Z",
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:27.365090+00:00",
+      "state_reason": "completed"
+    },
+    {
+      "repository": "foss42/awesome-generative-ai-apis",
+      "number": 483,
+      "kind": "issue",
+      "url": "https://github.com/foss42/awesome-generative-ai-apis/issues/483",
+      "title": "Add AI API Two-Plan Cost Estimator to Other AI Tools",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T12:34:23Z",
+      "updated_at": "2026-10-09T12:53:31Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:27.391956+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "howardpen9/awesome-ai-api-proxy",
+      "number": 84,
+      "kind": "issue",
+      "url": "https://github.com/howardpen9/awesome-ai-api-proxy/issues/84",
+      "title": "add: TokenDos (tokendos.com)",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-09-18T04:17:13Z",
+      "updated_at": "2026-09-18T04:17:13Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:27.817065+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "howardpen9/awesome-ai-api-proxy",
+      "number": 110,
+      "kind": "pull_request",
+      "url": "https://github.com/howardpen9/awesome-ai-api-proxy/pull/110",
+      "title": "feat(providers): add TokenDos to china_relays",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-08T03:42:35Z",
+      "updated_at": "2026-10-08T03:42:35Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:28.201953+00:00",
+      "merged_at": null,
+      "review_comments": 0,
+      "head_sha": "4bc8a8990c047d3ae07dd617e49b9623e421c09f"
+    },
+    {
+      "repository": "howardpen9/awesome-ai-api-proxy",
+      "number": 120,
+      "kind": "issue",
+      "url": "https://github.com/howardpen9/awesome-ai-api-proxy/issues/120",
+      "title": "add: Claude / GPT / Gemini API Selection Guide (awesome-ai-api-cn)",
+      "state": "closed",
+      "comments": 1,
+      "created_at": "2026-10-09T11:54:05Z",
+      "updated_at": "2026-10-09T11:54:14Z",
+      "closed_at": "2026-10-09T11:54:14Z",
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:28.299841+00:00",
+      "state_reason": "not_planned"
+    },
+    {
+      "repository": "howardpen9/awesome-ai-api-proxy",
+      "number": 121,
+      "kind": "issue",
+      "url": "https://github.com/howardpen9/awesome-ai-api-proxy/issues/121",
+      "title": "add: Claude / GPT / Gemini API Selection Guide (awesome-ai-api-cn)",
+      "state": "closed",
+      "comments": 1,
+      "created_at": "2026-10-09T11:58:08Z",
+      "updated_at": "2026-10-09T11:58:16Z",
+      "closed_at": "2026-10-09T11:58:16Z",
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:28.080494+00:00",
+      "state_reason": "not_planned"
+    },
+    {
+      "repository": "howardpen9/awesome-ai-api-proxy",
+      "number": 122,
+      "kind": "issue",
+      "url": "https://github.com/howardpen9/awesome-ai-api-proxy/issues/122",
+      "title": "add: Claude / GPT / Gemini API Selection Guide (awesome-ai-api-cn)",
+      "state": "closed",
+      "comments": 1,
+      "created_at": "2026-10-09T12:02:11Z",
+      "updated_at": "2026-10-09T12:02:20Z",
+      "closed_at": "2026-10-09T12:02:19Z",
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:28.124202+00:00",
+      "state_reason": "not_planned"
+    },
+    {
+      "repository": "ikaijua/Awesome-AITools",
+      "number": 1225,
+      "kind": "pull_request",
+      "url": "https://github.com/ikaijua/Awesome-AITools/pull/1225",
+      "title": "Add TokenDos to General LLM Applications",
+      "state": "open",
+      "comments": 1,
+      "created_at": "2026-10-09T16:13:39Z",
+      "updated_at": "2026-10-09T16:22:57Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:29.106296+00:00",
+      "merged_at": null,
+      "review_comments": 0,
+      "head_sha": "9f8326a417f316c6e694e633366bcaa01aec9fac",
+      "bot_comments": 1,
+      "human_comments": 0,
+      "reviews": 0
+    },
+    {
+      "repository": "mahseema/awesome-ai-tools",
+      "number": 2353,
+      "kind": "pull_request",
+      "url": "https://github.com/mahseema/awesome-ai-tools/pull/2353",
+      "title": "Add TokenDos to Developer tools",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T13:35:36Z",
+      "updated_at": "2026-10-09T13:35:36Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:28.936608+00:00",
+      "merged_at": null,
+      "review_comments": 0,
+      "head_sha": "eb6c922afe7ffb8789cd77bb53679a8a9f842877"
+    },
+    {
+      "repository": "mn-api/awesome-ai-proxy",
+      "number": 53,
+      "kind": "issue",
+      "url": "https://github.com/mn-api/awesome-ai-proxy/issues/53",
+      "title": "[撤回重复申请] TokenDos；请以 #63 为准",
+      "state": "closed",
+      "comments": 0,
+      "created_at": "2026-09-18T04:10:26Z",
+      "updated_at": "2026-10-09T15:40:23Z",
+      "closed_at": "2026-10-09T15:40:23Z",
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:28.842007+00:00",
+      "state_reason": "not_planned"
+    },
+    {
+      "repository": "mn-api/awesome-ai-proxy",
+      "number": 63,
+      "kind": "issue",
+      "url": "https://github.com/mn-api/awesome-ai-proxy/issues/63",
+      "title": "申请收录：TokenDos（会员会话共享、节点报价与公开鹈鹕记录）",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T05:43:57Z",
+      "updated_at": "2026-10-09T15:40:20Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:28.829127+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "panxunying/ai-coding-welfare",
+      "number": 22,
+      "kind": "issue",
+      "url": "https://github.com/panxunying/ai-coding-welfare/issues/22",
+      "title": "[已撤回] TokenDos：免费额度尚未核验",
+      "state": "closed",
+      "comments": 0,
+      "created_at": "2026-10-08T03:39:28Z",
+      "updated_at": "2026-10-09T15:40:27Z",
+      "closed_at": "2026-10-09T15:40:27Z",
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:29.308838+00:00",
+      "state_reason": "not_planned"
+    },
+    {
+      "repository": "panxunying/ai-coding-welfare",
+      "number": 24,
+      "kind": "issue",
+      "url": "https://github.com/panxunying/ai-coding-welfare/issues/24",
+      "title": "[已撤回] TokenDos：无法确认免费注册额度",
+      "state": "closed",
+      "comments": 0,
+      "created_at": "2026-10-09T02:27:33Z",
+      "updated_at": "2026-10-09T15:40:30Z",
+      "closed_at": "2026-10-09T15:40:30Z",
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:29.378207+00:00",
+      "state_reason": "not_planned"
+    },
+    {
+      "repository": "peter123023/awesome-claude-api",
+      "number": 24,
+      "kind": "pull_request",
+      "url": "https://github.com/peter123023/awesome-claude-api/pull/24",
+      "title": "docs: add TokenDos (tokendos.com) to Claude API relay list",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-09-18T04:23:56Z",
+      "updated_at": "2026-09-18T04:27:59Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:29.840807+00:00",
+      "merged_at": null,
+      "review_comments": 0,
+      "head_sha": "3d821a644f6b64bc0acc9bda0622a5cd621c3144"
+    },
+    {
+      "repository": "ruanyf/weekly",
+      "number": 12175,
+      "kind": "issue",
+      "url": "https://github.com/ruanyf/weekly/issues/12175",
+      "title": "【工具自荐】TokenDos：会员算力共享、节点比价与公开鹈鹕测试",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T06:42:42Z",
+      "updated_at": "2026-10-09T13:11:54Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:29.570097+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "shyshyshyyyy/awesome-ai-tools-zh",
+      "number": 18,
+      "kind": "issue",
+      "url": "https://github.com/shyshyshyyyy/awesome-ai-tools-zh/issues/18",
+      "title": "添加 TokenDos 到 AI 编程 / 开发者 分类",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-09-18T07:08:33Z",
+      "updated_at": "2026-09-18T07:08:33Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:29.652102+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "tensorchord/Awesome-LLMOps",
+      "number": 925,
+      "kind": "pull_request",
+      "url": "https://github.com/tensorchord/Awesome-LLMOps/pull/925",
+      "title": "Add AI API Two-Plan Cost Estimator",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-10-09T13:09:23Z",
+      "updated_at": "2026-10-09T15:22:47Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:30.604578+00:00",
+      "merged_at": null,
+      "review_comments": 0,
+      "head_sha": "0562493170018ea02d5c4aba16421dd7afd8cfd5",
+      "bot_comments": 0,
+      "human_comments": 0,
+      "reviews": 0
+    },
+    {
+      "repository": "xx025/carrot",
+      "number": 1027,
+      "kind": "issue",
+      "url": "https://github.com/xx025/carrot/issues/1027",
+      "title": "添加站点：TokenDos（会员会话共享、节点报价与公开鹈鹕记录）",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-09-18T07:07:07Z",
+      "updated_at": "2026-10-09T15:40:13Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:30.509159+00:00",
+      "state_reason": null
+    },
+    {
+      "repository": "xx025/carrot",
+      "number": 1048,
+      "kind": "issue",
+      "url": "https://github.com/xx025/carrot/issues/1048",
+      "title": "[撤回重复申请] TokenDos；请以 #1027 为准",
+      "state": "closed",
+      "comments": 0,
+      "created_at": "2026-10-09T06:42:08Z",
+      "updated_at": "2026-10-09T15:40:16Z",
+      "closed_at": "2026-10-09T15:40:16Z",
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:30.076423+00:00",
+      "state_reason": "not_planned"
+    },
+    {
+      "repository": "zzsting88/relayAPI",
+      "number": 74,
+      "kind": "issue",
+      "url": "https://github.com/zzsting88/relayAPI/issues/74",
+      "title": "申请收录：TokenDos（AI API 共享市场，OpenAI/Anthropic 双协议）",
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-09-18T07:07:57Z",
+      "updated_at": "2026-09-18T07:07:57Z",
+      "closed_at": null,
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-09T16:39:30.675634+00:00",
+      "state_reason": null
+    }
+  ],
+  "checks": [
+    {
+      "repository": "ikaijua/Awesome-AITools",
+      "number": 1225,
+      "head_sha": "9f8326a417f316c6e694e633366bcaa01aec9fac",
+      "name": "link-check",
+      "status": "completed",
+      "conclusion": "success",
+      "completed_at": "2026-10-09T16:23:49Z",
+      "details_url": "https://github.com/ikaijua/Awesome-AITools/actions/runs/37958704631/job/113915721915",
+      "observed_at": "2026-10-09T16:39:31.632247+00:00"
+    },
+    {
+      "repository": "tensorchord/Awesome-LLMOps",
+      "number": 925,
+      "head_sha": "0562493170018ea02d5c4aba16421dd7afd8cfd5",
+      "name": "DCO",
+      "status": "completed",
+      "conclusion": "success",
+      "completed_at": "2026-10-09T15:22:49Z",
+      "details_url": "https://probot.github.io/apps/dco/",
+      "observed_at": "2026-10-09T16:39:33.906755+00:00"
+    }
+  ],
+  "discussions_and_issues": {
+    "data": {
+      "data": {
+        "repository": {
+          "discussions": {
+            "totalCount": 1,
+            "nodes": [
+              {
+                "number": 2,
+                "title": "公开的 AI API 选型资料：欢迎提交价格、限制与实测记录",
+                "url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/discussions/2",
+                "updatedAt": "2026-10-09T12:15:04Z",
+                "comments": {
+                  "totalCount": 0
+                }
+              }
+            ]
+          },
+          "issues": {
+            "totalCount": 1,
+            "nodes": [
+              {
+                "number": 1,
+                "title": "[运营] 首期收录与事实修订征集",
+                "url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/1",
+                "updatedAt": "2026-10-09T10:45:36Z",
+                "comments": {
+                  "totalCount": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "observed_at": "2026-10-09T16:39:36.253924+00:00"
+  },
+  "traffic": {
+    "views": {
+      "count": 0,
+      "uniques": 0,
+      "views": [
+        {
+          "timestamp": "2026-09-26T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-09-27T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-09-28T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-09-29T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-09-30T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-01T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-02T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-03T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-04T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-05T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-07T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-08T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-09T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        }
+      ]
+    },
+    "clones": {
+      "count": 0,
+      "uniques": 0,
+      "clones": [
+        {
+          "timestamp": "2026-09-26T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-09-27T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-09-28T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-09-29T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-09-30T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-01T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-02T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-03T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-04T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-05T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-06T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-07T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-08T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        },
+        {
+          "timestamp": "2026-10-09T00:00:00Z",
+          "count": 0,
+          "uniques": 0
+        }
+      ]
+    },
+    "referrers": {
+      "data": [],
+      "observed_at": "2026-10-09T16:39:25.667977+00:00",
+      "source": "repos/codefarmer4GDP/awesome-ai-api-cn/traffic/popular/referrers"
+    },
+    "paths": {
+      "data": [],
+      "observed_at": "2026-10-09T16:39:25.667957+00:00",
+      "source": "repos/codefarmer4GDP/awesome-ai-api-cn/traffic/popular/paths"
+    }
+  },
+  "sources": {
+    "ref": {
+      "endpoint": "repos/codefarmer4GDP/awesome-ai-api-cn/git/ref/heads/main",
+      "observed_at": "2026-10-09T16:39:24.911920+00:00"
+    },
+    "pages": {
+      "endpoint": "repos/codefarmer4GDP/awesome-ai-api-cn/pages/builds/latest",
+      "observed_at": "2026-10-09T16:39:24.927309+00:00"
+    },
+    "clones": {
+      "endpoint": "repos/codefarmer4GDP/awesome-ai-api-cn/traffic/clones",
+      "observed_at": "2026-10-09T16:39:24.937539+00:00"
+    },
+    "repository": {
+      "endpoint": "repos/codefarmer4GDP/awesome-ai-api-cn",
+      "observed_at": "2026-10-09T16:39:24.960798+00:00"
+    },
+    "release": {
+      "endpoint": "repos/codefarmer4GDP/awesome-ai-api-cn/releases/latest",
+      "observed_at": "2026-10-09T16:39:24.980251+00:00"
+    },
+    "views": {
+      "endpoint": "repos/codefarmer4GDP/awesome-ai-api-cn/traffic/views",
+      "observed_at": "2026-10-09T16:39:25.427949+00:00"
+    },
+    "paths": {
+      "endpoint": "repos/codefarmer4GDP/awesome-ai-api-cn/traffic/popular/paths",
+      "observed_at": "2026-10-09T16:39:25.667957+00:00"
+    },
+    "referrers": {
+      "endpoint": "repos/codefarmer4GDP/awesome-ai-api-cn/traffic/popular/referrers",
+      "observed_at": "2026-10-09T16:39:25.667977+00:00"
+    }
+  },
+  "errors": [],
+  "limitations": [
+    "Traffic counters can lag and internal maintenance access is not evidence of external users.",
+    "Closed and open states are not evidence of acceptance; merged_at and explicit maintainer feedback must be checked.",
+    "Passing CI or a bot acknowledgement is not a human review.",
+    "Historical integration and APIs-guru submissions were status-checked only; their contents and possible duplicates were not adjudicated.",
+    "Evidence and pricing snapshots retain their original source dates."
+  ],
+  "last_updated_at": "2026-10-09T16:47:14.492380+00:00",
+  "publication": {
+    "commit": "97662b547d4d7870a69f27fa07a23dc5e060a4a4",
+    "release": {
+      "tag_name": "v0.4.0",
+      "html_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.4.0",
+      "target_commitish": "97662b547d4d7870a69f27fa07a23dc5e060a4a4",
+      "published_at": "2026-10-09T16:43:34Z"
+    },
+    "pages": {
+      "status": "built",
+      "commit": "97662b547d4d7870a69f27fa07a23dc5e060a4a4",
+      "created_at": "2026-10-09T16:43:30Z",
+      "updated_at": "2026-10-09T16:43:49Z",
+      "error": {
+        "message": null
+      }
+    },
+    "observed_at": "2026-10-09T16:47:14.492380+00:00",
+    "scope": "Citation metadata, version/evidence-date distinction and earlier operator disclosure only; no new product tests, performance rankings or external submissions."
+  },
+  "main_latest": {
+    "sha": "97662b547d4d7870a69f27fa07a23dc5e060a4a4",
+    "observed_at": "2026-10-09T16:47:14.492380+00:00"
+  },
+  "pages_latest": {
+    "status": "built",
+    "commit": "97662b547d4d7870a69f27fa07a23dc5e060a4a4",
+    "created_at": "2026-10-09T16:43:30Z",
+    "updated_at": "2026-10-09T16:43:49Z",
+    "error": {
+      "message": null
+    },
+    "observed_at": "2026-10-09T16:47:14.492380+00:00"
+  }
+}
