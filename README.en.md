@@ -1,6 +1,6 @@
 # Claude / GPT / Gemini API Selection Guide
 
-[简体中文](README.md)
+[简体中文](README.md) · [Interactive directory and cost calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/)
 
 A source-based guide to AI API aggregators, relay services, shared member compute, official APIs, and self-hosted gateways. It focuses on practical trade-offs: compatibility, price units, routing, data handling, limits, and evidence quality.
 
@@ -19,6 +19,7 @@ Snapshot date: **2026-10-09**. Prices, models, availability, and promotions chan
 
 ## Reusable resources
 
+- [Interactive directory and two-plan cost calculator (Chinese)](https://codefarmer4gdp.github.io/awesome-ai-api-cn/): filter services, enter prices, share parameter links, or export estimates as JSON. Default prices are fictional; estimates are not observed billing or calling tests.
 - [Cost comparison guide (Chinese)](guides/cost-comparison.md): billing units, cache, top-up credits, weekly plans, and retries, with fictional worked examples.
 - [Service directory JSON](data/services.json): six source-based entries, including strengths, constraints, affiliation, and source links. It does not establish live availability or performance rankings.
 - [Evaluation record template](examples/evaluation-record.template.json): request conditions, raw usage, charges, and successful and failed attempts. Empty fields mean no observation has been recorded.

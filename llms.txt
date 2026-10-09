@@ -4,6 +4,7 @@
 
 ## Core pages
 
+- [Interactive directory and cost calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/): Chinese service filters and a two-plan budget estimator with shareable parameters and JSON export; default prices are fictional and not provider quotes.
 - [Chinese guide](https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/README.md): source-based service comparison, pricing units, compatibility, limits, and TokenDos disclosure.
 - [English guide](https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/README.en.md): English summary with the same evidence boundaries.
 - [Cost comparison guide](https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/cost-comparison.md): Chinese worked examples for units, cache, top-up credits, subscriptions, and retries; all example prices are fictional.
