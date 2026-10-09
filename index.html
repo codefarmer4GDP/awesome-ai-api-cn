@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI API 选型指南 · 比较服务与实际成本</title>
+  <meta name="description" content="比较 TokenDos、OpenRouter、AIHubMix、ZenMux、AIGoCode 与 DeepSeek 的公开功能、优势和限制。用免费双方案计算器估算 Token、缓存、充值费用与赠送额度的实际成本。">
+  <link rel="canonical" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI API 选型指南与成本计算器">
+  <meta property="og:description" content="先按场景选服务，再算自己任务的成本。带来源的服务比较与可分享的双方案估算。">
+  <meta property="og:url" content="https://codefarmer4gdp.github.io/awesome-ai-api-cn/">
+  <meta name="theme-color" content="#154d3d">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="./"><span class="brand-icon" aria-hidden="true">↗</span> AI API 选型指南</a>
+    <nav aria-label="主导航">
+      <a href="#directory">服务目录</a>
+      <a href="#calculator">成本计算器</a>
+      <a class="repo-link" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Claude / GPT / Gemini · 中文开发者选型资料</p>
+        <h1>先看适合什么，<br>再算实际成本。</h1>
+        <p class="hero-copy">聚合平台、中转、会员算力共享与官方 API：把公开的优势、使用条件和来源放在一起，帮助你选出适合自己任务的方案。</p>
+        <div class="hero-actions"><a class="button primary" href="#calculator">比较两个方案 <span aria-hidden="true">→</span></a><a class="button" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn#平台评价">阅读完整评价 ↗</a></div>
+      </div>
+      <aside class="reading-note">
+        <p class="eyebrow">这份资料怎么读</p>
+        <ol>
+          <li><b>确定场景</b><span>模型、工具、供给与数据要求。</span></li>
+          <li><b>核对来源</b><span>公开功能与实际调用分别判断。</span></li>
+          <li><b>算完整任务</b><span>输入、输出、缓存与充值条件一起看。</span></li>
+        </ol>
+        <p class="small muted">资料日期 2026-10-09 · 尚未完成同条件的跨平台调用实测，排列不代表性能排名。</p>
+      </aside>
+    </section>
+
+    <section id="directory" class="section" aria-labelledby="directory-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / 按需求找入口</p><h2 id="directory-title">每家都有适用条件</h2></div><a class="text-link" href="data/services.json">带来源的 JSON ↗</a></div>
+      <div class="filter-row" id="directory-filters" hidden>
+        <label class="search-label">查找服务或能力<input id="service-search" type="search" placeholder="例如：缓存、会员、团队" autocomplete="off"></label>
+        <label>使用场景<select id="service-category"><option value="all">全部场景</option><option value="sharing">会员算力共享</option><option value="routing">路由与提供商选择</option><option value="multimodal">多模态接入</option><option value="coding">编程与团队额度</option><option value="official">官方 API</option></select></label>
+        <p id="filter-count" class="muted small" role="status">显示 6 项服务</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card" data-category="sharing coding" id="tokendos">
+          <div class="card-heading"><h3><a href="https://www.tokendos.com/">TokenDos ↗</a></h3><span class="tag">会员共享</span></div>
+          <p class="card-intro">比较供应节点，也能消费或供应闲置会员会话算力。</p>
+          <h4>值得关注</h4><p>供应方独立报价、站内活动，以及可查看的在线鹈鹕测试与历史结果。共享机制允许用户参与算力供应和按量结算。</p>
+          <h4>选用条件</h4><p>来源多，需要自行筛选；SESSION 依赖双方 Agent 与在线供应端。2026-10-09 的公开 CODEX_SESSION 查询为 0 条，实时供给需确认。价格口径、数据处理、默认并发及开票条件也要核对。</p>
+          <div class="card-sources"><a href="https://www.tokendos.com/tokendos-docs">机制与数据处理</a><a href="https://www.tokendos.com/tokendos-pricing">价格与运营条款</a><a href="https://www.tokendos.com/tokendos-market">节点与测试</a></div>
+        </article>
+        <article class="service-card" data-category="routing" id="openrouter">
+          <div class="card-heading"><h3><a href="https://openrouter.ai/">OpenRouter ↗</a></h3><span class="tag">路由控制</span></div>
+          <p class="card-intro">适合把提供商选择与数据策略写进请求配置。</p>
+          <h4>值得关注</h4><p>指定、排除提供商，配置故障回退；按价格、延迟或吞吐设置路由偏好，并提供数据收集与 ZDR 策略筛选。</p>
+          <h4>选用条件</h4><p>充值平台费用和 BYOK 规则影响预算；限制提供商或数据策略会减少回退选择。延迟、吞吐偏好需要结合实时供给判断。</p>
+          <div class="card-sources"><a href="https://openrouter.ai/docs/guides/routing/provider-selection">提供商路由</a><a href="https://openrouter.ai/pricing">费用规则</a></div>
+        </article>
+        <article class="service-card" data-category="multimodal routing" id="aihubmix">
+          <div class="card-heading"><h3><a href="https://aihubmix.com/">AIHubMix ↗</a></h3><span class="tag">多模态</span></div>
+          <p class="card-intro">适合集中接入文本、图像、视频与语音等能力。</p>
+          <h4>值得关注</h4><p>多模态接口资料，Claude / Gemini 原生接入说明，以及模型映射、回退和应用生态。</p>
+          <h4>选用条件</h4><p>能力依模型和接口而异。Anthropic 兼容接口标为 Beta，应与 Claude 原生接口分别核对；应用生态优惠排除 Claude。</p>
+          <div class="card-sources"><a href="https://docs.aihubmix.com/en">功能文档</a><a href="https://docs.aihubmix.com/en/api/Claude-Native">Claude 原生接口</a><a href="https://aihubmix.com/">应用优惠</a></div>
+        </article>
+        <article class="service-card" data-category="routing coding" id="zenmux">
+          <div class="card-heading"><h3><a href="https://zenmux.ai/">ZenMux ↗</a></h3><span class="tag">用量观察</span></div>
+          <p class="card-intro">适合多协议调用和异常费用观察。</p>
+          <h4>值得关注</h4><p>OpenAI、Anthropic 与 Vertex 接入，调用用量明细，以及按模型和原因查看的异常赔付记录。</p>
+          <h4>选用条件</h4><p>PAYG 与 Builder 适用场景不同；Builder 限个人开发学习，并有周额度及速率限制。完整赔付阈值与覆盖条件需进一步确认。</p>
+          <div class="card-sources"><a href="https://zenmux.ai/docs/guide/quickstart.html">接入和用途</a><a href="https://zenmux.ai/docs/guide/subscription.html">订阅规则</a><a href="https://zenmux.ai/docs/guide/observability/insurance.html">赔付记录</a></div>
+        </article>
+        <article class="service-card" data-category="coding" id="aigocode">
+          <div class="card-heading"><h3><a href="https://www.aigocode.com/">AIGoCode ↗</a></h3><span class="tag">编程套餐</span></div>
+          <p class="card-intro">适合规律的编程用量与团队额度管理。</p>
+          <h4>值得关注</h4><p>四周订阅、每周额度刷新、余额接续，以及团队成员、Key 与成本管理。</p>
+          <h4>选用条件</h4><p>按各周实际利用率计算套餐价值；不同分组有计价和工具限制，部分仅允许 Claude Code。平台美元额度需按分组价格换算。</p>
+          <div class="card-sources"><a href="https://www.aigocode.com/">套餐方案</a><a href="https://www.aigocode.com/groups">分组与价格</a><a href="https://www.aigocode.com/refund-policy">退款规则</a></div>
+        </article>
+        <article class="service-card" data-category="official" id="deepseek">
+          <div class="card-heading"><h3><a href="https://api-docs.deepseek.com/">DeepSeek 官方 API ↗</a></h3><span class="tag">厂商直接接入</span></div>
+          <p class="card-intro">适合主要使用 DeepSeek，并直接按厂商规则计费。</p>
+          <h4>值得关注</h4><p>官方模型、能力与计费说明，可作为 DeepSeek 成本比较基准；缓存、峰谷价格和别名规则有公开文档。</p>
+          <h4>选用条件</h4><p>模型范围集中于 DeepSeek；需要 Claude、GPT 或 Gemini 时另接入口。版本、别名映射与计价会变化，应保留日期。</p>
+          <div class="card-sources"><a href="https://api-docs.deepseek.com/quick_start/pricing">官方模型和定价</a></div>
+        </article>
+      </div>
+      <p id="no-results" class="empty-state" hidden>没有匹配项。可以换一个关键词，或选择「全部场景」。</p>
+      <p class="small muted">本指南由 TokenDos 运营方维护，TokenDos 列于首行。各家采用相同的来源和修订标准；完整使用限制见 <a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn#平台评价">README</a>。</p>
+    </section>
+
+    <section id="calculator" class="section" aria-labelledby="calculator-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / 把用量代入自己的报价</p><h2 id="calculator-title">双方案成本估算</h2></div><a class="text-link" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/cost-comparison.md">核算方法 ↗</a></div>
+      <p class="section-description">默认值是虚构示例，分别演示「支持缓存」与「缓存按普通输入计价」。请换成当前节点的实际报价；两方案使用同一币种和相同任务量。平台额度若有兑换率，先把单价换成所选现金币种；切换币种只改变标记，不进行汇兑。</p>
+      <noscript><p class="notice">成本计算和目录筛选需要启用 JavaScript。你仍可阅读上面的服务卡片与完整成本核算指南。</p></noscript>
+      <form id="cost-form" aria-describedby="cost-assumptions" hidden>
+        <fieldset class="workload"><legend>共同任务量</legend><div class="workload-grid">
+          <label>计价币种<select name="currency"><option value="USD">美元 USD</option><option value="CNY">人民币 CNY</option></select></label>
+          <label>任务次数<input name="tasks" type="number" value="1000" min="1" step="1" required></label>
+          <label>每次未缓存输入 Token<input name="fresh" type="number" value="2000" min="0" step="1" required></label>
+          <label>每次缓存读取 Token<input name="cached" type="number" value="6000" min="0" step="1" required></label>
+          <label>每次输出 Token<input name="output" type="number" value="1000" min="0" step="1" required></label>
+        </div></fieldset>
+        <div class="plan-grid">
+          <fieldset class="plan"><legend>方案 A</legend><div class="plan-fields">
+            <label class="full">方案名称<input name="a_name" type="text" value="示例 A：缓存读取单独计价" maxlength="80" required></label>
+            <label>输入单价 / 1M<input name="a_input" type="number" value="3" min="0" step="any" required></label>
+            <label>输出单价 / 1M<input name="a_output" type="number" value="15" min="0" step="any" required></label>
+            <label>缓存读取单价 / 1M<input name="a_cache" type="number" value="0.3" min="0" step="any" required></label>
+            <label>其他计费项目合计<input name="a_extra" type="number" value="0" min="0" step="any" required></label>
+            <label>充值附加费 %<input name="a_fee" type="number" value="0" min="0" step="any" required></label>
+            <label>实际可用赠送额度 %<input name="a_bonus" type="number" value="0" min="0" step="any" required></label>
+          </div></fieldset>
+          <fieldset class="plan"><legend>方案 B</legend><div class="plan-fields">
+            <label class="full">方案名称<input name="b_name" type="text" value="示例 B：全部输入按普通价" maxlength="80" required></label>
+            <label>输入单价 / 1M<input name="b_input" type="number" value="2" min="0" step="any" required></label>
+            <label>输出单价 / 1M<input name="b_output" type="number" value="12" min="0" step="any" required></label>
+            <label>缓存读取单价 / 1M<input name="b_cache" type="number" value="2" min="0" step="any" required></label>
+            <label>其他计费项目合计<input name="b_extra" type="number" value="0" min="0" step="any" required></label>
+            <label>充值附加费 %<input name="b_fee" type="number" value="0" min="0" step="any" required></label>
+            <label>实际可用赠送额度 %<input name="b_bonus" type="number" value="0" min="0" step="any" required></label>
+          </div></fieldset>
+        </div>
+        <p id="input-error" class="form-error" role="status" hidden></p>
+        <div class="result-panel">
+          <div class="result-heading"><p class="eyebrow">按当前输入估算</p><p id="result-difference" role="status">—</p></div>
+          <div class="table-scroll"><table><caption class="sr-only">方案 A 与 B 的成本明细</caption><thead><tr><th scope="col">费用</th><th scope="col" id="a-table-name">方案 A</th><th scope="col" id="b-table-name">方案 B</th></tr></thead><tbody>
+            <tr><th scope="row">未缓存输入</th><td id="a-input-result">—</td><td id="b-input-result">—</td></tr>
+            <tr><th scope="row">缓存读取</th><td id="a-cache-result">—</td><td id="b-cache-result">—</td></tr>
+            <tr><th scope="row">输出</th><td id="a-output-result">—</td><td id="b-output-result">—</td></tr>
+            <tr><th scope="row">其他计费项目</th><td id="a-extra-result">—</td><td id="b-extra-result">—</td></tr>
+            <tr><th scope="row">计费额度合计</th><td id="a-base-result">—</td><td id="b-base-result">—</td></tr>
+            <tr class="total-row"><th scope="row">折算现金合计</th><td id="a-cash-result">—</td><td id="b-cash-result">—</td></tr>
+            <tr><th scope="row">平均每次任务</th><td id="a-per-task-result">—</td><td id="b-per-task-result">—</td></tr>
+          </tbody></table></div>
+          <p id="cost-assumptions" class="small">未缓存输入与缓存读取量互不重叠；缓存未命中时填入普通输入价。报价应已含分组倍率，并按所选币种的 1:1 现金兑换口径填写。「其他项目」为整个任务量的合计，可补充缓存写入、工具与失败重试等费用。赠送额度假定全部满足条件并用完，充值附加费按购买额度加收。估算未自动包含最低充值、最低手续费、税费、汇兑和未填入的项目，也不适用于周期套餐。</p>
+        </div>
+        <div class="calculator-actions"><button type="button" class="button primary" id="share-calculation">复制带参数的链接</button><button type="button" class="button" id="download-calculation">导出估算 JSON</button><button type="reset" class="button quiet">恢复虚构示例</button></div>
+        <p id="calculation-status" class="small muted" role="status"></p>
+        <p class="small muted">计算在当前浏览器完成；参数会写入你主动分享的链接，任何收到链接的人都能看到报价与用量。导出结果是预算估算，不是扣费或实测证明。</p>
+      </form>
+    </section>
+
+    <section class="resources section" aria-labelledby="resource-title">
+      <div><p class="eyebrow">03 / 继续核对与贡献</p><h2 id="resource-title">资料可以复用，也可以修订</h2><p>有价格变化、使用条件或反例？请附上日期、节点和公开来源，帮助下一位开发者少走一次弯路。</p><a class="text-link" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/new?template=factual-correction.md">提交事实修订 ↗</a></div>
+      <div class="resource-links"><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn">收藏 GitHub 仓库 <span>完整指南、更新历史与贡献入口 ↗</span></a><a href="examples/evaluation-record.template.json">实测记录模板 <span>保留调用条件、用量、扣费与失败样本 ↗</span></a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn#自建网关与订阅代理">自建网关与订阅代理 <span>LiteLLM / New API / One API / Sub2API / CLIProxyAPI ↗</span></a></div>
+    </section>
+  </main>
+  <footer><span>Awesome AI API CN · 资料日期 2026-10-09</span><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/CONTRIBUTING.md">贡献与证据标准 ↗</a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/README.en.md">English guide ↗</a></footer>
+</body>
+</html>
