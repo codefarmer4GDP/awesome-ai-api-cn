@@ -27,7 +27,13 @@ Platform-reported route fields help trace requests and troubleshoot problems. Th
 
 **Your own calling records** connect a particular task to usage, bills and results. Include retries and failures. Repeated observations under comparable conditions support conclusions about the recorded nodes, tasks and time window. Output style alone still does not establish model identity.
 
-## Two situations that invite stronger conclusions than the evidence allows
+## Situations that invite stronger conclusions than the evidence allows
+
+### Input, output and cache prices all look low
+
+Check how the prices are aggregated: do all component minima belong to the same node? TokenDos's [public pricing endpoint](https://www.tokendos.com/api/tokendos/public/transit-snapshot) provides USD and `price_usd_per_m`, allowing a [dated field snapshot](../data/pricing-snapshots/tokendos-2026-10-09.json). Each minimum can come from a different supplier. Combining node A's input price with node B's output price does not establish the cost of one purchasable plan.
+
+For your workload, retain one node's input, output, cache-read, cache-write and extra rates, then reconcile routing and actual charges. Query API prices and SESSION supply separately; API catalog prices do not establish available member-session seats.
 
 ### A Pelican drawing looks good
 

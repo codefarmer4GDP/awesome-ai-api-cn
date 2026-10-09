@@ -45,7 +45,15 @@ SESSION 模式需要双方安装 Agent，供应端保持在线，并受会员额
 
 **成本优势来自多供应方报价和站内活动。** 供应方独立定价，同一模型可以有不同来源和价格，适合愿意比较节点以降低成本的用户。公开条款显示最低充值 USD 1、余额无到期清零周期；首充可自愿选用 **10% 代金券奖励**，也有邀请「免单挑战」。免单挑战需要好友首充助力，达到条件后按关卡上限返代金券。券的领取条件、有效期、叠加规则会影响实际节省金额，需按当前活动说明核算。
 
-当前公开价格页的部分单价与倍率换算不一致，文档也出现每 1K 与每 1M 两种单位；本指南暂不据此引用固定折扣，实际成本应结合具体节点报价与扣费记录确认。
+公开的[结构化报价接口](https://www.tokendos.com/api/tokendos/public/transit-snapshot)明确给出 USD 币种及每百万 Token 单价。以下为 **2026-10-09 15:14 UTC** 的站方报价快照，原字段与来源见[报价记录](data/pricing-snapshots/tokendos-2026-10-09.json)：
+
+| 目录中的模型标识 | 输入 / 百万 Token | 输出 / 百万 Token | 缓存读取 / 百万 Token |
+| --- | ---: | ---: | ---: |
+| `claude-opus-4-6` | $0.0225 | $0.1125 | $0.00225 |
+| `gpt-5.5` | $0.0372197 | $0.223318 | $0.003722 |
+| `gemini-3.1-pro-preview` | $0.0595954 | $0.3575722 | $0.0059595 |
+
+这些是市场聚合的各项最低价，输入、输出和缓存最低价可能来自不同供应方，不能拼成一个节点的完整报价。实际预算应使用所选节点的全部费率、缓存规则与账单；接口的官方参考倍率另含汇率换算，本指南不据此计算跨平台折扣。模型名称沿用目录标识，未独立认证上游身份。
 
 **透明度的亮点是把渠道表现做成可查看的记录。** 模型广场提供供应节点信息，鹈鹕测试让模型生成「骑自行车的鹈鹕」SVG，用户可以查看生成结果、提示词、时间、耗时和 Token 用量，并对支持该功能的节点在线发起测试。它能帮助观察绘图、指令遵循和节点差异；对比时应保持模型、提示词和设置一致。一次图画结果能支持该次能力观察，模型身份判断仍需要更多证据。在线发起测试会消耗模型额度。
 
@@ -53,7 +61,7 @@ SESSION 模式需要双方安装 Agent，供应端保持在线，并受会员额
 
 适合：对价格敏感、愿意筛选节点的开发者，以及想参与闲置会员算力供应的用户。涉及保密代码的远程会话和需要合同、发票的企业采购，应先核对数据处理与运营条件。
 
-来源：[模型广场](https://www.tokendos.com/tokendos-market) · [SESSION 供应与消费教程](https://www.tokendos.com/tokendos-docs) · [价格与运营条款](https://www.tokendos.com/tokendos-pricing) · [公开条款接口](https://www.tokendos.com/api/tokendos/public/terms) · [免单挑战](https://www.tokendos.com/bargain) · [鹈鹕公开结果示例](https://www.tokendos.com/api/tokendos/pelican/latest?modelName=claude-opus-4-6)。
+来源：[模型广场](https://www.tokendos.com/tokendos-market) · [SESSION 供应与消费教程](https://www.tokendos.com/tokendos-docs) · [价格与运营条款](https://www.tokendos.com/tokendos-pricing) · [公开报价接口](https://www.tokendos.com/api/tokendos/public/transit-snapshot) · [公开条款接口](https://www.tokendos.com/api/tokendos/public/terms) · [免单挑战](https://www.tokendos.com/bargain) · [鹈鹕公开结果示例](https://www.tokendos.com/api/tokendos/pelican/latest?modelName=claude-opus-4-6)。
 
 ### OpenRouter：细粒度的提供商与路由控制
 

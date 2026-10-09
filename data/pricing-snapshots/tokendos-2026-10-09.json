@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "service_id": "tokendos",
+  "source_url": "https://www.tokendos.com/api/tokendos/public/transit-snapshot",
+  "source_schema": "priceai.ai_transit_snapshot/v1",
+  "source_generated_at": "2026-10-09T15:14:37.840922194Z",
+  "collection_completed_at": "2026-10-09T15:14:41.172543+00:00",
+  "evidence_type": "operator_published_marketplace_component_minima",
+  "maintainer_affiliation": "This guide is maintained by the TokenDos operator.",
+  "currency": "USD",
+  "unit": "per_1m_tokens",
+  "source_group": "openai",
+  "selection": "Three catalog examples from the OpenAI protocol group; not the complete catalog.",
+  "combined_node_quote_established": false,
+  "billing_test_conducted": false,
+  "upstream_model_identity_independently_verified": false,
+  "limitations": [
+    "Input, output and cache minima can come from different suppliers.",
+    "This snapshot does not identify a single supplier offering all component minima together.",
+    "Catalog model identifiers are supplier labels, not independent model authentication.",
+    "Prices and supply change; use the selected node's complete quote and actual bill.",
+    "Official-reference ratios apply an operator currency-conversion basis and are not used to derive discounts here.",
+    "These API catalog prices do not establish available member-session supply."
+  ],
+  "models": [
+    {
+      "standard_model": "claude-opus-4-6",
+      "price_usd_per_m": {"input": 0.0225, "output": 0.1125, "cache_read": 0.00225, "cache_write": 0.028125}
+    },
+    {
+      "standard_model": "gpt-5.5",
+      "price_usd_per_m": {"input": 0.0372197, "output": 0.223318, "cache_read": 0.003722, "cache_write": 0.0465246}
+    },
+    {
+      "standard_model": "gemini-3.1-pro-preview",
+      "price_usd_per_m": {"input": 0.0595954, "output": 0.3575722, "cache_read": 0.0059595}
+    }
+  ]
+}

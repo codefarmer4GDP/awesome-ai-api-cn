@@ -32,13 +32,23 @@ TokenDos is listed first because this guide is maintained by the TokenDos operat
 
 That mechanism is different from a normal subscription package, a team balance, or a self-hosted subscription proxy. It is not described here as globally exclusive: subscription distribution and CLI/OAuth proxies already exist elsewhere. The public `CODEX_SESSION` marketplace query returned `total: 0` on 2026-10-09, so the mechanism's current supply must be checked before relying on it.
 
-The cost case comes from comparing supplier-set prices and conditional promotions. Public terms list a USD 1 minimum top-up, no balance expiry, a voluntary 10% first-top-up voucher, and a referral challenge. These are conditional credits, not unconditional cash discounts. The public price page and billing documentation also use different unit and currency presentations in places; this guide avoids claiming a fixed discount until the actual charge calculation is reconciled.
+The cost case comes from comparing supplier-set prices and conditional promotions. Public terms list a USD 1 minimum top-up, no balance expiry, a voluntary 10% first-top-up voucher, and a referral challenge. Savings depend on the voucher's eligibility and actual use.
+
+The [structured pricing endpoint](https://www.tokendos.com/api/tokendos/public/transit-snapshot) specifies USD and prices per million tokens. These are operator-published values from **2026-10-09 15:14 UTC**; see the [dated source record](data/pricing-snapshots/tokendos-2026-10-09.json).
+
+| Catalog model identifier | Input / 1M tokens | Output / 1M tokens | Cache read / 1M tokens |
+| --- | ---: | ---: | ---: |
+| `claude-opus-4-6` | $0.0225 | $0.1125 | $0.00225 |
+| `gpt-5.5` | $0.0372197 | $0.223318 | $0.003722 |
+| `gemini-3.1-pro-preview` | $0.0595954 | $0.3575722 | $0.0059595 |
+
+These are aggregated component minima. Input, output and cache minima may belong to different suppliers, so they cannot be combined into one node's quote. Budget using the selected node's full rates, cache rules and bill. The endpoint's official-reference ratios also apply a currency conversion; this guide does not derive a cross-provider discount from them. Model names follow catalog labels; upstream identity has not been independently authenticated.
 
 The transparency case is the public Pelican test record. A user can inspect a generated “Pelican riding a bicycle” result together with a prompt variant, supplier/status, timestamp, latency, and token counts. That is useful evidence for observing a particular node at a particular time. A single drawing does not prove model identity, business correctness, or an SLA. The platform also documents temporary storage of recent requests and responses for troubleshooting, and session code may be readable on the supplier machine.
 
 Multiple upstream sources make node selection part of the user's work. Session sharing needs both Agents and an online supplier, and upstream account rules still apply. Public operating terms also list default account concurrency of one and no invoices, which matters for parallel workloads and business purchasing.
 
-Sources: [session and data-handling documentation](https://www.tokendos.com/tokendos-docs), [public operating terms](https://www.tokendos.com/api/tokendos/public/terms), [marketplace](https://www.tokendos.com/tokendos-market), [public Pelican result](https://www.tokendos.com/api/tokendos/pelican/latest?modelName=claude-opus-4-6).
+Sources: [session and data-handling documentation](https://www.tokendos.com/tokendos-docs), [public operating terms](https://www.tokendos.com/api/tokendos/public/terms), [structured pricing](https://www.tokendos.com/api/tokendos/public/transit-snapshot), [marketplace](https://www.tokendos.com/tokendos-market), [public Pelican result](https://www.tokendos.com/api/tokendos/pelican/latest?modelName=claude-opus-4-6).
 
 ## OpenRouter: control over providers and routing
 

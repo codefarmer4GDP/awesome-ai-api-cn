@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-快照时间：2026-10-09 15:04 UTC（本轮 GitHub API 快照）。
+快照时间：2026-10-09 15:14 UTC（本轮 GitHub API 快照）。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -108,6 +108,14 @@ awesome-LLM-resources 的「技巧 Tips」已收录 LLM Pricing，适合补充�
 14:57 UTC 的无鉴权请求显示：`api.tokendos.com/v1/models` 返回 401 JSON，官网 `/v1/models` 返回 HTML，API 根路径返回 404。目录脚本只探测候选 URL 的同一域名，因此本次注明 API 分域并保留待复核状态，没有据鉴权响应声称生成成功。14:58 UTC 的 CODEX_SESSION 与 CLAUDE_SESSION 公开查询仍均 `total: 0`；共享机制有文档说明，当前供给和交易完成另需确认。
 
 GitHub API 已核对提交文件与本地资料一致、PR 正文一致，申请为 open、未合并、0 条评论。检查列表为空、commit status 为 pending，没有可报告的 CI 通过结论。15:04 UTC 的既有十项申请均仍 open、0 条评论，现有 PR 未合并；本仓库仍 0 Star、0 Fork、Views 0、Clones 0。本轮新增了一项待审候选申请，尚未观察到收录或增长；未运行测试、构建或开发服务。
+
+## 报价证据补充
+
+2026-10-09 15:14 UTC 复读公开报价接口，补充[有日期的价格 JSON](data/pricing-snapshots/tokendos-2026-10-09.json)，记录三个目录模型的 USD / 百万 Token 输入、输出及缓存费率。中英文 README、服务 JSON、网页卡片、渠道证据指南与 llms.txt 同步来源与范围，替换此前笼统的「价格口径待核对」说明。
+
+快照保留站方生成时间、采集完成时间及原字段；这些是市场聚合的各项最低价，可能分别属于不同供应方。资料说明应使用同一节点的完整报价核算，不拼接最低值，不据含汇率换算的参考倍率声称固定折扣。没有新增付费调用、扣费实测或模型身份认证。
+
+同轮 CODEX_SESSION 与 CLAUDE_SESSION 查询仍均为空。十一项已有申请仍 open、0 条评论，PR 均未合并；本仓库为 0 Star、0 Fork、最近 14 天 Views 0、Clones 0。Claws 候选 PR 没有已报告的检查结果，commit status 为 pending；本轮没有新增投稿或催审。
 
 ## 分发规则
 

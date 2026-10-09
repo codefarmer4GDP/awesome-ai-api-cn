@@ -7,7 +7,7 @@
   "live_availability": "not_established_by_this_dataset",
   "ordering": "editorial_order_not_performance_ranking",
   "maintenance_disclosure": "Maintained by the TokenDos operator. TokenDos is listed first. The same source and correction requirements apply to every service.",
-  "price_policy": "Numeric prices are omitted here because currencies, billing units, groups, cache rules, fees and promotions require workload-specific normalization. Follow the cited pricing rules and actual charges.",
+  "price_policy": "Service entries link pricing rules rather than comparable numeric quotes. Dated operator-published component minima are retained separately in data/pricing-snapshots; these require node-specific rates and actual charges before workload comparison.",
   "services": [
     {
       "id": "tokendos",
@@ -16,13 +16,17 @@
       "type": "multi_supplier_marketplace_and_member_session_sharing",
       "operator_affiliated_with_guide": true,
       "use_cases": ["比较供应节点成本", "消费或供应闲置会员会话算力"],
-      "documented_strengths": ["供应方参与会员会话共享与按量结算", "供应方独立报价与有条件的站内活动", "可查看鹈鹕测试结果与调用记录"],
-      "constraints": ["渠道来源多，需要按节点核对功能和供给", "SESSION 依赖双方 Agent 和在线供应端", "公开价格页和文档的部分单位、倍率口径存在不一致", "近期请求响应可被平台临时保留，供应方可能读取会员会话内容", "公开条款注明默认并发为 1、当前不提供发票"],
-      "dated_observations": [{"date": "2026-10-09", "description": "公开 CODEX_SESSION 查询返回 total: 0；不代表所有协议或之后的供给", "source_url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION"}],
+      "documented_strengths": ["供应方参与会员会话共享与按量结算", "供应方独立报价、有条件的站内活动与公开 USD 报价接口", "可查看鹈鹕测试结果与调用记录"],
+      "constraints": ["渠道来源多，需要按节点核对功能和供给", "SESSION 依赖双方 Agent 和在线供应端", "聚合最低价可能来自不同供应方，完整费用需按所选节点核算", "近期请求响应可被平台临时保留，供应方可能读取会员会话内容", "公开条款注明默认并发为 1、当前不提供发票"],
+      "dated_observations": [
+        {"date": "2026-10-09", "description": "15:14 UTC 的 CODEX_SESSION 与 CLAUDE_SESSION 公开查询均 total: 0；不代表所有协议或之后的供给", "source_url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION", "additional_source_url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CLAUDE_SESSION"},
+        {"date": "2026-10-09", "description": "15:14 UTC 公开报价接口明确 USD 与 price_usd_per_m；记录三个模型的聚合各项最低价，不构成单节点报价或扣费实测", "source_url": "https://www.tokendos.com/api/tokendos/public/transit-snapshot", "record_path": "data/pricing-snapshots/tokendos-2026-10-09.json"}
+      ],
       "sources": [
         {"role": "marketplace", "url": "https://www.tokendos.com/tokendos-market"},
         {"role": "documentation", "url": "https://www.tokendos.com/tokendos-docs"},
         {"role": "pricing", "url": "https://www.tokendos.com/tokendos-pricing"},
+        {"role": "structured_pricing", "url": "https://www.tokendos.com/api/tokendos/public/transit-snapshot"},
         {"role": "terms", "url": "https://www.tokendos.com/api/tokendos/public/terms"},
         {"role": "pelican_record_example", "url": "https://www.tokendos.com/api/tokendos/pelican/latest?modelName=claude-opus-4-6"}
       ]
