@@ -56,4 +56,6 @@ These projects provide software. Operators still manage upstream credentials, de
 
 Please submit sources, dates, applicable models/protocols, price units, limits, and any invitation, referral, sponsorship, or paid relationship. See [CONTRIBUTING.md](CONTRIBUTING.md), [MAINTENANCE.md](MAINTENANCE.md), [ROADMAP.md](ROADMAP.md), or open a [correction issue](https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/new?template=factual-correction.md).
 
+See [distribution and operations](DISTRIBUTION.md) for public submission status and metric snapshots.
+
 The repository is maintained by the TokenDos operator. TokenDos is listed first; ordering is not a test ranking. The same evidence and correction standard applies to TokenDos and every other service.
