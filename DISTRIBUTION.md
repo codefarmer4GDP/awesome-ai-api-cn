@@ -12,7 +12,7 @@
 | Fork | 0 | `forks_count` |
 | 最近 14 天 Views | 0 | GitHub Traffic API；新仓库数据可能延迟 |
 | 最近 14 天 Clones | 0 | GitHub Traffic API |
-| 最新发布 | v0.2.0 | 在线目录与双方案成本计算器 |
+| 最新发布 | v0.3.0 | 在线目录、成本计算器与公开运营记录 |
 | 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
 
 这些数字只描述查询时的状态，不构成增长预测。
@@ -29,6 +29,8 @@
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) | open |
 
 针对同一个目录的选型指南投稿曾通过 API 创建了 [#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121) 和 [#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122)，均因未使用该目录要求的 Issue Form 被自动关闭。后续不重复发送自由格式 Issue；如需再次投稿，应使用其网页表单并保留关联披露。
+
+仓库已发布一条 [公开运营讨论](https://github.com/codefarmer4GDP/awesome-ai-api-cn/discussions/2)，说明目录的证据标准、投稿方式和维护关系，供读者直接反馈。
 
 ## 分发规则
 
