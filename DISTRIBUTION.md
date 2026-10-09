@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-快照日期：2026-10-09（GitHub API，UTC）。
+快照时间：2026-10-09 13:13 UTC（GitHub API）。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -33,9 +33,10 @@
 | 目录 | 投稿对象与申请 | 状态（2026-10-09） |
 | --- | --- | --- |
 | [awesome-generative-ai-apis](https://github.com/foss42/awesome-generative-ai-apis) | 双方案成本估算工具，[#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) | open，等待维护者确认范围及分配；尚未提交 PR 或收录 |
+| [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) | 双方案成本估算工具，[PR #925](https://github.com/tensorchord/Awesome-LLMOps/pull/925) | open，未合并，0 条评论 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122) | 均被自动关闭；当前无待审的指南申请 |
 
-成本工具按目标项目的 Issue-first 流程提交，披露 TokenDos 维护关系、中文界面与英文核算说明，并注明默认价格为虚构示例。它比较读者自行填写的方案；本次申请未把它描述成实时价格 API 或跨平台性能实测。
+向 awesome-generative-ai-apis 的成本工具申请按其 Issue-first 流程提交，披露 TokenDos 维护关系、中文界面与英文核算说明，并注明默认价格为虚构示例。它比较读者自行填写的方案；本次申请未把它描述成实时价格 API 或跨平台性能实测。
 
 选型指南的三次 API 投稿均因未使用目录要求的 Issue Form 被自动关闭；API 创建未取得表单标签，外部贡献者后续补标签又因权限不足失败。后续不重复发送自由格式 Issue；如需再次投稿，应使用其网页表单并保留关联披露。
 
@@ -46,6 +47,14 @@
 同日补齐 [英文在线目录与成本计算器](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#calculator)，包括英文服务卡片、筛选、费用表、输入提示和导出说明；中英文页面共用计算逻辑，语言切换保留已填报价和用量。计算器仍使用虚构默认价格，不提供实时价格、供给或性能排名。交互验证按项目约定由用户完成。
 
 英文入口发布后，已更新原有工具申请 [#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) 的正文与建议收录行，注明中英文界面和共享计算逻辑；未新建重复申请或提交 PR。GitHub API 核对正文与本地更新稿一致；状态仍为 open、未分配、0 条评论。
+
+Awesome-LLMOps 允许逐项提交 PR。阅读贡献规则并查重后，在其 Optimizations 表格按字母顺序新增一条 `AI API Two-Plan Cost Estimator`，介绍同任务量、用户自填报价、充值费用与赠送额度的比较，以及英文/中文界面、参数分享和 JSON 导出。PR 正文披露 TokenDos 关系、虚构默认价格与未进行交互验证；GitHub API 核对只有 README 一行新增，正文与本地稿件一致。申请待审核，不代表已收录。
+
+## 周刊自荐修订
+
+已修订既有 [科技爱好者周刊 #12175](https://github.com/ruanyf/weekly/issues/12175)，没有另发重复投稿。标题与正文改为介绍会员算力共享、节点报价与活动、公开鹈鹕测试，并补充本指南及成本工具链接。正文明确运营方身份，同时说明渠道筛选、Agent 与在线供给、数据处理、并发和发票条件；删除未经充分核实的兼容性、延迟承诺与旧模型清单。
+
+同日重新读取公开条款、CODEX_SESSION 市场与鹈鹕示例接口：CODEX_SESSION 查询仍为 `total: 0`，鹈鹕示例返回 9 个节点记录。共享机制、当前可见供给和能力样本分别表述，没有据此声称共享流程已实测或模型身份已认证。GitHub API 核对投稿正文与本地更新稿一致；申请仍为 open、0 条评论，尚未核实周刊收录。
 
 ## 分发规则
 
