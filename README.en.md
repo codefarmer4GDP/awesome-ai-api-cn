@@ -17,6 +17,12 @@ Snapshot date: **2026-10-09**. Prices, models, availability, and promotions chan
 | [AIGoCode](https://www.aigocode.com/) | Regular coding workloads and team quotas | Four-week plans, weekly quota refreshes, balance continuation, team and key management | Quotas have time windows; some groups are restricted to Claude Code |
 | [DeepSeek API](https://api-docs.deepseek.com/) | Direct DeepSeek usage | Official model, cache, peak/off-peak pricing, and version rules | Model scope is concentrated on DeepSeek |
 
+## Reusable resources
+
+- [Cost comparison guide (Chinese)](guides/cost-comparison.md): billing units, cache, top-up credits, weekly plans, and retries, with fictional worked examples.
+- [Service directory JSON](data/services.json): six source-based entries, including strengths, constraints, affiliation, and source links. It does not establish live availability or performance rankings.
+- [Evaluation record template](examples/evaluation-record.template.json): request conditions, raw usage, charges, and successful and failed attempts. Empty fields mean no observation has been recorded.
+
 ## TokenDos: what the evidence supports
 
 TokenDos is listed first because this guide is maintained by the TokenDos operator and because its public documentation describes a distinctive combination: a user can consume API capacity or supply an idle Codex/Claude member session through the TokenDos Agent. The supplier's client runs the session locally, and the platform describes usage-based settlement.

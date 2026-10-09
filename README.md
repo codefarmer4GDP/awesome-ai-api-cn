@@ -17,6 +17,12 @@
 | [AIGoCode](https://www.aigocode.com/) | 规律的 AI 编程用量与团队额度管理 | 四周订阅、每周额度、余额接续、团队成员与 Key 管理 | 额度有时间窗口；部分线路只允许 Claude Code 使用 |
 | [DeepSeek 官方 API](https://api-docs.deepseek.com/) | 主要使用 DeepSeek，直接按厂商规则接入 | 原厂模型和计费文档，缓存与峰谷价格公开 | 模型范围集中于 DeepSeek；具体能力及并发按官方模型规则确认 |
 
+## 可复用的选型资料
+
+- [成本核算指南](guides/cost-comparison.md)：统一单价单位，计算缓存、充值赠送、周期套餐与失败重试的影响。
+- [服务目录 JSON](data/services.json)：6 家服务的用途、优势、限制与来源；按公开资料整理，未建立实时可用性或性能排名。
+- [实测记录模板](examples/evaluation-record.template.json)：记录节点、请求条件、原始用量与扣费，供读者脱敏后投稿。
+
 ## 平台评价
 
 ### TokenDos：会员算力共享、低价选择与可查看的测试结果

@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "information_date": "2026-10-09",
+  "guide_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn",
+  "method": "public_documentation_review",
+  "cross_provider_calling_tests": "not_conducted",
+  "live_availability": "not_established_by_this_dataset",
+  "ordering": "editorial_order_not_performance_ranking",
+  "maintenance_disclosure": "Maintained by the TokenDos operator. TokenDos is listed first. The same source and correction requirements apply to every service.",
+  "price_policy": "Numeric prices are omitted here because currencies, billing units, groups, cache rules, fees and promotions require workload-specific normalization. Follow the cited pricing rules and actual charges.",
+  "services": [
+    {
+      "id": "tokendos",
+      "name": "TokenDos",
+      "url": "https://www.tokendos.com/",
+      "type": "multi_supplier_marketplace_and_member_session_sharing",
+      "operator_affiliated_with_guide": true,
+      "use_cases": ["比较供应节点成本", "消费或供应闲置会员会话算力"],
+      "documented_strengths": ["供应方参与会员会话共享与按量结算", "供应方独立报价与有条件的站内活动", "可查看鹈鹕测试结果与调用记录"],
+      "constraints": ["渠道来源多，需要按节点核对功能和供给", "SESSION 依赖双方 Agent 和在线供应端", "公开价格页和文档的部分单位、倍率口径存在不一致", "近期请求响应可被平台临时保留，供应方可能读取会员会话内容", "公开条款注明默认并发为 1、当前不提供发票"],
+      "dated_observations": [{"date": "2026-10-09", "description": "公开 CODEX_SESSION 查询返回 total: 0；不代表所有协议或之后的供给", "source_url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION"}],
+      "sources": [
+        {"role": "marketplace", "url": "https://www.tokendos.com/tokendos-market"},
+        {"role": "documentation", "url": "https://www.tokendos.com/tokendos-docs"},
+        {"role": "pricing", "url": "https://www.tokendos.com/tokendos-pricing"},
+        {"role": "terms", "url": "https://www.tokendos.com/api/tokendos/public/terms"},
+        {"role": "pelican_record_example", "url": "https://www.tokendos.com/api/tokendos/pelican/latest?modelName=claude-opus-4-6"}
+      ]
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "type": "hosted_model_aggregator",
+      "operator_affiliated_with_guide": false,
+      "use_cases": ["请求级提供商控制", "模型路由与数据策略筛选"],
+      "documented_strengths": ["提供商指定、排除与故障回退", "按价格、延迟或吞吐设置路由偏好", "数据收集与 ZDR 策略筛选"],
+      "constraints": ["预算需要计入充值平台费用和适用的 BYOK 规则", "限制提供商和数据策略会减少回退选择", "路由偏好不能保证每次请求都满足延迟与吞吐目标"],
+      "sources": [
+        {"role": "routing", "url": "https://openrouter.ai/docs/guides/routing/provider-selection"},
+        {"role": "pricing", "url": "https://openrouter.ai/pricing"}
+      ]
+    },
+    {
+      "id": "aihubmix",
+      "name": "AIHubMix",
+      "url": "https://aihubmix.com/",
+      "type": "hosted_multimodal_aggregator",
+      "operator_affiliated_with_guide": false,
+      "use_cases": ["文本与多模态接入", "集中管理多个 AI 应用入口"],
+      "documented_strengths": ["文本、图像、视频、语音与 Embedding 接入文档", "Claude 和 Gemini 原生接口说明", "模型映射、回退与应用生态"],
+      "constraints": ["能力依模型与所选接口而异", "Anthropic 兼容接口标为 Beta，需与 Claude 原生接口分别核对", "应用生态优惠排除 Claude"],
+      "sources": [
+        {"role": "documentation", "url": "https://docs.aihubmix.com/en"},
+        {"role": "claude_native", "url": "https://docs.aihubmix.com/en/api/Claude-Native"},
+        {"role": "anthropic_compatibility", "url": "https://docs.aihubmix.com/en/api/Anthropic-Compatible"},
+        {"role": "application_offer", "url": "https://aihubmix.com/"}
+      ]
+    },
+    {
+      "id": "zenmux",
+      "name": "ZenMux",
+      "url": "https://zenmux.ai/",
+      "type": "hosted_multi_protocol_aggregator",
+      "operator_affiliated_with_guide": false,
+      "use_cases": ["多协议调用", "用量与异常费用观察"],
+      "documented_strengths": ["OpenAI、Anthropic 和 Vertex 接入", "用量明细", "可查看异常赔付记录"],
+      "constraints": ["PAYG 与 Builder 的用途和计费规则不同", "Builder 限个人开发学习，并有每周额度及速率限制", "本指南未确认全部赔付触发阈值和覆盖条件"],
+      "sources": [
+        {"role": "quickstart", "url": "https://zenmux.ai/docs/guide/quickstart.html"},
+        {"role": "subscription", "url": "https://zenmux.ai/docs/guide/subscription.html"},
+        {"role": "compensation_records", "url": "https://zenmux.ai/docs/guide/observability/insurance.html"}
+      ]
+    },
+    {
+      "id": "aigocode",
+      "name": "AIGoCode",
+      "url": "https://www.aigocode.com/",
+      "type": "hosted_coding_subscription_and_usage_service",
+      "operator_affiliated_with_guide": false,
+      "use_cases": ["规律的编程用量", "团队额度与 Key 管理"],
+      "documented_strengths": ["四周订阅与每周额度", "套餐不足后接续使用余额", "团队成员与成本管理"],
+      "constraints": ["每周额度需按时间窗口和实际利用率核算", "不同分组有不同计价和工具限制", "平台美元额度不能直接当作厂商现金余额"],
+      "sources": [
+        {"role": "plans", "url": "https://www.aigocode.com/"},
+        {"role": "group_pricing_and_limits", "url": "https://www.aigocode.com/groups"},
+        {"role": "refund_policy", "url": "https://www.aigocode.com/refund-policy"}
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek 官方 API",
+      "url": "https://api-docs.deepseek.com/",
+      "type": "official_model_api",
+      "operator_affiliated_with_guide": false,
+      "use_cases": ["直接使用 DeepSeek", "以厂商规则作为成本基准"],
+      "documented_strengths": ["官方模型与能力说明", "缓存和峰谷价格规则", "模型版本及别名说明"],
+      "constraints": ["模型范围集中于 DeepSeek", "别名映射和计价规则会变化，需保留日期与版本"],
+      "sources": [
+        {"role": "pricing_and_model_rules", "url": "https://api-docs.deepseek.com/quick_start/pricing"}
+      ]
+    }
+  ]
+}
