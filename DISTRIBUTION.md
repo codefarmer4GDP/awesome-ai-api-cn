@@ -117,6 +117,14 @@ GitHub API 已核对提交文件与本地资料一致、PR 正文一致，申请
 
 同轮 CODEX_SESSION 与 CLAUDE_SESSION 查询仍均为空。十一项已有申请仍 open、0 条评论，PR 均未合并；本仓库为 0 Star、0 Fork、最近 14 天 Views 0、Clones 0。Claws 候选 PR 没有已报告的检查结果，commit status 为 pending；本轮没有新增投稿或催审。
 
+报价资料已发布为提交 `cacac2d`；GitHub Pages API 确认该提交于 2026-10-09 15:24 UTC 构建完成。上轮候选投稿的运营记录提交 `988bfb9` 也已补齐发布。发布与 Pages 构建状态仅说明资料上线，交互验证仍由用户完成。
+
+## 成本工具投稿署名修正
+
+复核 [Awesome-LLMOps PR #925](https://github.com/tensorchord/Awesome-LLMOps/pull/925) 时，发现原提交署名格式有误，且缺少 DCO 要求的 `Signed-off-by`。本轮修正作者和提交者格式并补齐签署行，文件树保持一致，仍仅新增一条工具链接。Git 推送超时后，通过 GitHub API 更新自有投稿分支，更新前两次确认远端仍指向原提交；新提交为 `0562493`，本地分支已同步。
+
+GitHub 的 DCO 检查已完成并返回 `success`，摘要为「All commits are signed off!」。PR 仍 open、未合并、0 条评论；该结果仅说明署名检查通过，不代表内容已获审核或工具已经实测。
+
 ## 分发规则
 
 1. 使用普通 HTTPS 官方入口，不使用邀请、返佣、UTM 或隐藏归因参数。
