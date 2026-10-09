@@ -1,5 +1,5 @@
 {
-  "template_version": "1.0",
+  "template_version": "1.1",
   "record_status": "not_conducted",
   "service": null,
   "model_requested": null,
@@ -8,6 +8,26 @@
   "protocol": null,
   "started_at": null,
   "region": null,
+  "evidence_scope": {
+    "documentation_sources": [],
+    "platform_records": [],
+    "reader_observations": [],
+    "independently_reproduced": null,
+    "unconfirmed_claims": []
+  },
+  "routing_request": {
+    "delivery_mode": null,
+    "provider_or_node": null,
+    "fallback_allowed": null
+  },
+  "session_conditions": {
+    "consumer_client_version": null,
+    "supplier_environment_documented": null,
+    "quota_window_documented": null,
+    "concurrency_documented": null,
+    "availability_checked_at": null,
+    "data_handling_source": null
+  },
   "request_settings": {
     "prompt_reference_redacted": null,
     "max_output_tokens": null,
@@ -50,6 +70,11 @@
     "http_status",
     "business_success",
     "retry_of",
+    "delivery_mode_reported",
+    "provider_or_node_reported",
+    "route_evidence_redacted",
+    "fallback_of",
+    "queue_duration_ms",
     "time_to_first_token_ms",
     "total_duration_ms",
     "billed_amount",

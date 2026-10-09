@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-快照时间：2026-10-09 14:11 UTC（本轮 GitHub API 快照）。
+快照时间：2026-10-09 14:30 UTC（本轮 GitHub API 快照）。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -73,6 +73,28 @@ awesome-LLM-resources 的「技巧 Tips」已收录 LLM Pricing，适合补充�
 已修订既有 [科技爱好者周刊 #12175](https://github.com/ruanyf/weekly/issues/12175)，没有另发重复投稿。标题与正文改为介绍会员算力共享、节点报价与活动、公开鹈鹕测试，并补充本指南及成本工具链接。正文明确运营方身份，同时说明渠道筛选、Agent 与在线供给、数据处理、并发和发票条件；删除未经充分核实的兼容性、延迟承诺与旧模型清单。
 
 同日重新读取公开条款、CODEX_SESSION 市场与鹈鹕示例接口：CODEX_SESSION 查询仍为 `total: 0`，鹈鹕示例返回 9 个节点记录。共享机制、当前可见供给和能力样本分别表述，没有据此声称共享流程已实测或模型身份已认证。GitHub API 核对投稿正文与本地更新稿一致；申请仍为 open、0 条评论，尚未核实周刊收录。
+
+## 导航项目复核与分发选择
+
+2026-10-09 14:24 UTC 读取三个项目的仓库信息、完整文件树、README 和可见提交记录：
+
+| 项目 | Star / Fork | 文件与内容 | 可借鉴的做法 |
+| --- | --- | --- | --- |
+| [xx025/carrot](https://github.com/xx025/carrot) | 17,205 / 1,451 | 3 个文件：README 和两份 Issue 模板；分类导航与自有站点入口 | 长期维护分类、提供更新与纠错入口 |
+| [zzsting88/relayAPI](https://github.com/zzsting88/relayAPI) | 4,949 / 163 | 96 个文件，包含 React 检测界面；README 中 28 个禾维跳转链接含 `source=git` | 对照表连接检测工具，并记录入口来源 |
+| [peter123023/awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | 454 / 28 | README 与 LICENSE；统一服务表、检测工具和 Star History 入口 | 围绕明确选型问题组织可收藏的资料 |
+
+文件少并不等于没有维护价值；导流链接也不能证明 Star 来源。当前 stargazers API 查询均返回 HTTP 404，没有取得点星时间序列或账号样本，不能判定刷星或给出自然增长比例。上述公开内容支持对维护、工具入口和商业导流方式的观察，不能据此计算它们对 Star 的贡献。
+
+本轮也阅读了两个候选目录的贡献规则：[awesome-freellm-apis](https://github.com/open-free-llm-api/awesome-freellm-apis/blob/main/CONTRIBUTING.md)要求真实、可用的免费层，首充券和邀请奖励不能替代免费额度；[awesome-agentic-ai-zh](https://github.com/WenyuChiou/awesome-agentic-ai-zh/blob/main/resources/style-guide.md)要求新收录的第三方 GitHub 项目至少 1,000 Star，并有明确教学价值。当前资料不满足这些投稿依据，因此没有向它们提交申请。
+
+14:30 UTC 的已有服务、周刊和工具申请仍全部 open、0 条评论，现有 PR 未合并；仓库仍为 0 Star、0 Fork、Views 0、Clones 0。调研和资料发布属于准备进展，尚未观察到增长。本轮没有新增外部申请、发表评论或催审。
+
+## 渠道证据指南
+
+新增[中文渠道证据指南](guides/channel-evidence.md)与[英文版](guides/channel-evidence.en.md)，同步中英文 README、在线目录与 llms.txt。指南把报价、请求路由、API / SESSION 供给、鹈鹕样本、数据处理和真实账单分别对应到可支持的结论，并区分公开文档、平台记录和读者自己的调用观察。
+
+[记录模板](examples/evaluation-record.template.json)升级为 1.1，补充证据范围、请求选路、共享条件，以及每次尝试的交付模式、供应节点、回退和排队字段。模板保留空值与 `not_conducted`，不把一次绘图、HTTP 200 或 Agent 聊天成功写成模型认证、持续可用性或会员共享交易实测。仅核对资料引用、锚点与 JSON 语法，未运行项目测试、构建、开发服务或交互验证。
 
 ## 分发规则
 

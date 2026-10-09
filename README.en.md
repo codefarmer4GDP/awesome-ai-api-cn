@@ -22,6 +22,7 @@ Snapshot date: **2026-10-09**. Prices, models, availability, and promotions chan
 - [Interactive directory and two-plan cost calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html) ([中文](https://codefarmer4gdp.github.io/awesome-ai-api-cn/)): filter services, enter prices, switch languages while retaining quotes, share parameter links, or export estimates as JSON. Default prices are fictional; estimates are not observed billing or calling tests.
 - [Cost comparison guide](guides/cost-comparison.en.md) ([中文](guides/cost-comparison.md)): billing units, cache, top-up credits, weekly plans, and retries, with fictional worked examples.
 - [Member-session sharing guide](guides/member-session-sharing.en.md) ([中文](guides/member-session-sharing.md)): distinguish periodic plans, team credits, self-hosted proxies and supplier-hosted sessions; check routes, supply, data access and costs for both parties.
+- [Channel evidence guide](guides/channel-evidence.en.md) ([中文](guides/channel-evidence.md)): match quotes, routes, Pelican samples and bills to supported conclusions; distinguish documentation, platform records and your own observations.
 - [Service directory JSON](data/services.json): six source-based entries, including strengths, constraints, affiliation, and source links. It does not establish live availability or performance rankings.
 - [Evaluation record template](examples/evaluation-record.template.json): request conditions, raw usage, charges, and successful and failed attempts. Empty fields mean no observation has been recorded.
 
