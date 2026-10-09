@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-快照时间：2026-10-09 14:30 UTC（本轮 GitHub API 快照）。
+快照时间：2026-10-09 15:04 UTC（本轮 GitHub API 快照）。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -28,6 +28,7 @@
 | [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | open，未合并 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) | open |
 | [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) | [PR #2353](https://github.com/mahseema/awesome-ai-tools/pull/2353) | open，未合并，0 条评论 |
+| [Claws-ZH/awesome-ai-api](https://github.com/Claws-ZH/awesome-ai-api) | [PR #50](https://github.com/Claws-ZH/awesome-ai-api/pull/50) | open，候选待审，未合并，0 条评论 |
 
 awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增一个工具并放在分类末尾。本次先查重、阅读模板，再在 Developer tools 末尾添加一条 TokenDos，介绍供应方报价、Agent 会员会话共享与公开鹈鹕记录，同时说明可用性与数据处理依赖所选供应方。PR 正文披露运营关系、当前 CODEX_SESSION 查询为空、供应端可读取会话及平台临时留存条件，并链接本指南。GitHub API 核对只有 README 一行新增，正文与本地稿件一致。
 
@@ -95,6 +96,18 @@ awesome-LLM-resources 的「技巧 Tips」已收录 LLM Pricing，适合补充�
 新增[中文渠道证据指南](guides/channel-evidence.md)与[英文版](guides/channel-evidence.en.md)，同步中英文 README、在线目录与 llms.txt。指南把报价、请求路由、API / SESSION 供给、鹈鹕样本、数据处理和真实账单分别对应到可支持的结论，并区分公开文档、平台记录和读者自己的调用观察。
 
 [记录模板](examples/evaluation-record.template.json)升级为 1.1，补充证据范围、请求选路、共享条件，以及每次尝试的交付模式、供应节点、回退和排队字段。模板保留空值与 `not_conducted`，不把一次绘图、HTTP 200 或 Agent 聊天成功写成模型认证、持续可用性或会员共享交易实测。仅核对资料引用、锚点与 JSON 语法，未运行项目测试、构建、开发服务或交互验证。
+
+## 自动探测目录候选投稿
+
+2026-10-09 阅读 [Claws-ZH/awesome-ai-api](https://github.com/Claws-ZH/awesome-ai-api) 的 README、贡献规则、评分方法、候选输入、站点覆盖配置与每日工作流。目录快照为 68 Star、30 Fork、186 个网关，数据与排行榜每日自动更新。现有运营方自荐申请说明它允许投稿；近期可见的多个服务 PR 仍待审，自动更新不等于人工收录活跃，不能据此预计审核时间。
+
+[PR #50](https://github.com/Claws-ZH/awesome-ai-api/pull/50) 按 README 的候选流程新增官网 URL、`needs_review` 站点配置和一份 TokenDos 资料，共 3 个文件、81 行新增。正文与条目首部均披露运营方身份，介绍多供应方报价与活动、公开鹈鹕样本和 Agent 会员会话共享，同时说明渠道筛选、数据访问、并发及发票条件。排行榜、评分、历史和监测数据由目录维护者处理。
+
+公开[价格快照接口](https://www.tokendos.com/api/tokendos/public/transit-snapshot)明确提供 USD 币种与 `price_usd_per_m`。条目记录 14:58 UTC 的三个逐模型输入、输出和缓存读价，注明聚合最低价可能来自不同供应方，并非一个节点的完整报价；没有据含汇率换算的参考倍率计算折扣百分比。上线月份与客服入口来自公开条款，域名年龄、持续运营、客服响应、注册完成和实际收费仍未独立核验。
+
+14:57 UTC 的无鉴权请求显示：`api.tokendos.com/v1/models` 返回 401 JSON，官网 `/v1/models` 返回 HTML，API 根路径返回 404。目录脚本只探测候选 URL 的同一域名，因此本次注明 API 分域并保留待复核状态，没有据鉴权响应声称生成成功。14:58 UTC 的 CODEX_SESSION 与 CLAUDE_SESSION 公开查询仍均 `total: 0`；共享机制有文档说明，当前供给和交易完成另需确认。
+
+GitHub API 已核对提交文件与本地资料一致、PR 正文一致，申请为 open、未合并、0 条评论。检查列表为空、commit status 为 pending，没有可报告的 CI 通过结论。15:04 UTC 的既有十项申请均仍 open、0 条评论，现有 PR 未合并；本仓库仍 0 Star、0 Fork、Views 0、Clones 0。本轮新增了一项待审候选申请，尚未观察到收录或增长；未运行测试、构建或开发服务。
 
 ## 分发规则
 
