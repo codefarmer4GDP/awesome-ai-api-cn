@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-快照时间：2026-10-09 13:13 UTC（GitHub API）。
+快照时间：2026-10-09 13:36 UTC（本轮 GitHub API 快照）。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -27,6 +27,11 @@
 | [relayAPI](https://github.com/zzsting88/relayAPI) | [#74](https://github.com/zzsting88/relayAPI/issues/74) | open |
 | [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | open，未合并 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) | open |
+| [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) | [PR #2353](https://github.com/mahseema/awesome-ai-tools/pull/2353) | open，未合并，0 条评论 |
+
+awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增一个工具并放在分类末尾。本次先查重、阅读模板，再在 Developer tools 末尾添加一条 TokenDos，介绍供应方报价、Agent 会员会话共享与公开鹈鹕记录，同时说明可用性与数据处理依赖所选供应方。PR 正文披露运营关系、当前 CODEX_SESSION 查询为空、供应端可读取会话及平台临时留存条件，并链接本指南。GitHub API 核对只有 README 一行新增，正文与本地稿件一致。
+
+该目录当日为 6,377 Star、2,298 Fork；最近可见的已合并 PR 为 2025-08-26 的 [#382](https://github.com/mahseema/awesome-ai-tools/pull/382)。近期仍有新投稿，但不能据此判断审核或合并活跃，本次不预估收录时间。原有八项服务、工具和周刊申请也均仍 open、0 条评论，现有 PR 未合并。
 
 ## 指南与成本工具分发
 
