@@ -17,7 +17,7 @@
 
 这些数字只描述查询时的状态，不构成增长预测。
 
-## 已提交的公开收录申请
+## TokenDos 服务收录申请
 
 以下申请均使用无邀请参数的官方仓库或服务链接；开放状态不代表已经收录。
 
@@ -28,9 +28,20 @@
 | [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | open，未合并 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) | open |
 
-针对同一个目录的选型指南投稿曾通过 API 创建了 [#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121) 和 [#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122)，均因未使用该目录要求的 Issue Form 被自动关闭。后续不重复发送自由格式 Issue；如需再次投稿，应使用其网页表单并保留关联披露。
+## 指南与成本工具分发
+
+| 目录 | 投稿对象与申请 | 状态（2026-10-09） |
+| --- | --- | --- |
+| [awesome-generative-ai-apis](https://github.com/foss42/awesome-generative-ai-apis) | 双方案成本估算工具，[#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) | open，等待维护者确认范围及分配；尚未提交 PR 或收录 |
+| [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122) | 均被自动关闭；当前无待审的指南申请 |
+
+成本工具按目标项目的 Issue-first 流程提交，披露 TokenDos 维护关系、中文界面与英文核算说明，并注明默认价格为虚构示例。它比较读者自行填写的方案；本次申请未把它描述成实时价格 API 或跨平台性能实测。
+
+选型指南的三次 API 投稿均因未使用目录要求的 Issue Form 被自动关闭；API 创建未取得表单标签，外部贡献者后续补标签又因权限不足失败。后续不重复发送自由格式 Issue；如需再次投稿，应使用其网页表单并保留关联披露。
 
 仓库已发布一条 [公开运营讨论](https://github.com/codefarmer4GDP/awesome-ai-api-cn/discussions/2)，说明目录的证据标准、投稿方式和维护关系，供读者直接反馈。
+
+2026-10-09 补齐英文版五家其他服务的评价与来源，并发布 [英文成本核算指南](guides/cost-comparison.en.md)。资料公开和投稿完成均不代表已产生外部流量。
 
 ## 分发规则
 
