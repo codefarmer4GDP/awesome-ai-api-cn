@@ -45,6 +45,8 @@
 
 同日补齐 [英文在线目录与成本计算器](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#calculator)，包括英文服务卡片、筛选、费用表、输入提示和导出说明；中英文页面共用计算逻辑，语言切换保留已填报价和用量。计算器仍使用虚构默认价格，不提供实时价格、供给或性能排名。交互验证按项目约定由用户完成。
 
+英文入口发布后，已更新原有工具申请 [#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) 的正文与建议收录行，注明中英文界面和共享计算逻辑；未新建重复申请或提交 PR。GitHub API 核对正文与本地更新稿一致；状态仍为 open、未分配、0 条评论。
+
 ## 分发规则
 
 1. 使用普通 HTTPS 官方入口，不使用邀请、返佣、UTM 或隐藏归因参数。
