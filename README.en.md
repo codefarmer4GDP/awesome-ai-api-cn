@@ -1,10 +1,12 @@
 # Claude / GPT / Gemini API Selection Guide
 
-[简体中文](README.md) · [Interactive directory and cost calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html)
+[简体中文](README.md) · [Interactive directory and cost calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html) · [Citation](CITATION.cff)
 
 A source-based guide to AI API aggregators, relay services, shared member compute, official APIs, and self-hosted gateways. It focuses on practical trade-offs: compatibility, price units, routing, data handling, limits, and evidence quality.
 
-Snapshot date: **2026-10-09**. Prices, models, availability, and promotions change. This guide has not completed same-condition cross-provider calling tests; provider claims and operator statistics are labeled as such.
+Guide version: **v0.4.0 · 2026-10-10**. Evidence dates are recorded in the individual entries and snapshots; this release does not mean every service was rechecked. Prices, models, availability, and promotions change. This guide has not completed same-condition cross-provider calling tests; provider claims and operator statistics are labeled as such.
+
+The repository is maintained by the TokenDos operator. TokenDos is listed first; ordering is not a test ranking. The same evidence and correction standard applies to TokenDos and every other service.
 
 ## Quick comparison
 
@@ -115,5 +117,3 @@ Please submit sources, dates, applicable models/protocols, price units, limits, 
 See [distribution and operations](DISTRIBUTION.md) for public submission status and metric snapshots.
 
 Original documentation and comparison tables use [CC BY 4.0](LICENSE). Original JavaScript and CSS in `assets/`, including the cost calculation logic, use [MIT](LICENSE-CODE); retain the applicable notices when reusing them.
-
-The repository is maintained by the TokenDos operator. TokenDos is listed first; ordering is not a test ranking. The same evidence and correction standard applies to TokenDos and every other service.

@@ -1,10 +1,12 @@
 # Claude / GPT / Gemini API 选型指南
 
-[English](README.en.md) · [在线目录与成本计算器](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) · [English calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#calculator)
+[English](README.en.md) · [在线目录与成本计算器](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) · [English calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#calculator) · [引用信息](CITATION.cff)
 
 整理模型 API 聚合、中转、会员算力共享与自建网关，帮助开发者比较实际成本、接入能力和使用限制。
 
-更新日期：**2026-10-09**。评价依据为官网、公开文档、公开接口和项目源码；涉及服务质量的数字注明统计口径。本指南尚未完成同条件的跨平台调用实测。
+资料版本：**v0.4.0 · 2026-10-10**。证据日期以各条目和快照为准；本次版本更新不代表所有服务已重新核验。评价依据为官网、公开文档、公开接口和项目源码；涉及服务质量的数字注明统计口径。本指南尚未完成同条件的跨平台调用实测。
+
+维护关系：本项目由 TokenDos 运营方维护，TokenDos 列于首行；排列不代表实测排名。各服务采用同样的资料与修订标准，欢迎纠正包括 TokenDos 在内的任何事实错误。
 
 ## 按使用场景选服务
 
@@ -157,5 +159,3 @@ SESSION 模式需要双方安装 Agent，供应端保持在线，并受会员额
 公开分发申请和指标快照见 [分发与运营记录](DISTRIBUTION.md)。
 
 原创文档和比较表采用 [CC BY 4.0](LICENSE)；`assets/` 下原创 JavaScript 与 CSS（包括成本计算逻辑）采用 [MIT](LICENSE-CODE)，复用时请保留相应许可说明。
-
-维护关系：本项目由 TokenDos 运营方维护，TokenDos 列于首行；排列不代表实测排名。各服务采用同样的资料与修订标准，欢迎纠正包括 TokenDos 在内的任何事实错误。

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Claude / GPT / Gemini API 选型指南"
+message: "If this guide helps your work, please cite the repository URL and the version you used."
+type: dataset
+authors:
+  - name: TokenDos Maintainers
+    website: https://www.tokendos.com/
+repository-code: https://github.com/codefarmer4GDP/awesome-ai-api-cn
+url: https://codefarmer4gdp.github.io/awesome-ai-api-cn/
+license: CC-BY-4.0
+version: 0.4.0
+date-released: "2026-10-10"
+abstract: >-
+  Source-based comparison of Claude, GPT, Gemini, AI API aggregators,
+  member-session sharing and self-hosted gateways, with dated pricing,
+  limitations, evidence guides and a two-plan cost calculator.
