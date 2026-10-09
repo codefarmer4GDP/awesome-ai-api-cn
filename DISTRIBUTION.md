@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-快照时间：2026-10-09 15:14 UTC（本轮 GitHub API 快照）。
+指标快照时间：2026-10-09 15:37 UTC；六项申请的清理结果更新至 15:40 UTC。原始字段、逐项观察时间与公开来源见[机器可读运营快照](data/operations/2026-10-09.json)。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -15,7 +15,9 @@
 | 最新发布 | v0.3.0 | 在线目录、成本计算器与公开运营记录 |
 | 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
 
-这些数字只描述查询时的状态，不构成增长预测。
+这些数字只描述查询时的状态，不构成增长预测。Pages API 已确认提交 `831da6b` 构建成功；尚未观察到 Star 增长或外部收录。
+
+本轮修正两项保留申请、关闭四项申请，没有新增投稿或催审评论。搜索与逐项 API 查询覆盖 30 项当前及历史记录，其中 22 项 open、8 项 closed；这包含本仓库 Issue 和历史集成申请，不能当作 22 个待审导航渠道。以下表格列明本轮导航运营相关申请。
 
 ## TokenDos 服务收录申请
 
@@ -23,12 +25,21 @@
 
 | 目录 | 申请 | 状态（2026-10-09） |
 | --- | --- | --- |
-| [carrot](https://github.com/xx025/carrot) | [#1048](https://github.com/xx025/carrot/issues/1048) | open |
+| [carrot](https://github.com/xx025/carrot) | [#1027](https://github.com/xx025/carrot/issues/1027) | open；已修正；重复 #1048 已撤回 |
 | [relayAPI](https://github.com/zzsting88/relayAPI) | [#74](https://github.com/zzsting88/relayAPI/issues/74) | open |
 | [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | open，未合并 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) | open |
 | [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) | [PR #2353](https://github.com/mahseema/awesome-ai-tools/pull/2353) | open，未合并，0 条评论 |
 | [Claws-ZH/awesome-ai-api](https://github.com/Claws-ZH/awesome-ai-api) | [PR #50](https://github.com/Claws-ZH/awesome-ai-api/pull/50) | open，候选待审，未合并，0 条评论 |
+| [mn-api/awesome-ai-proxy](https://github.com/mn-api/awesome-ai-proxy) | [#63](https://github.com/mn-api/awesome-ai-proxy/issues/63) | open；已修正；重复 #53 已撤回 |
+| [ai-api-gongyi-nav](https://github.com/bubblevv/ai-api-gongyi-nav) | [#16](https://github.com/bubblevv/ai-api-gongyi-nav/issues/16) | open，0 条评论 |
+| [relay-radar](https://github.com/AetherCore-Dev/relay-radar) | [#14](https://github.com/AetherCore-Dev/relay-radar/issues/14) | open，0 条评论 |
+| [awesome-claude-code-relay](https://github.com/cfrs2005/awesome-claude-code-relay) | [#11](https://github.com/cfrs2005/awesome-claude-code-relay/issues/11) | open，0 条评论 |
+| [awesome-ai-tools-zh](https://github.com/shyshyshyyyy/awesome-ai-tools-zh) | [#18](https://github.com/shyshyshyyyy/awesome-ai-tools-zh/issues/18) | open，0 条评论 |
+| [ai-api-proxy-list](https://github.com/deverzh/ai-api-proxy-list) | [PR #12](https://github.com/deverzh/ai-api-proxy-list/pull/12) | open，未合并，0 条评论 |
+| [ai-coding-welfare](https://github.com/panxunying/ai-coding-welfare) | [#22](https://github.com/panxunying/ai-coding-welfare/issues/22) · [#24](https://github.com/panxunying/ai-coding-welfare/issues/24) | 两项均主动撤回，当前无待审申请 |
+
+新增到状态表的历史申请只核对了状态，不代表本轮已重新核验其正文、模型清单或性能表述。howardpen9 的 Issue 与 PR 均保留在表中，属于同一服务的申请与变更记录，不计为两个独立收录结果。
 
 awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增一个工具并放在分类末尾。本次先查重、阅读模板，再在 Developer tools 末尾添加一条 TokenDos，介绍供应方报价、Agent 会员会话共享与公开鹈鹕记录，同时说明可用性与数据处理依赖所选供应方。PR 正文披露运营关系、当前 CODEX_SESSION 查询为空、供应端可读取会话及平台临时留存条件，并链接本指南。GitHub API 核对只有 README 一行新增，正文与本地稿件一致。
 
@@ -39,7 +50,7 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 | 目录 | 投稿对象与申请 | 状态（2026-10-09） |
 | --- | --- | --- |
 | [awesome-generative-ai-apis](https://github.com/foss42/awesome-generative-ai-apis) | 双方案成本估算工具，[#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) | open，等待维护者确认范围及分配；尚未提交 PR 或收录 |
-| [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) | 双方案成本估算工具，[PR #925](https://github.com/tensorchord/Awesome-LLMOps/pull/925) | open，未合并，0 条评论 |
+| [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) | 双方案成本估算工具，[PR #925](https://github.com/tensorchord/Awesome-LLMOps/pull/925) | open，未合并，0 条评论；DCO 通过 |
 | [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) | 成本核算指南与中英文计算器，[PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) | open，未合并，0 条评论 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122) | 均被自动关闭；当前无待审的指南申请 |
 
@@ -124,6 +135,24 @@ GitHub API 已核对提交文件与本地资料一致、PR 正文一致，申请
 复核 [Awesome-LLMOps PR #925](https://github.com/tensorchord/Awesome-LLMOps/pull/925) 时，发现原提交署名格式有误，且缺少 DCO 要求的 `Signed-off-by`。本轮修正作者和提交者格式并补齐签署行，文件树保持一致，仍仅新增一条工具链接。Git 推送超时后，通过 GitHub API 更新自有投稿分支，更新前两次确认远端仍指向原提交；新提交为 `0562493`，本地分支已同步。
 
 GitHub 的 DCO 检查已完成并返回 `success`，摘要为「All commits are signed off!」。PR 仍 open、未合并、0 条评论；该结果仅说明署名检查通过，不代表内容已获审核或工具已经实测。
+
+## 申请去重与事实修正
+
+2026-10-09 15:40 UTC 完成六项既有申请的正文或状态修订，逐项从 GitHub API 重新读取确认。关闭原因由提交方写入原正文，没有新增评论或催审。
+
+| 目录 | 保留与关闭结果 | 依据 |
+| --- | --- | --- |
+| carrot | 保留 #1027，关闭 #1048 | #1027 已使用目录的四字段模板并带 `add-site` 标签；保留标签和原申请身份 |
+| mn-api/awesome-ai-proxy | 保留 #63，关闭 #53 | 在 #63 补齐符合 README 的服务表、运营关系、证据与限制 |
+| ai-coding-welfare | 关闭 #22 和 #24 | [贡献规则](https://github.com/panxunying/ai-coding-welfare/blob/main/CONTRIBUTING.md)与表单要求确认免费额度；现有资料不能支持原确认 |
+
+两项保留申请介绍会员会话共享、多供应方价格与活动、公开鹈鹕记录，并补充渠道筛选、在线供给、数据访问、并发和开票条件。删除原来的「秒级直连」「完美兼容」等未经实测支持的承诺；市场报价不再用参考倍率写成固定折扣。
+
+福利目录的撤回正文更正了注册免费额度、延迟、折扣和第三方评分等旧表述。公开条款确认最低充值 USD 1、首充可选 10% 代金券；这不能证明注册即可免费获得额度。撤回表示当前证据不足，不表示已经确认服务不存在任何免费活动。四项关闭均为提交方主动处理，不能记成维护者拒收。
+
+完整快照还包含历史 [Chatbox #3981](https://github.com/chatboxai/chatbox/issues/3981)、[Cherry Studio PR #21402](https://github.com/CherryHQ/cherry-studio/pull/21402) 与 APIs-guru [#2831](https://github.com/APIs-guru/openapi-directory/issues/2831)、[#2835](https://github.com/APIs-guru/openapi-directory/issues/2835)。它们仍 open，属于集成或 API 描述申请；本轮只记录状态，没有复核内容或处理 APIs-guru 两项的可能重复。
+
+本轮没有新增外部投稿。相关既有 PR 仍未合并，指标仍为 0 Star、0 Fork、Views 0、Clones 0。
 
 ## 分发规则
 
