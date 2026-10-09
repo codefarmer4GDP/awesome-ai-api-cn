@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-指标快照时间：2026-10-09 15:37 UTC；六项申请的清理结果更新至 15:40 UTC。原始字段、逐项观察时间与公开来源见[机器可读运营快照](data/operations/2026-10-09.json)。
+指标复核时间：2026-10-09 16:24 UTC；本次同时核对 Awesome-AITools PR #1225。其他申请保留各自观察时间；六项申请的清理结果截至 15:40 UTC。原始字段、逐项观察时间与公开来源见[机器可读运营快照](data/operations/2026-10-09.json)。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -15,9 +15,9 @@
 | 最新发布 | v0.3.0 | 在线目录、成本计算器与公开运营记录 |
 | 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
 
-这些数字只描述查询时的状态，不构成增长预测。Pages API 已确认提交 `831da6b` 构建成功；尚未观察到 Star 增长或外部收录。
+这些数字只描述查询时的状态，不构成增长预测。Pages API 已确认提交 `7675d4f` 于 15:50 UTC 构建成功；本次未观察到 Star 增长，PR #1225 尚未合并。
 
-本轮修正两项保留申请、关闭四项申请，没有新增投稿或催审评论。搜索与逐项 API 查询覆盖 30 项当前及历史记录，其中 22 项 open、8 项 closed；这包含本仓库 Issue 和历史集成申请，不能当作 22 个待审导航渠道。以下表格列明本轮导航运营相关申请。
+15:40 UTC 的清理修正两项保留申请、关闭四项申请，当时没有新增投稿或催审评论。搜索与逐项 API 查询覆盖 30 项当前及历史记录，当时 22 项 open、8 项 closed；这包含本仓库 Issue 和历史集成申请，不能当作 22 个待审导航渠道。现补记随后提交的 PR #1225，机器记录共 31 项，其他申请仍以各自观察时间为准。以下表格列明导航运营相关申请。
 
 ## TokenDos 服务收录申请
 
@@ -30,6 +30,7 @@
 | [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | open，未合并 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) | open |
 | [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) | [PR #2353](https://github.com/mahseema/awesome-ai-tools/pull/2353) | open，未合并，0 条评论 |
+| [Awesome-AITools](https://github.com/ikaijua/Awesome-AITools) | [PR #1225](https://github.com/ikaijua/Awesome-AITools/pull/1225) | 16:24 UTC 核对：open，未合并，1 条机器人回执，0 条人工评论；更新后的链接检查通过 |
 | [Claws-ZH/awesome-ai-api](https://github.com/Claws-ZH/awesome-ai-api) | [PR #50](https://github.com/Claws-ZH/awesome-ai-api/pull/50) | open，候选待审，未合并，0 条评论 |
 | [mn-api/awesome-ai-proxy](https://github.com/mn-api/awesome-ai-proxy) | [#63](https://github.com/mn-api/awesome-ai-proxy/issues/63) | open；已修正；重复 #53 已撤回 |
 | [ai-api-gongyi-nav](https://github.com/bubblevv/ai-api-gongyi-nav) | [#16](https://github.com/bubblevv/ai-api-gongyi-nav/issues/16) | open，0 条评论 |
@@ -153,6 +154,18 @@ GitHub 的 DCO 检查已完成并返回 `success`，摘要为「All commits are 
 完整快照还包含历史 [Chatbox #3981](https://github.com/chatboxai/chatbox/issues/3981)、[Cherry Studio PR #21402](https://github.com/CherryHQ/cherry-studio/pull/21402) 与 APIs-guru [#2831](https://github.com/APIs-guru/openapi-directory/issues/2831)、[#2835](https://github.com/APIs-guru/openapi-directory/issues/2835)。它们仍 open，属于集成或 API 描述申请；本轮只记录状态，没有复核内容或处理 APIs-guru 两项的可能重复。
 
 本轮没有新增外部投稿。相关既有 PR 仍未合并，指标仍为 0 Star、0 Fork、Views 0、Clones 0。
+
+## Awesome-AITools 投稿与计费修正
+
+补记 2026-10-09 16:13 UTC 提交的 [PR #1225](https://github.com/ikaijua/Awesome-AITools/pull/1225)。投稿前已阅读[贡献规则](https://github.com/ikaijua/Awesome-AITools/blob/main/CONTRIBUTING.md)并查重；目录当时为 6,219 Star、850 Fork，存在近期合并记录。它要求工具真实可用、有实际差异，中英文条目同步，并保持说明简洁、链接有效。近期合并只作为分发选择依据，不代表本申请会被收录。
+
+PR 在 General LLM Applications 的 OpenRouter 后添加 TokenDos，修改中英文 README 与 CHANGELOG 共 3 个文件。条目介绍会员会话共享、供应方选择、公开报价与鹈鹕 SVG 记录，同时披露维护关系、混合渠道、实时供给、数据处理、双方 Agent 和上游账号条件；链接使用无推广参数的官方地址。
+
+复核发现最初费用栏使用「免费/付费」，现有条款不足以支持其中的免费使用表述。16:22 UTC 已在同一 PR 更正为「按量付费」，并按[推荐模板](https://github.com/ikaijua/Awesome-AITools/issues/233)补充适用人群、入门文档、最低充值 USD 1、首充可选 10% 代金券，以及尚未核验免费试用的说明。补充正文明确：此前公开 SESSION 查询为空，共享购买、交付和结算尚未独立实测；鹈鹕样本不能单独证明模型身份。该更新提交为 `9f8326a`，没有新增重复申请或催审评论。
+
+16:24 UTC 的 GitHub API 记录显示 PR 仍 open、未合并，只有 1 条机器人回执、0 条人工评论、0 次 review。更新后的 `link-check` 于 16:23:49 UTC 返回 `success`；这说明链接检查通过，内容仍待维护者审核。仓库指标仍为 0 Star、0 Fork、最近 14 天 Views 0、Clones 0。
+
+同轮明确代码许可：原创文档与比较表继续使用 [CC BY 4.0](LICENSE)，`assets/` 下原创 JavaScript 与 CSS 使用 [MIT](LICENSE-CODE)。中英文 README 同步说明，成本计算逻辑可按许可复用。未修改计算逻辑，未运行项目测试、构建或交互验证。
 
 ## 分发规则
 

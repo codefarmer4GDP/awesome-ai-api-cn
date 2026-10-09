@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "captured_at": "2026-10-09T15:37:50.603623+00:00",
-  "last_updated_at": "2026-10-09T15:42:13.976220+00:00",
-  "scope": "Author-owned TokenDos and awesome-ai-api-cn submissions found through two GitHub searches; historical integrations included for visibility. Search results are not proof of acceptance.",
+  "last_updated_at": "2026-10-09T16:24:23.728950+00:00",
+  "scope": "Author-owned TokenDos and awesome-ai-api-cn submissions found through two GitHub searches, plus the directly verified Awesome-AITools PR #1225; historical integrations included for visibility. Each observation retains its own timestamp. Search results are not proof of acceptance.",
   "metrics": {
     "repository": "codefarmer4GDP/awesome-ai-api-cn",
     "stars": 0,
@@ -11,7 +11,8 @@
     "views_14_days": 0,
     "unique_visitors_14_days": 0,
     "clones_14_days": 0,
-    "unique_cloners_14_days": 0
+    "unique_cloners_14_days": 0,
+    "observed_at": "2026-10-09T16:24:23.728950+00:00"
   },
   "main_sha_at_capture": "831da6b88f9d74c6ac5567d07176eb99f48a38e1",
   "pages_at_capture": {
@@ -287,6 +288,32 @@
       "observed_at": "2026-10-09T15:37:50.603623+00:00"
     },
     {
+      "repository": "ikaijua/Awesome-AITools",
+      "number": 1225,
+      "kind": "pull_request",
+      "url": "https://github.com/ikaijua/Awesome-AITools/pull/1225",
+      "title": "Add TokenDos to General LLM Applications",
+      "author": "codefarmer4GDP",
+      "state": "open",
+      "comments": 1,
+      "bot_comments": 1,
+      "human_comments": 0,
+      "created_at": "2026-10-09T16:13:39Z",
+      "updated_at": "2026-10-09T16:22:57Z",
+      "closed_at": null,
+      "merged_at": null,
+      "review_comments": 0,
+      "reviews": 0,
+      "head_sha": "9f8326a417f316c6e694e633366bcaa01aec9fac",
+      "observed_at": "2026-10-09T16:24:22.603985+00:00",
+      "files": [
+        "README.md",
+        "README-CN.md",
+        "CHANGELOG.md"
+      ],
+      "scope": "API and member-session sharing entry; affiliate disclosure and supplier/supply/data/account limitations included. Fees corrected to paid, usage-based; no free trial is verified."
+    },
+    {
       "repository": "mahseema/awesome-ai-tools",
       "number": 2353,
       "kind": "pull_request",
@@ -515,6 +542,19 @@
       "conclusion": "success",
       "summary": "All commits are signed off!",
       "scope": "Commit sign-off only; not content approval or product testing."
+    },
+    {
+      "repository": "ikaijua/Awesome-AITools",
+      "number": 1225,
+      "head_sha": "9f8326a417f316c6e694e633366bcaa01aec9fac",
+      "name": "link-check",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-09T16:22:59Z",
+      "completed_at": "2026-10-09T16:23:49Z",
+      "details_url": "https://github.com/ikaijua/Awesome-AITools/actions/runs/37958704631/job/113915721915",
+      "observed_at": "2026-10-09T16:24:22.620271+00:00",
+      "scope": "Link accessibility only; not maintainer acceptance, model authentication or product testing."
     }
   ],
   "sources": {
@@ -526,14 +566,32 @@
       "https://api.github.com/search/issues?q=author%3Acodefarmer4GDP+tokendos&per_page=100",
       "https://api.github.com/search/issues?q=author%3Acodefarmer4GDP+%22awesome-ai-api-cn%22&per_page=100"
     ],
-    "issue_and_pr_status": "REST GET /repos/{owner}/{repo}/issues/{number} and /pulls/{number}; each row links to its public source."
+    "issue_and_pr_status": "REST GET /repos/{owner}/{repo}/issues/{number} and /pulls/{number}; each row links to its public source.",
+    "aitools_recommendation_template": "https://github.com/ikaijua/Awesome-AITools/issues/233",
+    "aitools_contribution_rules": "https://github.com/ikaijua/Awesome-AITools/blob/main/CONTRIBUTING.md"
   },
   "limitations": [
     "Traffic endpoints require repository-owner authorization and may lag.",
     "Open does not mean accepted; closed does not mean rejected unless a maintainer explicitly says so.",
-    "No new external submission or reminder comment was created in this cleanup.",
     "Historical APIs-guru issues #2831 and #2835 remain open; their submission contents and possible duplication were not adjudicated in this navigation cleanup.",
     "Integration requests in Chatbox and Cherry Studio are separate from directory inclusion.",
-    "No measured Star growth or external acceptance was observed."
-  ]
+    "No measured Star growth or external acceptance was observed.",
+    "This follow-up records existing Awesome-AITools PR #1225 and corrects its fee column/body; it creates no additional submission or reminder comment.",
+    "Only PR #1225 and repository metrics/Pages were refreshed in this follow-up; other submissions retain their earlier observed_at timestamps.",
+    "A bot acknowledgement and passing link check do not constitute human review or acceptance."
+  ],
+  "main_latest": {
+    "sha": "7675d4f90f81d5735def85e2141bef7e00a5a411",
+    "observed_at": "2026-10-09T16:24:21.834964+00:00"
+  },
+  "pages_latest": {
+    "status": "built",
+    "commit": "7675d4f90f81d5735def85e2141bef7e00a5a411",
+    "created_at": "2026-10-09T15:50:13Z",
+    "updated_at": "2026-10-09T15:50:34Z",
+    "error": {
+      "message": null
+    },
+    "observed_at": "2026-10-09T16:24:21.835122+00:00"
+  }
 }

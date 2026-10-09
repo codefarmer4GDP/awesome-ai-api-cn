@@ -114,4 +114,6 @@ Please submit sources, dates, applicable models/protocols, price units, limits, 
 
 See [distribution and operations](DISTRIBUTION.md) for public submission status and metric snapshots.
 
+Original documentation and comparison tables use [CC BY 4.0](LICENSE). Original JavaScript and CSS in `assets/`, including the cost calculation logic, use [MIT](LICENSE-CODE); retain the applicable notices when reusing them.
+
 The repository is maintained by the TokenDos operator. TokenDos is listed first; ordering is not a test ranking. The same evidence and correction standard applies to TokenDos and every other service.

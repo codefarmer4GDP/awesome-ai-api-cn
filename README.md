@@ -156,4 +156,6 @@ SESSION 模式需要双方安装 Agent，供应端保持在线，并受会员额
 
 公开分发申请和指标快照见 [分发与运营记录](DISTRIBUTION.md)。
 
+原创文档和比较表采用 [CC BY 4.0](LICENSE)；`assets/` 下原创 JavaScript 与 CSS（包括成本计算逻辑）采用 [MIT](LICENSE-CODE)，复用时请保留相应许可说明。
+
 维护关系：本项目由 TokenDos 运营方维护，TokenDos 列于首行；排列不代表实测排名。各服务采用同样的资料与修订标准，欢迎纠正包括 TokenDos 在内的任何事实错误。
