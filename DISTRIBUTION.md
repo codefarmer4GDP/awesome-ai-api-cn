@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-快照时间：2026-10-09 13:53 UTC（本轮 GitHub API 快照）。
+快照时间：2026-10-09 14:11 UTC（本轮 GitHub API 快照）。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -39,6 +39,7 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 | --- | --- | --- |
 | [awesome-generative-ai-apis](https://github.com/foss42/awesome-generative-ai-apis) | 双方案成本估算工具，[#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) | open，等待维护者确认范围及分配；尚未提交 PR 或收录 |
 | [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) | 双方案成本估算工具，[PR #925](https://github.com/tensorchord/Awesome-LLMOps/pull/925) | open，未合并，0 条评论 |
+| [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) | 成本核算指南与中英文计算器，[PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) | open，未合并，0 条评论 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122) | 均被自动关闭；当前无待审的指南申请 |
 
 向 awesome-generative-ai-apis 的成本工具申请按其 Issue-first 流程提交，披露 TokenDos 维护关系、中文界面与英文核算说明，并注明默认价格为虚构示例。它比较读者自行填写的方案；本次申请未把它描述成实时价格 API 或跨平台性能实测。
@@ -54,6 +55,10 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 英文入口发布后，已更新原有工具申请 [#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) 的正文与建议收录行，注明中英文界面和共享计算逻辑；未新建重复申请或提交 PR。GitHub API 核对正文与本地更新稿一致；状态仍为 open、未分配、0 条评论。
 
 Awesome-LLMOps 允许逐项提交 PR。阅读贡献规则并查重后，在其 Optimizations 表格按字母顺序新增一条 `AI API Two-Plan Cost Estimator`，介绍同任务量、用户自填报价、充值费用与赠送额度的比较，以及英文/中文界面、参数分享和 JSON 导出。PR 正文披露 TokenDos 关系、虚构默认价格与未进行交互验证；GitHub API 核对只有 README 一行新增，正文与本地稿件一致。申请待审核，不代表已收录。
+
+awesome-LLM-resources 的「技巧 Tips」已收录 LLM Pricing，适合补充任务成本核算方法。投稿前已阅读 README、CODE_OF_CONDUCT.md，并检查贡献规则、模板与既有申请；当前文件树未发现另设贡献文件或模板，也未发现本项目的重复投稿。该目录当日 9,012 Star，最近 push 为 2026-10-07；已确认一条教程投稿 [PR #215](https://github.com/WangRongsheng/awesome-LLM-resources/pull/215) 于 2026-09-02 合并。近期合并记录是筛选依据，不是本申请的收录承诺。
+
+[PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) 仅在 Tips 末尾新增第 39 项通用成本指南，说明单位、缓存、充值赠送、周期套餐与重试，并链接中英文计算器。正文披露 TokenDos 运营关系、虚构示例价格、用户自填报价、非实时价格/性能排名及未进行交互测试。GitHub API 核对正文与本地稿件一致，1 个文件、1 行新增、0 行删除；申请已提交，尚未收录。
 
 ## 会员共享专题
 
