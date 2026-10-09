@@ -20,7 +20,7 @@ Snapshot date: **2026-10-09**. Prices, models, availability, and promotions chan
 ## Reusable resources
 
 - [Interactive directory and two-plan cost calculator (Chinese)](https://codefarmer4gdp.github.io/awesome-ai-api-cn/): filter services, enter prices, share parameter links, or export estimates as JSON. Default prices are fictional; estimates are not observed billing or calling tests.
-- [Cost comparison guide (Chinese)](guides/cost-comparison.md): billing units, cache, top-up credits, weekly plans, and retries, with fictional worked examples.
+- [Cost comparison guide](guides/cost-comparison.en.md) ([中文](guides/cost-comparison.md)): billing units, cache, top-up credits, weekly plans, and retries, with fictional worked examples.
 - [Service directory JSON](data/services.json): six source-based entries, including strengths, constraints, affiliation, and source links. It does not establish live availability or performance rankings.
 - [Evaluation record template](examples/evaluation-record.template.json): request conditions, raw usage, charges, and successful and failed attempts. Empty fields mean no observation has been recorded.
 
@@ -33,6 +33,50 @@ That mechanism is different from a normal subscription package, a team balance, 
 The cost case comes from comparing supplier-set prices and conditional promotions. Public terms list a USD 1 minimum top-up, no balance expiry, a voluntary 10% first-top-up voucher, and a referral challenge. These are conditional credits, not unconditional cash discounts. The public price page and billing documentation also use different unit and currency presentations in places; this guide avoids claiming a fixed discount until the actual charge calculation is reconciled.
 
 The transparency case is the public Pelican test record. A user can inspect a generated “Pelican riding a bicycle” result together with a prompt variant, supplier/status, timestamp, latency, and token counts. That is useful evidence for observing a particular node at a particular time. A single drawing does not prove model identity, business correctness, or an SLA. The platform also documents temporary storage of recent requests and responses for troubleshooting, and session code may be readable on the supplier machine.
+
+Multiple upstream sources make node selection part of the user's work. Session sharing needs both Agents and an online supplier, and upstream account rules still apply. Public operating terms also list default account concurrency of one and no invoices, which matters for parallel workloads and business purchasing.
+
+Sources: [session and data-handling documentation](https://www.tokendos.com/tokendos-docs), [public operating terms](https://www.tokendos.com/api/tokendos/public/terms), [marketplace](https://www.tokendos.com/tokendos-market), [public Pelican result](https://www.tokendos.com/api/tokendos/pelican/latest?modelName=claude-opus-4-6).
+
+## OpenRouter: control over providers and routing
+
+OpenRouter exposes provider choices in request parameters: set a preferred order, allow or exclude providers, sort by price, latency or throughput, and configure fallbacks. Parameter-support and data-policy filters, including ZDR, help applications express requirements without maintaining separate integrations for each provider.
+
+The trade-off is cost and a narrower fallback pool when filters are strict. The pricing page lists a 5.5% Standard credit-purchase fee and an 8% Business fee at the snapshot date; BYOK has separate rules. Routing thresholds are preferences subject to available providers, and a ZDR inference endpoint does not by itself cover external tool backends.
+
+Sources: [provider routing](https://openrouter.ai/docs/guides/routing/provider-selection), [pricing and fees](https://openrouter.ai/pricing).
+
+## AIHubMix: multimodal integrations
+
+AIHubMix documents text, image, video, audio and embedding access, alongside native Claude and Gemini calls, model mapping and fallback features. It is a useful candidate when an application needs several types of generation and examples for existing clients.
+
+Check each model and protocol rather than assuming every gateway feature applies. The documentation marks Anthropic compatibility as Beta and separately describes Claude native calls. The website's 10% app-ecosystem discount excludes Claude, so a Claude budget should use its applicable quote.
+
+Sources: [product documentation](https://docs.aihubmix.com/en), [Claude native calls](https://docs.aihubmix.com/en/api/Claude-Native), [Anthropic compatibility](https://docs.aihubmix.com/en/api/Anthropic-Compatible), [app-ecosystem terms](https://aihubmix.com/).
+
+## ZenMux: multiple protocols and incident records
+
+ZenMux documents OpenAI Chat Completions / Responses, Anthropic Messages and Google Vertex AI access. Usage and compensation records include model, reason, latency, throughput, charges and compensation amounts, which can help users examine an incident's cost.
+
+PAYG and Builder serve different needs. The quickstart permits production and commercial use for PAYG; Builder is for personal development and learning, prohibits production use, and has weekly and roughly 10–15 RPM limits. This research has not established all compensation thresholds and coverage conditions, so anticipated compensation should not be deducted from a budget.
+
+Sources: [quickstart and permitted use](https://zenmux.ai/docs/guide/quickstart.html), [subscription rules](https://zenmux.ai/docs/guide/subscription.html), [compensation records](https://zenmux.ai/docs/guide/observability/insurance.html).
+
+## AIGoCode: recurring coding usage and team quotas
+
+AIGoCode offers pay-as-you-go balances, four-week subscriptions and team management. Subscription quotas refresh every seven days, with balance use after the quota is exhausted. The Pro plan displayed ¥399 per four weeks and $110 of platform credit per week at the snapshot date.
+
+Evaluate the workload week by week and apply the selected group's prices. Dollar-denominated platform credit is not necessarily vendor cash credit, and some groups permit Claude Code only. Team allocation of a platform balance also differs from a member supplying idle sessions from their own machine.
+
+Sources: [plans and team features](https://www.aigocode.com/), [group prices and tool restrictions](https://www.aigocode.com/groups), [refund rules](https://www.aigocode.com/refund-policy).
+
+## DeepSeek: direct vendor access
+
+The official DeepSeek API provides a direct reference for its model capabilities, cache-hit/cache-miss prices, peak/off-peak pricing and alias rules. It is useful when the workload mainly needs DeepSeek and the user prefers the vendor's own billing rules.
+
+Its model scope is concentrated on DeepSeek; Claude, GPT or Gemini need another integration. Preserve the date and actual version because an older alias can map to a newer model.
+
+Source: [official models, prices and aliases](https://api-docs.deepseek.com/quick_start/pricing).
 
 ## How to compare services
 
