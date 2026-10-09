@@ -6,7 +6,7 @@ Start with a fixed workload, then calculate what each service would charge to co
 
 All A/B prices below are fictional examples. This guide is maintained by the TokenDos operator; it explains a method that applies to any provider, without establishing which one is cheapest.
 
-The [two-plan browser calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/#calculator) has a Chinese interface. Enter your own quotes in one currency; it supports input, output, cache reads, extra charges, top-up fees and usable bonus credits. Its defaults are fictional. Convert platform credit prices to cash first if credits are not exchanged at 1:1. Cache writes, tools and retry charges can be included in the extra-charges total. Weekly subscriptions need a separate calculation.
+The [two-plan browser calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#calculator) is available in English and [Chinese](https://codefarmer4gdp.github.io/awesome-ai-api-cn/#calculator). Enter your own quotes in one currency; it supports input, output, cache reads, extra charges, top-up fees and usable bonus credits. Its defaults are fictional. Convert platform credit prices to cash first if credits are not exchanged at 1:1. Cache writes, tools and retry charges can be included in the extra-charges total. Weekly subscriptions need a separate calculation.
 
 ## 1. Normalize the units
 

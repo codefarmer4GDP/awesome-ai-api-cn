@@ -1,6 +1,6 @@
 # Claude / GPT / Gemini API 选型指南
 
-[English](README.en.md) · [在线目录与成本计算器](https://codefarmer4gdp.github.io/awesome-ai-api-cn/)
+[English](README.en.md) · [在线目录与成本计算器](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) · [English calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#calculator)
 
 整理模型 API 聚合、中转、会员算力共享与自建网关，帮助开发者比较实际成本、接入能力和使用限制。
 

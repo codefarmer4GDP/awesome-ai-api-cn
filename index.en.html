@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI API Selection Guide · Compare Services and Costs</title>
+  <meta name="description" content="Compare the documented strengths and constraints of TokenDos, OpenRouter, AIHubMix, ZenMux, AIGoCode and DeepSeek. Estimate two plans using your token usage, cache pricing, top-up fees and bonus credits.">
+  <link rel="canonical" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/">
+  <link rel="alternate" hreflang="en" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI API Selection Guide and Cost Calculator">
+  <meta property="og:description" content="Compare documented service features, then estimate your workload's cost with shareable parameters.">
+  <meta property="og:url" content="https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html">
+  <meta name="theme-color" content="#154d3d">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.en.html"><span class="brand-icon" aria-hidden="true">↗</span> AI API Selection Guide</a>
+    <nav aria-label="Main navigation">
+      <a href="#directory">Directory</a>
+      <a href="#calculator">Cost calculator</a>
+      <a href="./" lang="zh-CN" hreflang="zh-CN" data-language-switch>中文</a>
+      <a class="repo-link" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Claude / GPT / Gemini · API selection resources</p>
+        <h1>Find the right fit.<br>Estimate the full cost.</h1>
+        <p class="hero-copy">Aggregators, relay services, shared member compute and official APIs: compare public strengths, requirements and sources for your own workload.</p>
+        <div class="hero-actions"><a class="button primary" href="#calculator">Compare two plans <span aria-hidden="true">→</span></a><a class="button" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/README.en.md">Read the full guide ↗</a></div>
+      </div>
+      <aside class="reading-note">
+        <p class="eyebrow">How to use this guide</p>
+        <ol>
+          <li><b>Define the workload</b><span>Models, tools, supply and data requirements.</span></li>
+          <li><b>Check the sources</b><span>Separate documented features from observed calls.</span></li>
+          <li><b>Budget the whole task</b><span>Include input, output, cache and top-up conditions.</span></li>
+        </ol>
+        <p class="small muted">Snapshot: 2026-10-09. Same-condition cross-provider calling tests have not been completed. Listing order is not a performance ranking.</p>
+      </aside>
+    </section>
+
+    <section id="directory" class="section" aria-labelledby="directory-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / Find services by need</p><h2 id="directory-title">Strengths come with conditions</h2></div><a class="text-link" href="data/services.json">Source-linked JSON ↗</a></div>
+      <div class="filter-row" id="directory-filters" hidden>
+        <label class="search-label">Find a service or capability<input id="service-search" type="search" placeholder="e.g. cache, sharing, teams" autocomplete="off"></label>
+        <label>Use case<select id="service-category"><option value="all">All use cases</option><option value="sharing">Member compute sharing</option><option value="routing">Routing and provider choice</option><option value="multimodal">Multimodal access</option><option value="coding">Coding and team quotas</option><option value="official">Official APIs</option></select></label>
+        <p id="filter-count" class="muted small" role="status">Showing 6 services</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card" data-category="sharing coding" id="tokendos">
+          <div class="card-heading"><h3><a href="https://www.tokendos.com/">TokenDos ↗</a></h3><span class="tag">Member sharing</span></div>
+          <p class="card-intro">Compare supply nodes, or consume and supply idle member-session compute.</p>
+          <h4>Worth examining</h4><p>Supplier-set prices, site promotions, and public online Pelican tests and historical results. The sharing mechanism lets users participate in compute supply with usage-based settlement. Pelican records show a particular test; they do not establish model identity or general reliability.</p>
+          <h4>Check before choosing</h4><p>Multiple sources require screening. SESSION depends on both Agents and an online supplier. A public CODEX_SESSION query on 2026-10-09 returned zero listings; confirm current supply. Some pricing units need clarification. The platform temporarily retains recent requests and responses; suppliers may read member-session code. Public terms list default concurrency of one and no invoices.</p>
+          <div class="card-sources"><a href="https://www.tokendos.com/tokendos-docs">Mechanism and data handling</a><a href="https://www.tokendos.com/tokendos-pricing">Pricing and operating terms</a><a href="https://www.tokendos.com/tokendos-market">Nodes and tests</a></div>
+        </article>
+        <article class="service-card" data-category="routing" id="openrouter">
+          <div class="card-heading"><h3><a href="https://openrouter.ai/">OpenRouter ↗</a></h3><span class="tag">Routing control</span></div>
+          <p class="card-intro">Express provider choices and data policies in request settings.</p>
+          <h4>Worth examining</h4><p>Select or exclude providers, configure fallbacks, and set price, latency or throughput preferences. Data-collection and ZDR filters help express data requirements.</p>
+          <h4>Check before choosing</h4><p>Credit-purchase fees and BYOK rules affect the budget. Restricting providers or data policies narrows fallback choices. Latency and throughput preferences depend on available supply.</p>
+          <div class="card-sources"><a href="https://openrouter.ai/docs/guides/routing/provider-selection">Provider routing</a><a href="https://openrouter.ai/pricing">Fees and pricing</a></div>
+        </article>
+        <article class="service-card" data-category="multimodal routing" id="aihubmix">
+          <div class="card-heading"><h3><a href="https://aihubmix.com/">AIHubMix ↗</a></h3><span class="tag">Multimodal</span></div>
+          <p class="card-intro">Access text, images, video and audio through a shared integration.</p>
+          <h4>Worth examining</h4><p>Multimodal API documentation, native Claude and Gemini integration guides, model mapping, fallbacks and an application ecosystem.</p>
+          <h4>Check before choosing</h4><p>Capabilities vary by model and protocol. Anthropic compatibility is marked Beta and should be checked separately from Claude native calls. The app-ecosystem discount excludes Claude.</p>
+          <div class="card-sources"><a href="https://docs.aihubmix.com/en">Documentation</a><a href="https://docs.aihubmix.com/en/api/Claude-Native">Claude native API</a><a href="https://aihubmix.com/">App discounts</a></div>
+        </article>
+        <article class="service-card" data-category="routing coding" id="zenmux">
+          <div class="card-heading"><h3><a href="https://zenmux.ai/">ZenMux ↗</a></h3><span class="tag">Usage records</span></div>
+          <p class="card-intro">Multiple protocols with usage and incident-cost records.</p>
+          <h4>Worth examining</h4><p>OpenAI, Anthropic and Vertex integrations, detailed usage, and compensation records organized by model and incident reason.</p>
+          <h4>Check before choosing</h4><p>PAYG and Builder have different permitted uses. Builder is for personal development and learning, with weekly quotas and rate limits. Full compensation thresholds and coverage conditions need further confirmation.</p>
+          <div class="card-sources"><a href="https://zenmux.ai/docs/guide/quickstart.html">Integration and permitted use</a><a href="https://zenmux.ai/docs/guide/subscription.html">Subscription rules</a><a href="https://zenmux.ai/docs/guide/observability/insurance.html">Compensation records</a></div>
+        </article>
+        <article class="service-card" data-category="coding" id="aigocode">
+          <div class="card-heading"><h3><a href="https://www.aigocode.com/">AIGoCode ↗</a></h3><span class="tag">Coding plans</span></div>
+          <p class="card-intro">Recurring coding workloads and team quota management.</p>
+          <h4>Worth examining</h4><p>Four-week subscriptions, weekly quota refreshes, balance continuation, and team-member, key and cost management.</p>
+          <h4>Check before choosing</h4><p>Calculate subscription value from actual use in each week. Groups have different prices and tool restrictions; some permit Claude Code only. Convert platform dollar credit using the selected group's prices.</p>
+          <div class="card-sources"><a href="https://www.aigocode.com/">Plans</a><a href="https://www.aigocode.com/groups">Groups and pricing</a><a href="https://www.aigocode.com/refund-policy">Refund rules</a></div>
+        </article>
+        <article class="service-card" data-category="official" id="deepseek">
+          <div class="card-heading"><h3><a href="https://api-docs.deepseek.com/">DeepSeek API ↗</a></h3><span class="tag">Direct vendor access</span></div>
+          <p class="card-intro">Use DeepSeek directly under the vendor's billing rules.</p>
+          <h4>Worth examining</h4><p>Official model capabilities and billing documentation provide a DeepSeek comparison reference, including cache, peak/off-peak pricing and alias rules.</p>
+          <h4>Check before choosing</h4><p>The model scope is concentrated on DeepSeek. Claude, GPT or Gemini need another integration. Versions, alias mappings and prices can change; retain the date.</p>
+          <div class="card-sources"><a href="https://api-docs.deepseek.com/quick_start/pricing">Official models and pricing</a></div>
+        </article>
+      </div>
+      <p id="no-results" class="empty-state" hidden>No matches. Try another keyword or select “All use cases”.</p>
+      <p class="small muted">This guide is maintained by the TokenDos operator. TokenDos appears first. Every service uses the same source and correction standards; see the <a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/README.en.md">full guide</a> for usage constraints.</p>
+    </section>
+
+    <section id="calculator" class="section" aria-labelledby="calculator-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / Use your workload and quotes</p><h2 id="calculator-title">Two-plan cost estimate</h2></div><a class="text-link" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/cost-comparison.en.md">Calculation method ↗</a></div>
+      <p class="section-description">The defaults are fictional: one plan prices cache reads separately; the other bills them as ordinary input. Replace them with actual node quotes in one currency for the same workload. Convert platform credits to the chosen cash currency first. Changing currency changes the label only; it does not convert exchange rates.</p>
+      <noscript><p class="notice">Enable JavaScript for the calculator and directory filters. The service cards and full cost guide remain readable.</p></noscript>
+      <form id="cost-form" aria-describedby="cost-assumptions" hidden>
+        <fieldset class="workload"><legend>Shared workload</legend><div class="workload-grid">
+          <label>Currency<select name="currency"><option value="USD">US dollar USD</option><option value="CNY">Chinese yuan CNY</option></select></label>
+          <label>Number of tasks<input name="tasks" type="number" value="1000" min="1" step="1" required></label>
+          <label>Uncached input tokens / task<input name="fresh" type="number" value="2000" min="0" step="1" required></label>
+          <label>Cache-read tokens / task<input name="cached" type="number" value="6000" min="0" step="1" required></label>
+          <label>Output tokens / task<input name="output" type="number" value="1000" min="0" step="1" required></label>
+        </div></fieldset>
+        <div class="plan-grid">
+          <fieldset class="plan"><legend>Plan A</legend><div class="plan-fields">
+            <label class="full">Plan name<input name="a_name" type="text" value="Example A: separate cache-read price" maxlength="80" required></label>
+            <label>Input price / 1M tokens<input name="a_input" type="number" value="3" min="0" step="any" required></label>
+            <label>Output price / 1M tokens<input name="a_output" type="number" value="15" min="0" step="any" required></label>
+            <label>Cache-read price / 1M tokens<input name="a_cache" type="number" value="0.3" min="0" step="any" required></label>
+            <label>Total extra charges<input name="a_extra" type="number" value="0" min="0" step="any" required></label>
+            <label>Top-up surcharge %<input name="a_fee" type="number" value="0" min="0" step="any" required></label>
+            <label>Usable bonus credit %<input name="a_bonus" type="number" value="0" min="0" step="any" required></label>
+          </div></fieldset>
+          <fieldset class="plan"><legend>Plan B</legend><div class="plan-fields">
+            <label class="full">Plan name<input name="b_name" type="text" value="Example B: ordinary price for all input" maxlength="80" required></label>
+            <label>Input price / 1M tokens<input name="b_input" type="number" value="2" min="0" step="any" required></label>
+            <label>Output price / 1M tokens<input name="b_output" type="number" value="12" min="0" step="any" required></label>
+            <label>Cache-read price / 1M tokens<input name="b_cache" type="number" value="2" min="0" step="any" required></label>
+            <label>Total extra charges<input name="b_extra" type="number" value="0" min="0" step="any" required></label>
+            <label>Top-up surcharge %<input name="b_fee" type="number" value="0" min="0" step="any" required></label>
+            <label>Usable bonus credit %<input name="b_bonus" type="number" value="0" min="0" step="any" required></label>
+          </div></fieldset>
+        </div>
+        <p id="input-error" class="form-error" role="status" hidden></p>
+        <div class="result-panel">
+          <div class="result-heading"><p class="eyebrow">Estimate from current inputs</p><p id="result-difference" role="status">—</p></div>
+          <div class="table-scroll"><table><caption class="sr-only">Cost breakdown for plans A and B</caption><thead><tr><th scope="col">Charge</th><th scope="col" id="a-table-name">Plan A</th><th scope="col" id="b-table-name">Plan B</th></tr></thead><tbody>
+            <tr><th scope="row">Uncached input</th><td id="a-input-result">—</td><td id="b-input-result">—</td></tr>
+            <tr><th scope="row">Cache reads</th><td id="a-cache-result">—</td><td id="b-cache-result">—</td></tr>
+            <tr><th scope="row">Output</th><td id="a-output-result">—</td><td id="b-output-result">—</td></tr>
+            <tr><th scope="row">Extra charges</th><td id="a-extra-result">—</td><td id="b-extra-result">—</td></tr>
+            <tr><th scope="row">Total billed credit</th><td id="a-base-result">—</td><td id="b-base-result">—</td></tr>
+            <tr class="total-row"><th scope="row">Estimated cash total</th><td id="a-cash-result">—</td><td id="b-cash-result">—</td></tr>
+            <tr><th scope="row">Average per task</th><td id="a-per-task-result">—</td><td id="b-per-task-result">—</td></tr>
+          </tbody></table></div>
+          <p id="cost-assumptions" class="small">Uncached input and cache-read counts do not overlap. Enter the ordinary input price if cache reads are billed as cache misses. Quotes must include group multipliers and use a 1:1 cash-credit basis in the selected currency. Extra charges cover the entire workload and can include cache writes, tools and failed retries. Bonus credits are assumed eligible and fully used; top-up surcharges apply to purchased credits. Minimum top-ups, minimum fees, taxes, exchange costs and unentered charges are not automatically included. This estimator does not cover periodic subscriptions.</p>
+        </div>
+        <div class="calculator-actions"><button type="button" class="button primary" id="share-calculation">Copy link with parameters</button><button type="button" class="button" id="download-calculation">Export estimate JSON</button><button type="reset" class="button quiet">Reset fictional examples</button></div>
+        <p id="calculation-status" class="small muted" role="status"></p>
+        <p class="small muted">Calculations run in your browser. Parameters are included in links you choose to share; anyone receiving a link can read its quotes and workload. Exports are budget estimates, not billing or calling-test evidence.</p>
+      </form>
+    </section>
+
+    <section class="resources section" aria-labelledby="resource-title">
+      <div><p class="eyebrow">03 / Verify and contribute</p><h2 id="resource-title">Reuse the data. Correct the facts.</h2><p>Found a price change, condition or counterexample? Include the date, node and public source so another developer can check it.</p><a class="text-link" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/new?template=factual-correction.md">Submit a correction ↗</a></div>
+      <div class="resource-links"><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn">Save the GitHub repository <span>Full guide, update history and contribution process ↗</span></a><a href="examples/evaluation-record.template.json">Evaluation record template <span>Record conditions, usage, billing and failed attempts ↗</span></a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/README.en.md#self-hosted-software">Self-hosted gateways and proxies <span>LiteLLM / New API / One API / Sub2API / CLIProxyAPI ↗</span></a></div>
+    </section>
+  </main>
+  <footer><span>Awesome AI API CN · Snapshot 2026-10-09</span><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/CONTRIBUTING.md">Contribution and evidence standards ↗</a><a href="./" lang="zh-CN" hreflang="zh-CN" data-language-switch>中文站点 ↗</a></footer>
+</body>
+</html>

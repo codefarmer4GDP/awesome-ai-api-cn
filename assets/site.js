@@ -1,5 +1,27 @@
 "use strict";
 
+const locale = document.documentElement.lang === "en" ? "en-US" : "zh-CN";
+const messages = locale === "en-US" ? {
+  invalid: "Enter a plan name and finite, non-negative numbers. Task count must be a positive integer, and token counts must be integers. Reduce the workload if values are too large.",
+  plan: (letter) => `Plan ${letter}`,
+  pending: "Enter complete quotes to compare costs",
+  equal: "Both plans have the same estimated cash cost",
+  difference: (letter, amount) => `Plan ${letter} costs an estimated ${amount} less; cost comparison only`,
+  copied: "Link copied, including the current plan names, workload and quotes.",
+  copyFallback: "Clipboard access was unavailable. The address bar now contains the parameters; copy its URL to share.",
+  downloaded: "Budget estimate exported as JSON. This file is not evidence of actual billing or calling tests.",
+  count: (count, total) => `Showing ${count} / ${total} services`
+} : {
+  invalid: "请填完整方案名称与非负数字；任务次数须为正整数，Token 用量须为整数。数值过大时请缩小任务量。",
+  plan: (letter) => `方案 ${letter}`,
+  pending: "待输入完整报价",
+  equal: "两方案估算现金成本相同",
+  difference: (letter, amount) => `方案 ${letter} 估算少花 ${amount}，仅比较费用`,
+  copied: "链接已复制，包含当前方案名称、用量与报价。",
+  copyFallback: "浏览器未允许复制；当前地址栏已保存参数，可以直接复制地址。",
+  downloaded: "已导出预算估算 JSON；这份文件不代表实际扣费或调用实测。",
+  count: (count, total) => `显示 ${count} / ${total} 项服务`
+};
 const form = document.getElementById("cost-form");
 const named = (name) => form.elements.namedItem(name);
 const numberFields = [...form.querySelectorAll('input[type="number"]')];
@@ -8,7 +30,7 @@ const status = document.getElementById("calculation-status");
 let currentEstimate = null;
 
 function formatMoney(value, currency) {
-  return new Intl.NumberFormat("zh-CN", {
+  return new Intl.NumberFormat(locale, {
     style: "currency", currency, minimumFractionDigits: 2, maximumFractionDigits: 4
   }).format(value);
 }
@@ -37,30 +59,43 @@ function updateEstimate() {
   const error = document.getElementById("input-error");
   const valid = currentEstimate !== null;
   error.hidden = valid;
-  error.textContent = valid ? "" : "请填完整方案名称与非负数字；任务次数须为正整数，Token 用量须为整数。数值过大时请缩小任务量。";
+  error.textContent = valid ? "" : messages.invalid;
   document.getElementById("share-calculation").disabled = !valid;
   document.getElementById("download-calculation").disabled = !valid;
   status.textContent = "";
   for (const prefix of ["a", "b"]) {
     const plan = currentEstimate?.plans.find((item) => item.prefix === prefix);
-    document.getElementById(`${prefix}-table-name`).textContent = plan?.name || `方案 ${prefix.toUpperCase()}`;
+    document.getElementById(`${prefix}-table-name`).textContent = plan?.name || messages.plan(prefix.toUpperCase());
     for (const [id, key] of [["input", "input"], ["cache", "cache"], ["output", "output"], ["extra", "extra"], ["base", "base"], ["cash", "cash"], ["per-task", "perTask"]]) {
       document.getElementById(`${prefix}-${id}-result`).textContent = plan ? formatMoney(plan[key], currentEstimate.currency) : "—";
     }
   }
   const difference = document.getElementById("result-difference");
-  if (!valid) { difference.textContent = "待输入完整报价"; return; }
+  refreshLanguageLinks();
+  if (!valid) { difference.textContent = messages.pending; return; }
   const [a, b] = currentEstimate.plans;
   const gap = Math.abs(a.cash - b.cash);
-  difference.textContent = gap < 0.00005 ? "两方案估算现金成本相同" : `方案 ${a.cash < b.cash ? "A" : "B"} 估算少花 ${formatMoney(gap, currentEstimate.currency)}，仅比较费用`;
+  difference.textContent = gap < 0.00005 ? messages.equal : messages.difference(a.cash < b.cash ? "A" : "B", formatMoney(gap, currentEstimate.currency));
 }
 
-function shareUrl() {
-  const url = new URL(window.location.href);
+function shareUrl(base = window.location.href) {
+  const url = new URL(base);
   const params = new URLSearchParams({ v: "1" });
   for (const field of fields) params.set(field.name, field.value);
   url.hash = params.toString();
   return url.href;
+}
+
+function refreshLanguageLinks() {
+  const shared = new URLSearchParams(window.location.hash.slice(1)).get("v") === "1";
+  const edited = fields.some((field) => field.value !== (field.tagName === "SELECT"
+    ? [...field.options].find((option) => option.defaultSelected)?.value || field.options[0].value
+    : field.defaultValue));
+  for (const link of document.querySelectorAll("[data-language-switch]")) {
+    const url = new URL(link.href);
+    url.hash = shared || edited ? new URL(shareUrl()).hash : window.location.hash;
+    link.href = url.href;
+  }
 }
 
 function restoreSharedValues() {
@@ -95,11 +130,12 @@ document.getElementById("share-calculation").addEventListener("click", async () 
   if (!currentEstimate) return;
   const url = shareUrl();
   window.history.replaceState(null, "", url);
+  refreshLanguageLinks();
   try {
     await navigator.clipboard.writeText(url);
-    status.textContent = "链接已复制，包含当前方案名称、用量与报价。";
+    status.textContent = messages.copied;
   } catch {
-    status.textContent = "浏览器未允许复制；当前地址栏已保存参数，可以直接复制地址。";
+    status.textContent = messages.copyFallback;
   }
 });
 
@@ -108,11 +144,12 @@ document.getElementById("download-calculation").addEventListener("click", () => 
   const record = {
     format_version: "1.0",
     record_type: "budget_estimate_not_observed_billing",
+    ui_locale: locale,
     created_at: new Date().toISOString(),
     inputs: Object.fromEntries(fields.map((field) => [field.name, field.type === "number" ? field.valueAsNumber : field.value])),
     results: currentEstimate,
     assumptions: document.getElementById("cost-assumptions").textContent,
-    source: "https://codefarmer4gdp.github.io/awesome-ai-api-cn/",
+    source: document.querySelector('link[rel="canonical"]').href,
     share_url: shareUrl()
   };
   const blob = new Blob([JSON.stringify(record, null, 2)], { type: "application/json;charset=utf-8" });
@@ -124,7 +161,7 @@ document.getElementById("download-calculation").addEventListener("click", () => 
   link.click();
   link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
-  status.textContent = "已导出预算估算 JSON；这份文件不代表实际扣费或调用实测。";
+  status.textContent = messages.downloaded;
 });
 
 const search = document.getElementById("service-search");
@@ -138,9 +175,10 @@ function filterServices() {
     card.hidden = !matches;
     if (matches) count += 1;
   }
-  document.getElementById("filter-count").textContent = `显示 ${count} / ${cards.length} 项服务`;
+  document.getElementById("filter-count").textContent = messages.count(count, cards.length);
   document.getElementById("no-results").hidden = count !== 0;
 }
 document.getElementById("directory-filters").hidden = false;
+filterServices();
 search.addEventListener("input", filterServices);
 category.addEventListener("change", filterServices);
