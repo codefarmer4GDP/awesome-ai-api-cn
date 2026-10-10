@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI API 选型指南 · 比较服务与实际成本</title>
-  <meta name="description" content="比较 TokenDos、OpenRouter、AIHubMix、ZenMux、AIGoCode 与 DeepSeek 的公开功能、优势和限制。用免费双方案计算器估算 Token、缓存、充值费用与赠送额度的实际成本。">
+  <meta name="description" content="比较 TokenDos、OpenRouter、AIHubMix、ZenMux、AIGoCode、DeepSeek、硅基流动与智谱 Coding Plan 的功能、优势和限制。用双方案计算器估算 Token、缓存、充值费用与赠送额度的成本。">
   <link rel="canonical" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/">
   <link rel="alternate" hreflang="zh-CN" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/">
   <link rel="alternate" hreflang="en" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html">
@@ -43,7 +43,7 @@
           <li><b>核对来源</b><span>公开功能与实际调用分别判断。</span></li>
           <li><b>算完整任务</b><span>输入、输出、缓存与充值条件一起看。</span></li>
         </ol>
-        <p class="small muted">资料日期 2026-10-09 · 尚未完成同条件的跨平台调用实测，排列不代表性能排名。</p>
+        <p class="small muted">v0.5.0 · 2026-10-10 新增硅基流动与智谱，其他证据保留原日期。尚未完成同条件的跨平台调用实测，排列不代表性能排名。</p>
       </aside>
     </section>
 
@@ -52,7 +52,7 @@
       <div class="filter-row" id="directory-filters" hidden>
         <label class="search-label">查找服务或能力<input id="service-search" type="search" placeholder="例如：缓存、会员、团队" autocomplete="off"></label>
         <label>使用场景<select id="service-category"><option value="all">全部场景</option><option value="sharing">会员算力共享</option><option value="routing">路由与提供商选择</option><option value="multimodal">多模态接入</option><option value="coding">编程与团队额度</option><option value="official">官方 API</option></select></label>
-        <p id="filter-count" class="muted small" role="status">显示 6 项服务</p>
+        <p id="filter-count" class="muted small" role="status">显示 8 项服务</p>
       </div>
       <div class="service-grid">
         <article class="service-card" data-category="sharing coding" id="tokendos">
@@ -96,6 +96,20 @@
           <h4>值得关注</h4><p>官方模型、能力与计费说明，可作为 DeepSeek 成本比较基准；缓存、峰谷价格和别名规则有公开文档。</p>
           <h4>选用条件</h4><p>模型范围集中于 DeepSeek；需要 Claude、GPT 或 Gemini 时另接入口。版本、别名映射与计价会变化，应保留日期。</p>
           <div class="card-sources"><a href="https://api-docs.deepseek.com/quick_start/pricing">官方模型和定价</a></div>
+        </article>
+        <article class="service-card" data-category="multimodal" id="siliconflow">
+          <div class="card-heading"><h3><a href="https://siliconflow.cn/">硅基流动 SiliconFlow ↗</a></h3><span class="tag">模型云服务</span></div>
+          <p class="card-intro">适合多模态、向量与重排序接入，以及开票或专属部署需求。</p>
+          <h4>值得关注</h4><p>OpenAI / Anthropic 对话协议，公开账户等级和逐模型限流规则；提供开票条件、预留实例和私有化部署方案。</p>
+          <h4>选用条件</h4><p>限流在账户级而非 Key 级计算；免费模型需实名认证。仅已消费金额可开票，认证主体决定抬头与类型。专属部署的隔离能力不能当作普通共享 API 的保障。文档核对日期 2026-10-10，未进行调用或开票实测。</p>
+          <div class="card-sources"><a href="https://docs.siliconflow.cn/cn/userguide/introduction">平台能力</a><a href="https://docs.siliconflow.cn/docs/userguide/faqs/rate-limit-and-upgradation">限流规则</a><a href="https://docs.siliconflow.cn/docs/userguide/faqs/invoice">开票条件</a></div>
+        </article>
+        <article class="service-card" data-category="coding" id="glm-coding-plan">
+          <div class="card-heading"><h3><a href="https://docs.bigmodel.cn/cn/coding-plan/overview">智谱 GLM Coding Plan ↗</a></h3><span class="tag">官方编程套餐</span></div>
+          <p class="card-intro">适合在支持的编程工具中按周期使用 GLM。</p>
+          <h4>值得关注</h4><p>公开输入、缓存与输出的积分抵扣系数、非高峰模型抵扣规则，以及视觉理解、搜索和网页读取等 MCP 能力。</p>
+          <h4>选用条件</h4><p>5 小时与周限额同时生效，模型和 MCP 共用额度；限指定工具与套餐端点，用尽不接续余额。禁止多人共享、倒卖和中转。订阅自动续费且不退款，当前取消续订需至少提前 3 天。Anthropic 兼容接口使用 GLM 模型。文档核对日期 2026-10-10，未订阅或调用实测。</p>
+          <div class="card-sources"><a href="https://docs.bigmodel.cn/cn/coding-plan/overview">积分规则</a><a href="https://docs.bigmodel.cn/cn/coding-plan/faq">工具与端点</a><a href="https://docs.bigmodel.cn/cn/coding-plan/usage-notes">账号与续费条件</a></div>
         </article>
       </div>
       <p id="no-results" class="empty-state" hidden>没有匹配项。可以换一个关键词，或选择「全部场景」。</p>
@@ -159,6 +173,6 @@
       <div class="resource-links"><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn">收藏 GitHub 仓库 <span>完整指南、更新历史与贡献入口 ↗</span></a><a href="examples/evaluation-record.template.json">实测记录模板 <span>保留调用条件、用量、扣费与失败样本 ↗</span></a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/member-session-sharing.md">会员共享选型指南 <span>套餐、团队额度、订阅代理与远程会话怎么选 ↗</span></a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/channel-evidence.md">渠道证据核验指南 <span>报价、路由、能力样本与账单分别能证明什么 ↗</span></a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn#自建网关与订阅代理">自建网关与订阅代理 <span>LiteLLM / New API / One API / Sub2API / CLIProxyAPI ↗</span></a></div>
     </section>
   </main>
-  <footer><span>Awesome AI API CN · 资料日期 2026-10-09</span><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/CONTRIBUTING.md">贡献与证据标准 ↗</a><a href="index.en.html" lang="en" hreflang="en" data-language-switch>English site ↗</a></footer>
+  <footer><span>Awesome AI API CN · v0.5.0 · 2026-10-10</span><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/CONTRIBUTING.md">贡献与证据标准 ↗</a><a href="index.en.html" lang="en" hreflang="en" data-language-switch>English site ↗</a></footer>
 </body>
 </html>

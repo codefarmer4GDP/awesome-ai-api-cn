@@ -1,6 +1,7 @@
 {
   "schema_version": "1.0",
-  "information_date": "2026-10-09",
+  "information_date": "2026-10-10",
+  "information_date_policy": "Latest content update; existing evidence dates remain unchanged. Only SiliconFlow and GLM Coding Plan were added from official documentation reviewed on 2026-10-10.",
   "guide_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn",
   "method": "public_documentation_review",
   "cross_provider_calling_tests": "not_conducted",
@@ -102,6 +103,41 @@
       "constraints": ["模型范围集中于 DeepSeek", "别名映射和计价规则会变化，需保留日期与版本"],
       "sources": [
         {"role": "pricing_and_model_rules", "url": "https://api-docs.deepseek.com/quick_start/pricing"}
+      ]
+    },
+    {
+      "id": "siliconflow",
+      "name": "硅基流动 SiliconFlow",
+      "url": "https://siliconflow.cn/",
+      "type": "hosted_model_inference_platform",
+      "operator_affiliated_with_guide": false,
+      "documentation_reviewed_on": "2026-10-10",
+      "documentation_record_path": "data/documentation-reviews/2026-10-10.json",
+      "use_cases": ["多模态、向量与重排序模型接入", "开票与专属部署需求"],
+      "documented_strengths": ["OpenAI 与 Anthropic 对话协议及多模态接口资料", "公开账户等级与逐模型限流规则", "开票条件以及预留实例、私有化部署方案"],
+      "constraints": ["限流在账户级而非 API Key 级计算，各模型独立设置", "免费模型需实名认证，免费范围与限额需按当前目录核对", "仅已消费金额可开票，认证主体影响发票抬头和类型", "预留实例与私有化方案的隔离能力不能当作普通共享 API 账户的保障"],
+      "sources": [
+        {"role": "overview", "url": "https://docs.siliconflow.cn/cn/userguide/introduction"},
+        {"role": "rate_limits", "url": "https://docs.siliconflow.cn/docs/userguide/faqs/rate-limit-and-upgradation"},
+        {"role": "invoice_conditions", "url": "https://docs.siliconflow.cn/docs/userguide/faqs/invoice"}
+      ]
+    },
+    {
+      "id": "glm-coding-plan",
+      "name": "智谱 GLM Coding Plan",
+      "url": "https://docs.bigmodel.cn/cn/coding-plan/overview",
+      "type": "official_coding_subscription",
+      "operator_affiliated_with_guide": false,
+      "documentation_reviewed_on": "2026-10-10",
+      "documentation_record_path": "data/documentation-reviews/2026-10-10.json",
+      "use_cases": ["在支持的工具中规律使用 GLM", "按缓存和时间窗口核算套餐利用率"],
+      "documented_strengths": ["公开输入、缓存、输出积分系数及非高峰模型抵扣规则", "编程工具接入与配套 MCP 能力", "公开用量与账单查询入口"],
+      "constraints": ["5 小时与每周限额同时生效，模型和 MCP 共用额度", "限指定工具与套餐端点，自建应用应使用标准 API", "套餐用尽不自动接续资源包或账户余额", "禁止账号共享、多人共用、倒卖和中转", "自动续费且不支持退款，当前文档要求至少提前 3 天取消续订", "Anthropic 兼容端点使用 GLM 模型，不能当作 Claude 模型额度"],
+      "sources": [
+        {"role": "plans_and_deduction_rules", "url": "https://docs.bigmodel.cn/cn/coding-plan/overview"},
+        {"role": "faq_and_endpoints", "url": "https://docs.bigmodel.cn/cn/coding-plan/faq"},
+        {"role": "account_concurrency_and_refunds", "url": "https://docs.bigmodel.cn/cn/coding-plan/usage-notes"},
+        {"role": "anthropic_compatibility", "url": "https://docs.bigmodel.cn/cn/guide/develop/claude/introduction"}
       ]
     }
   ]

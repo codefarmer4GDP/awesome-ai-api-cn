@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI API Selection Guide · Compare Services and Costs</title>
-  <meta name="description" content="Compare the documented strengths and constraints of TokenDos, OpenRouter, AIHubMix, ZenMux, AIGoCode and DeepSeek. Estimate two plans using your token usage, cache pricing, top-up fees and bonus credits.">
+  <meta name="description" content="Compare TokenDos, OpenRouter, AIHubMix, ZenMux, AIGoCode, DeepSeek, SiliconFlow and GLM Coding Plan. Estimate two plans using token usage, cache prices, top-up fees and bonus credits.">
   <link rel="canonical" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html">
   <link rel="alternate" hreflang="zh-CN" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/">
   <link rel="alternate" hreflang="en" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html">
@@ -43,7 +43,7 @@
           <li><b>Check the sources</b><span>Separate documented features from observed calls.</span></li>
           <li><b>Budget the whole task</b><span>Include input, output, cache and top-up conditions.</span></li>
         </ol>
-        <p class="small muted">Snapshot: 2026-10-09. Same-condition cross-provider calling tests have not been completed. Listing order is not a performance ranking.</p>
+        <p class="small muted">v0.5.0: SiliconFlow and GLM added on 2026-10-10; other evidence retains its original dates. Same-condition cross-provider calling tests have not been completed. Listing order is not a performance ranking.</p>
       </aside>
     </section>
 
@@ -52,7 +52,7 @@
       <div class="filter-row" id="directory-filters" hidden>
         <label class="search-label">Find a service or capability<input id="service-search" type="search" placeholder="e.g. cache, sharing, teams" autocomplete="off"></label>
         <label>Use case<select id="service-category"><option value="all">All use cases</option><option value="sharing">Member compute sharing</option><option value="routing">Routing and provider choice</option><option value="multimodal">Multimodal access</option><option value="coding">Coding and team quotas</option><option value="official">Official APIs</option></select></label>
-        <p id="filter-count" class="muted small" role="status">Showing 6 services</p>
+        <p id="filter-count" class="muted small" role="status">Showing 8 services</p>
       </div>
       <div class="service-grid">
         <article class="service-card" data-category="sharing coding" id="tokendos">
@@ -96,6 +96,20 @@
           <h4>Worth examining</h4><p>Official model capabilities and billing documentation provide a DeepSeek comparison reference, including cache, peak/off-peak pricing and alias rules.</p>
           <h4>Check before choosing</h4><p>The model scope is concentrated on DeepSeek. Claude, GPT or Gemini need another integration. Versions, alias mappings and prices can change; retain the date.</p>
           <div class="card-sources"><a href="https://api-docs.deepseek.com/quick_start/pricing">Official models and pricing</a></div>
+        </article>
+        <article class="service-card" data-category="multimodal" id="siliconflow">
+          <div class="card-heading"><h3><a href="https://siliconflow.cn/">SiliconFlow ↗</a></h3><span class="tag">Model cloud</span></div>
+          <p class="card-intro">Multimodal, embedding and reranking access, with invoice and dedicated-deployment options.</p>
+          <h4>Worth examining</h4><p>OpenAI/Anthropic chat protocols, published account tiers and per-model limits, invoice conditions, reserved instances and private-deployment options.</p>
+          <h4>Check before choosing</h4><p>Limits apply at account level, not per key; free models require identity verification. Only consumed amounts are invoiceable; account certification affects titles and invoice types. Dedicated-deployment isolation does not describe an ordinary shared API account. Documentation reviewed 2026-10-10; no calling or invoice tests.</p>
+          <div class="card-sources"><a href="https://docs.siliconflow.cn/cn/userguide/introduction">Platform capabilities</a><a href="https://docs.siliconflow.cn/docs/userguide/faqs/rate-limit-and-upgradation">Rate limits</a><a href="https://docs.siliconflow.cn/docs/userguide/faqs/invoice">Invoice conditions</a></div>
+        </article>
+        <article class="service-card" data-category="coding" id="glm-coding-plan">
+          <div class="card-heading"><h3><a href="https://docs.bigmodel.cn/cn/coding-plan/overview">GLM Coding Plan ↗</a></h3><span class="tag">Vendor coding plan</span></div>
+          <p class="card-intro">Periodic GLM usage within supported coding tools.</p>
+          <h4>Worth examining</h4><p>Published input/cache/output deduction coefficients, off-peak model deductions, and vision, search and page-reading MCP features.</p>
+          <h4>Check before choosing</h4><p>Five-hour and weekly caps apply together; models and MCP share quota. Specified tools/endpoints only; no automatic balance continuation. Sharing, resale and relaying are prohibited. Subscriptions renew automatically and are non-refundable; cancel at least three days before renewal under reviewed guidance. Anthropic compatibility uses GLM models. Documentation reviewed 2026-10-10; no subscription or calling tests.</p>
+          <div class="card-sources"><a href="https://docs.bigmodel.cn/cn/coding-plan/overview">Points and quotas</a><a href="https://docs.bigmodel.cn/cn/coding-plan/faq">Tools and endpoints</a><a href="https://docs.bigmodel.cn/cn/coding-plan/usage-notes">Account and renewal terms</a></div>
         </article>
       </div>
       <p id="no-results" class="empty-state" hidden>No matches. Try another keyword or select “All use cases”.</p>
@@ -159,6 +173,6 @@
       <div class="resource-links"><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn">Save the GitHub repository <span>Full guide, update history and contribution process ↗</span></a><a href="examples/evaluation-record.template.json">Evaluation record template <span>Record conditions, usage, billing and failed attempts ↗</span></a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/member-session-sharing.en.md">Member-session sharing guide <span>Compare plans, team credits, proxies and remote sessions ↗</span></a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/channel-evidence.en.md">Channel evidence guide <span>What quotes, routes, samples and bills can establish ↗</span></a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/README.en.md#self-hosted-software">Self-hosted gateways and proxies <span>LiteLLM / New API / One API / Sub2API / CLIProxyAPI ↗</span></a></div>
     </section>
   </main>
-  <footer><span>Awesome AI API CN · Snapshot 2026-10-09</span><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/CONTRIBUTING.md">Contribution and evidence standards ↗</a><a href="./" lang="zh-CN" hreflang="zh-CN" data-language-switch>中文站点 ↗</a></footer>
+  <footer><span>Awesome AI API CN · v0.5.0 · 2026-10-10</span><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/CONTRIBUTING.md">Contribution and evidence standards ↗</a><a href="./" lang="zh-CN" hreflang="zh-CN" data-language-switch>中文站点 ↗</a></footer>
 </body>
 </html>

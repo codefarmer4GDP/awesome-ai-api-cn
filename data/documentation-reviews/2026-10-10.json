@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-10-10",
+  "timezone": "Asia/Shanghai",
+  "method": "official_documentation_review",
+  "scope": "SiliconFlow and GLM Coding Plan additions only; source excerpts describe provider-published rules, not independently observed transactions or performance.",
+  "account_actions": "not_conducted",
+  "calling_tests": "not_conducted",
+  "sources": [
+    {
+      "service_id": "siliconflow",
+      "url": "https://docs.siliconflow.cn/cn/userguide/introduction",
+      "http_status": 200,
+      "representation": "html",
+      "response_sha256": "32c6ddd120410fd12a73fbd822c6dbbd31b9d867539ebb09db8f834fcc924ba2",
+      "excerpts": ["覆盖语言、语音、图片、视频、向量等场景和模态", "兼容 OpenAI、Anthropic 对话协议", "企业级私有化方案，涵盖网关、推理全链路"],
+      "interpretation": "Multimodal APIs and separate reserved/private deployment options are documented; their isolation properties are not assigned to ordinary shared API accounts."
+    },
+    {
+      "service_id": "siliconflow",
+      "url": "https://docs.siliconflow.cn/docs/userguide/faqs/rate-limit-and-upgradation",
+      "http_status": 200,
+      "representation": "html",
+      "response_sha256": "f81851187ba46ffae84de59c86148b79dd460165eebdd20ad638b1ca893bd685",
+      "excerpts": ["Rate Limit是在用户账户级别定义的，而不是密钥（API key）维度。", "每个模型单独设置", "实名认证后使用全部的免费模型。"],
+      "interpretation": "Account-level, per-model limits; free-model use requires identity verification. Model availability and actual calls were not verified."
+    },
+    {
+      "service_id": "siliconflow",
+      "url": "https://docs.siliconflow.cn/docs/userguide/faqs/invoice",
+      "http_status": 200,
+      "representation": "html",
+      "response_sha256": "ffb18b6fd4e77391d75054a751a0f220df93a7cc142ea5bd896ca992ee11fe18",
+      "excerpts": ["仅已消费金额可以申请开具发票", "充值未消费的充值余额不可开具发票", "企业认证用户可以开具企业抬头的增值税专用发票/增值税普通发票"],
+      "interpretation": "Invoicing is conditional on consumption and certification; no invoice was requested."
+    },
+    {
+      "service_id": "glm-coding-plan",
+      "url": "https://docs.bigmodel.cn/cn/coding-plan/overview.md",
+      "http_status": 200,
+      "representation": "markdown",
+      "response_sha256": "d8530b13a92e474ec1d40b10affc9038f5c296e11bbc3194acfe51af061be457",
+      "excerpts": ["套餐同时设有每 5 小时和每周额度上限", "非高峰时段内，模型调用按基础积分消耗的 50% 抵扣。", "系统不会继续消耗您的其他资源包/账户余额。"],
+      "interpretation": "Periodic points-based quotas and off-peak rules; no fixed savings percentage or unlimited-use claim is inferred."
+    },
+    {
+      "service_id": "glm-coding-plan",
+      "url": "https://docs.bigmodel.cn/cn/coding-plan/faq.md",
+      "http_status": 200,
+      "representation": "markdown",
+      "response_sha256": "3c1126d73b29a449c8eae64c1cb4a6d9ed6d2b3b27e98ebd6842c36947232396",
+      "excerpts": ["GLM Coding Plan 仅限在官方支持的", "如需在自建应用、网站、机器人、SaaS 产品等场景中通过 API 集成模型能力，请使用智谱提供的标准 API 服务", "模型与 MCP 共享套餐调用额度"],
+      "interpretation": "The plan is restricted to specified environments and endpoints, separate from standard API credit."
+    },
+    {
+      "service_id": "glm-coding-plan",
+      "url": "https://docs.bigmodel.cn/cn/coding-plan/usage-notes.md",
+      "http_status": 200,
+      "representation": "markdown",
+      "response_sha256": "5d227b4e824364da6e80ca481696387c65ff7896ce5291643cef0103f9cb4605",
+      "excerpts": ["禁止账号共享或多人共用", "账号存在倒卖、中转、套利等严重违规行为", "至少 3 天前", "订阅服务一经购买即视为确认，不支持退款。"],
+      "interpretation": "Personal-use restrictions, dynamic concurrency, automatic renewal and non-refundable subscriptions; no purchase or refund was attempted."
+    },
+    {
+      "service_id": "glm-coding-plan",
+      "url": "https://docs.bigmodel.cn/cn/guide/develop/claude/introduction.md",
+      "http_status": 200,
+      "representation": "markdown",
+      "response_sha256": "becda63d7e3a6e71b4155b2a966794ea84a33dba67beebcaa6abafb823cd2cdc",
+      "excerpts": ["调用时使用智谱模型编码即可", "某些场景下智谱与 Claude 接口仍存在差异"],
+      "interpretation": "Anthropic protocol compatibility uses GLM models; it is not an offer of Claude model credit."
+    }
+  ],
+  "limitations": [
+    "Response hashes cover the retrieved source representation; live pages can change and HTML can include changing presentation data.",
+    "Excerpts are bounded evidence for documentation claims, not complete contracts or performance measurements.",
+    "No subscription, API-key creation, identity verification, invoice, refund or paid request was performed."
+  ]
+}

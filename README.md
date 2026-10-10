@@ -4,7 +4,7 @@
 
 整理模型 API 聚合、中转、会员算力共享与自建网关，帮助开发者比较实际成本、接入能力和使用限制。
 
-资料版本：**v0.4.0 · 2026-10-10**。证据日期以各条目和快照为准；本次版本更新不代表所有服务已重新核验。评价依据为官网、公开文档、公开接口和项目源码；涉及服务质量的数字注明统计口径。本指南尚未完成同条件的跨平台调用实测。
+资料版本：**v0.5.0 · 2026-10-10**。证据日期以各条目和快照为准；本次新增硅基流动与智谱 Coding Plan，不代表所有服务已重新核验。评价依据为官网、公开文档、公开接口和项目源码；涉及服务质量的数字注明统计口径。本指南尚未完成同条件的跨平台调用实测。
 
 维护关系：本项目由 TokenDos 运营方维护，TokenDos 列于首行；排列不代表实测排名。各服务采用同样的资料与修订标准，欢迎纠正包括 TokenDos 在内的任何事实错误。
 
@@ -18,6 +18,8 @@
 | [ZenMux](https://zenmux.ai/) | 多协议聚合、自动路由和调用成本观察 | OpenAI/Anthropic/Vertex 接入、用量明细、异常赔付记录 | Builder 订阅限制用途和速率；赔付需看触发规则与实际记录 |
 | [AIGoCode](https://www.aigocode.com/) | 规律的 AI 编程用量与团队额度管理 | 四周订阅、每周额度、余额接续、团队成员与 Key 管理 | 额度有时间窗口；部分线路只允许 Claude Code 使用 |
 | [DeepSeek 官方 API](https://api-docs.deepseek.com/) | 主要使用 DeepSeek，直接按厂商规则接入 | 原厂模型和计费文档，缓存与峰谷价格公开 | 模型范围集中于 DeepSeek；具体能力及并发按官方模型规则确认 |
+| [硅基流动 SiliconFlow](https://siliconflow.cn/) | 多模态模型接入；有开票或专属部署需求 | OpenAI / Anthropic 对话协议、多模态与向量接口、预留实例和私有化方案 | 逐模型且账户级限流；免费模型需实名认证；仅已消费金额可开票 |
+| [智谱 GLM Coding Plan](https://docs.bigmodel.cn/cn/coding-plan/overview) | 在支持的编程工具中按周期使用 GLM | 套餐积分、缓存与非高峰抵扣规则、配套 MCP 工具 | 5 小时和周限额同时生效；限指定工具与端点，禁止多人共享；订阅不支持退款 |
 
 ## 可复用的选型资料
 
@@ -25,7 +27,7 @@
 - [成本核算指南](guides/cost-comparison.md)（[English](guides/cost-comparison.en.md)）：统一单价单位，计算缓存、充值赠送、周期套餐与失败重试的影响。
 - [会员共享选型指南](guides/member-session-sharing.md)（[English](guides/member-session-sharing.en.md)）：区分周期套餐、团队额度、自建订阅代理与供应方远程会话，核对路由、供给、数据处理和双方成本。
 - [渠道证据核验指南](guides/channel-evidence.md)（[English](guides/channel-evidence.en.md)）：把报价、路由、鹈鹕样本和账单对应到可支持的结论，区分公开文档、平台记录和自己的调用观察。
-- [服务目录 JSON](data/services.json)：6 家服务的用途、优势、限制与来源；按公开资料整理，未建立实时可用性或性能排名。
+- [服务目录 JSON](data/services.json)：8 项服务与套餐的用途、优势、限制与来源；按公开资料整理，未建立实时可用性或性能排名。
 - [实测记录模板](examples/evaluation-record.template.json)：记录节点、请求条件、原始用量与扣费，供读者脱敏后投稿。
 
 ## 平台评价
@@ -112,6 +114,26 @@ SESSION 模式需要双方安装 Agent，供应端保持在线，并受会员额
 使用范围集中于 DeepSeek。若项目需要 Claude、GPT、Gemini，也需另行接入；旧模型别名可能映射到新版本，长期复现实验应保留实际版本和调用日期。
 
 来源：[官方模型、价格及别名规则](https://api-docs.deepseek.com/quick_start/pricing)。
+
+### 硅基流动 SiliconFlow：多模态接入与企业部署选择
+
+**公开资料核对日期：2026-10-10。** 平台文档列出语言、图片、视频、语音、向量与重排序能力，并说明兼容 OpenAI、Anthropic 对话协议。除共享 API 服务外，还提供预留实例与私有化部署方案，适合同时接入多种模型能力，或需要进一步讨论专属算力与企业部署的开发者。预留实例、私有化能力属于另行选择的方案，不能直接当作普通 API 账户已有的数据隔离保障。
+
+限流规则公开区分免费与收费模型：免费模型需实名认证，限额固定；收费模型按账户消费等级分层。限流在**账户级而非 API Key 级**计算，各模型单独设置 RPM、TPM 等指标；新增 Key 不能提高同一账户对同一模型的额度。免费范围、模型能力和具体限额应以当前模型广场为准，本指南不据此声称所有模型免费或调用速度领先。
+
+发票文档说明仅**已消费金额**可申请，未消费充值余额不可开票；个人与企业认证对应不同抬头和发票类型。这对有报销需求的用户有实际价值，但仍需按自己的认证主体、消费记录和申请条件核对。
+
+来源：[平台简介](https://docs.siliconflow.cn/cn/userguide/introduction) · [限流与账户等级](https://docs.siliconflow.cn/docs/userguide/faqs/rate-limit-and-upgradation) · [发票条件](https://docs.siliconflow.cn/docs/userguide/faqs/invoice)。资料依据见[本次文档核对记录](data/documentation-reviews/2026-10-10.json)，未进行付费调用、认证或开票实测。
+
+### 智谱 GLM Coding Plan：工具内的周期套餐与可核算积分
+
+**公开资料核对日期：2026-10-10。** 套餐面向官方支持的编程工具与产品环境，提供 GLM 模型和视觉理解、联网搜索、网页读取等 MCP 能力。文档公开输入、缓存命中、输出的积分抵扣系数，以及非高峰时段模型按基础积分的 50% 抵扣规则，适合在支持的工具中规律使用 GLM 的用户按自己的用量估算套餐价值。调用 Anthropic 兼容接口时仍使用 GLM 模型编码，不能把协议兼容解释成购买 Claude 模型额度。
+
+**每 5 小时与每周限额同时生效**，模型与 MCP 共用套餐额度；套餐用尽不会自动接续消耗其他资源包或账户余额。文档要求指定工具和套餐端点，自建网站、机器人或 SaaS 集成应使用标准 API 并按其协议计费，不能把 Coding Plan 当作通用按量余额。并发会随套餐等级和资源动态调整，文档中的项目数量建议不构成固定并发承诺。
+
+套餐限订阅人专享，明确禁止账号共享、倒卖和中转。其服务形式是购买周期使用权益，与供应闲置会员会话算力不同。订阅自动续费、购买后不支持退款；当前文档要求至少在下次扣费日前 3 天取消自动续费。选择前应核对支持工具、端点、各周期利用率和续订条件。
+
+来源：[套餐与积分规则](https://docs.bigmodel.cn/cn/coding-plan/overview) · [常见问题与端点](https://docs.bigmodel.cn/cn/coding-plan/faq) · [账号、并发与退款规则](https://docs.bigmodel.cn/cn/coding-plan/usage-notes) · [Anthropic 协议兼容](https://docs.bigmodel.cn/cn/guide/develop/claude/introduction)。本次核对为文档阅读，未进行订阅、调用或退款实测。
 
 ## 自建网关与订阅代理
 

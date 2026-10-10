@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-指标复核时间：2026-10-10 03:04 UTC（北京时间 2026-10-10 11:04）。本次复查仓库指标、Pages 状态，并核对 howardpen9/awesome-ai-api-proxy 的新投稿 #126；逐项观察时间与来源见[本次运营快照](data/operations/2026-10-10.json)，旧记录保留在[此前快照](data/operations/2026-10-09.json)。
+指标复核时间：2026-10-10 03:04 UTC（北京时间 2026-10-10 11:04）。后续复查仍为零，并核对了仓库描述、Topics，以及 howardpen9/awesome-ai-api-proxy 的 #125 / #126。其他申请保留各自观察时间，详见[运营快照](data/operations/2026-10-10.json)；原有记录见[此前快照](data/operations/2026-10-09.json)。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -12,12 +12,12 @@
 | Fork | 0 | `forks_count` |
 | 最近 14 天 Views | 0 | GitHub Traffic API；新仓库数据可能延迟 |
 | 最近 14 天 Clones | 0 | GitHub Traffic API |
-| 最新发布 | [v0.4.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.4.0) | 引用信息、维护关系与证据日期说明 |
+| 最新资料版本 | [v0.5.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.5.0) | 新增硅基流动与智谱 Coding Plan 的有来源评价 |
 | 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
 
-这些数字只描述查询时的状态，不构成增长预测。运营快照提交 `c4e4219` 的 Pages 构建已于 2026-10-10 03:26:51 UTC 成功。相关既有 PR 均未合并；PR #1225 仍只有 1 条机器人回执、0 条人工评论、0 次 review，链接检查通过。Discussion #2 与 Issue #1 均没有评论。
+这些数字只描述查询时的状态，不构成增长预测。此前运营快照提交 `d45a269` 的 Pages 已于 2026-10-10 03:31:03 UTC 构建成功；本页记录的是发布前已核对的部署，不自引用包含本页的新提交。既有申请与评论状态以快照中的逐项观察时间为准，尚未记录人工收录或 Star 增长。
 
-本次快照在原有记录之外新增一次已授权的表单投稿尝试；开放状态不等于收录，自动关闭也不等于内容评审。以下表格列明导航运营相关申请，2026-10-10 的状态复查没有观察到合并。
+用户授权的指南投稿产生了 #125，未先核对首次请求结果的重试又产生重复 #126，两项均自动关闭。完整记录共 33 项，包含历史集成和 API 描述申请，不能当作 33 个独立分发渠道。开放状态不等于收录，自动关闭也不等于内容评审。
 
 ## TokenDos 服务收录申请
 
@@ -28,7 +28,7 @@
 | [carrot](https://github.com/xx025/carrot) | [#1027](https://github.com/xx025/carrot/issues/1027) | open；已修正；重复 #1048 已撤回 |
 | [relayAPI](https://github.com/zzsting88/relayAPI) | [#74](https://github.com/zzsting88/relayAPI/issues/74) | open |
 | [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | open，未合并 |
-| [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) · 指南 [#126](https://github.com/howardpen9/awesome-ai-api-proxy/issues/126) | 服务条目 Issue/PR open；指南 #126 被自动关闭 |
+| [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) | 服务条目 Issue/PR open；指南投稿另见下表 |
 | [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) | [PR #2353](https://github.com/mahseema/awesome-ai-tools/pull/2353) | open，未合并，0 条评论 |
 | [Awesome-AITools](https://github.com/ikaijua/Awesome-AITools) | [PR #1225](https://github.com/ikaijua/Awesome-AITools/pull/1225) | open，未合并，1 条机器人回执，0 条人工评论，0 次 review；链接检查通过 |
 | [Claws-ZH/awesome-ai-api](https://github.com/Claws-ZH/awesome-ai-api) | [PR #50](https://github.com/Claws-ZH/awesome-ai-api/pull/50) | open，候选待审，未合并，0 条评论 |
@@ -53,15 +53,15 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 | [awesome-generative-ai-apis](https://github.com/foss42/awesome-generative-ai-apis) | 双方案成本估算工具，[#483](https://github.com/foss42/awesome-generative-ai-apis/issues/483) | open，等待维护者确认范围及分配；尚未提交 PR 或收录 |
 | [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) | 双方案成本估算工具，[PR #925](https://github.com/tensorchord/Awesome-LLMOps/pull/925) | open，未合并，0 条评论；DCO 通过 |
 | [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) | 成本核算指南与中英文计算器，[PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) | open，未合并，0 条评论 |
-| [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122)、[#126](https://github.com/howardpen9/awesome-ai-api-proxy/issues/126) | 四次均被自动关闭；#126 虽请求带 `new-provider`，外部贡献者标签被移除；当前无待审指南申请 |
+| [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122)、[#125](https://github.com/howardpen9/awesome-ai-api-proxy/issues/125)、[#126](https://github.com/howardpen9/awesome-ai-api-proxy/issues/126) | 五项均被自动关闭；#126 是 #125 的重复重试，当前无待审指南申请 |
 
 向 awesome-generative-ai-apis 的成本工具申请按其 Issue-first 流程提交，披露 TokenDos 维护关系、中文界面与英文核算说明，并注明默认价格为虚构示例。它比较读者自行填写的方案；本次申请未把它描述成实时价格 API 或跨平台性能实测。
 
-选型指南的四次 API 投稿均因未被识别为规定的 Issue Form 而自动关闭；#126 的请求明确携带 `new-provider`，但创建后标签为空，不能绕过仓库工作流。当前 IAB 浏览器跳转到 GitHub 登录页，无法代用户完成网页表单登录；后续不重复发送 API 投稿，也不通过改写标题或字段绕过规则。如需再次投稿，应由已登录账号使用其网页表单并保留关联披露。
+五项指南 Issue 均被自动校验判定未使用规定 Issue Form；API 请求带 `new-provider`，公开创建结果仍为无标签，这不能证明标签曾写入后被删除。官方表单页面当前跳转到 GitHub 登录页。后续停止向这个目录重复 API 投稿；如需继续该申请，应使用已登录账号的官方表单。
 
 ### 2026-10-10 授权提交结果
 
-用户明确授权后，按完整投稿稿件向 `howardpen9/awesome-ai-api-proxy` 创建 [Issue #126](https://github.com/howardpen9/awesome-ai-api-proxy/issues/126)。提交正文的远端 Base64 解码内容与本地稿件从 `### Name / 名稱` 起的正文一致；请求带 `new-provider`，但 API 创建后的公开标签为空。仓库 `require-issue-template.yml` 随后添加机器人说明并将其以 `not_planned` 关闭。该结果证明投稿动作已发生，不证明维护者评审、收录或拒绝指南内容。
+用户明确授权后，首次请求创建 [Issue #125](https://github.com/howardpen9/awesome-ai-api-proxy/issues/125)，在输出未取得时误重试产生 [#126](https://github.com/howardpen9/awesome-ai-api-proxy/issues/126)。两份正文与本地历史稿一致，SHA-256 均为 `aadbe298d9b0d1d576dce7a5f8f8d0e179bb4e87835a191530885179f8f1ac0e`。两项均只有机器人关闭说明、无待审指南申请。这是重复提交失误，不能记成两个有效渠道或两次人工拒收；本轮没有再催审或重新开单。
 
 仓库已发布一条 [公开运营讨论](https://github.com/codefarmer4GDP/awesome-ai-api-cn/discussions/2)，说明目录的证据标准、投稿方式和维护关系，供读者直接反馈。
 
@@ -184,6 +184,12 @@ PR 在 General LLM Applications 的 OpenRouter 后添加 TokenDos，修改中英
 | [awesome-ai-gateway](https://github.com/cuihuan/awesome-ai-gateway) | 持续更新并提供贡献规则、证据表与 related lists；主目录收录的是实际请求路径上的网关，指南不属于这一类。本次作为比较资料参考，未提交服务条目或互链申请。 |
 
 这些判断仅用于选择分发渠道，不构成对目录内容或 TokenDos 的第三方背书。最近 push、Star 总数和单个 PR 的状态也不能证明自然增长或审核速度。后续若介绍本指南，应按相关资源范围投稿，并继续披露运营关系。
+
+## v0.5.0：补充国内平台的实际选择条件
+
+新增硅基流动与智谱 GLM Coding Plan，把目录从 6 项扩展到 8 项。硅基流动条目写明多模态能力、账户级逐模型限流、免费模型实名认证条件和已消费金额开票；智谱条目写明套餐积分、5 小时与周限额、指定工具和端点、共享限制、自动续费与退款规则。中英文 README、网页、服务 JSON、llms.txt 和引用版本同步，依据见[官方文档摘录与来源哈希](data/documentation-reviews/2026-10-10.json)。
+
+同轮确认仓库描述及 12 个 Topics 已更新，覆盖 API 计费、路由、网关与中文选型。内容扩充和搜索元数据修订有助于准确介绍项目，尚不能作为真实访问增长的证据。没有新增付费调用、订阅、开票或退款实测；其他服务资料保留原证据日期。此次发布后的提交与 Pages 状态单独核验，不为追写当前提交号反复发布。
 
 ## 分发规则
 

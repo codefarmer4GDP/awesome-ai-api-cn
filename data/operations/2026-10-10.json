@@ -3,7 +3,7 @@
   "captured_at": "2026-10-10T03:04:53Z",
   "local_date": "2026-10-10",
   "timezone": "Asia/Shanghai",
-  "scope": "Refreshed repository metrics and recorded one user-authorized API attempt to submit the selection guide through howardpen9/awesome-ai-api-proxy. Public activity and CI status do not prove human acceptance or service quality.",
+  "scope": "Repository metrics and metadata review, plus correction of the authorized guide submission record: issue 125 was created by the first request, issue 126 by an unintended duplicate retry. Both were automatically closed. Other submission observations retain their own timestamps.",
   "metrics": {
     "repository": "codefarmer4GDP/awesome-ai-api-cn",
     "stars": 0,
@@ -314,6 +314,25 @@
     },
     {
       "repository": "howardpen9/awesome-ai-api-proxy",
+      "number": 125,
+      "kind": "issue",
+      "url": "https://github.com/howardpen9/awesome-ai-api-proxy/issues/125",
+      "title": "add: Claude / GPT / Gemini API Selection Guide (awesome-ai-api-cn)",
+      "state": "closed",
+      "comments": 1,
+      "created_at": "2026-10-10T02:59:33Z",
+      "updated_at": "2026-10-10T02:59:40Z",
+      "closed_at": "2026-10-10T02:59:40Z",
+      "author": "codefarmer4GDP",
+      "observed_on": "2026-10-10",
+      "state_reason": "not_planned",
+      "requested_labels": ["new-provider"],
+      "labels_after_creation": [],
+      "body_sha256": "aadbe298d9b0d1d576dce7a5f8f8d0e179bb4e87835a191530885179f8f1ac0e",
+      "result": "automatically_closed_as_out_of_spec"
+    },
+    {
+      "repository": "howardpen9/awesome-ai-api-proxy",
       "number": 126,
       "kind": "issue",
       "url": "https://github.com/howardpen9/awesome-ai-api-proxy/issues/126",
@@ -329,7 +348,9 @@
       "requested_labels": ["new-provider"],
       "labels_after_creation": [],
       "body_sha256": "aadbe298d9b0d1d576dce7a5f8f8d0e179bb4e87835a191530885179f8f1ac0e",
-      "result": "automatically_closed_as_out_of_spec"
+      "result": "automatically_closed_as_out_of_spec",
+      "duplicate_of": 125,
+      "retry_error": "The first creation result was not checked before sending another creation request."
     },
     {
       "repository": "ikaijua/Awesome-AITools",
@@ -826,7 +847,7 @@
         "message": null
       }
     },
-    "observed_at": "2026-10-10T03:04:53Z",
+    "observed_at": "2026-10-10T03:26:51Z",
     "scope": "Previous v0.4.0 publication plus this snapshot's authorized external submission record; no new product tests, performance rankings or service acceptance."
   },
   "main_latest": {
@@ -842,5 +863,21 @@
       "message": null
     },
     "observed_at": "2026-10-10T03:26:51Z"
+  },
+  "repository_metadata_review": {
+    "observed_on": "2026-10-10",
+    "source": "https://api.github.com/repos/codefarmer4GDP/awesome-ai-api-cn",
+    "description": "中文 AI API 选型指南：Claude、GPT、Gemini、聚合平台、会员算力共享与自建网关；含来源、价格比较、限制和成本计算器。",
+    "topics": ["ai-api", "ai-gateway", "ai-routing", "anthropic-api", "api-comparison", "api-pricing", "api-proxy", "chinese", "llm-api", "llm-gateway", "openai-compatible", "self-hosted-ai"],
+    "limitation": "Search metadata improves description and categorization; no discovery or Star growth is inferred."
+  },
+  "content_update": {
+    "version": "0.5.0",
+    "date": "2026-10-10",
+    "services_added": ["siliconflow", "glm-coding-plan"],
+    "service_count": 8,
+    "documentation_record": "data/documentation-reviews/2026-10-10.json",
+    "scope": "Official documentation only; no subscription, paid calls, identity checks, invoices or refunds were conducted.",
+    "publication_record_policy": "Commit and Pages fields above describe previously observed publications. Post-publication verification is kept separately to avoid a self-referencing commit loop."
   }
 }
