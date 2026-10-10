@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-指标复核时间：2026-10-10 03:04 UTC（北京时间 2026-10-10 11:04）。后续复查仍为零，并核对了仓库描述、Topics，以及 howardpen9/awesome-ai-api-proxy 的 #125 / #126。其他申请保留各自观察时间，详见[运营快照](data/operations/2026-10-10.json)；原有记录见[此前快照](data/operations/2026-10-09.json)。
+指标复核时间：2026-10-10 04:15 UTC（北京时间 2026-10-10 12:15）。Star、Fork、Views 与 Clones 仍为零。本轮复查此前 23 项开放记录，确认一个已公开的 TokenDos 服务条目，并按明确授权提交一条 HelloGitHub 指南推荐；不同来源保留各自观察时间，见[最新分发核对](data/operations/external-review-2026-10-10.json)。此前完整运营记录见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -15,9 +15,9 @@
 | 最新资料版本 | [v0.5.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.5.0) | 新增硅基流动与智谱 Coding Plan 的有来源评价 |
 | 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
 
-这些数字只描述查询时的状态，不构成增长预测。此前运营快照提交 `d45a269` 的 Pages 已于 2026-10-10 03:31:03 UTC 构建成功；本页记录的是发布前已核对的部署，不自引用包含本页的新提交。既有申请与评论状态以快照中的逐项观察时间为准，尚未记录人工收录或 Star 增长。
+这些数字只描述查询时的状态，不构成增长预测。快速开始提交 `75db1a1` 的 Pages 已于 2026-10-10 04:04:35 UTC 构建成功；本页记录发布前已核对的部署，不自引用包含本页的新提交。服务条目出现、指南被推荐和仓库 Star 增长是不同结果：本轮确认了服务条目，指南推荐仍待处理，Star 尚未增长。
 
-用户授权的指南投稿产生了 #125，未先核对首次请求结果的重试又产生重复 #126，两项均自动关闭。完整记录共 33 项，包含历史集成和 API 描述申请，不能当作 33 个独立分发渠道。开放状态不等于收录，自动关闭也不等于内容评审。
+用户此前授权的指南投稿产生了 #125，未先核对首次请求结果的重试又产生重复 #126，两项均自动关闭。此前完整快照共 33 项，包含重复、历史集成和 API 描述申请，不能当作 33 个独立分发渠道。本轮另观察到同一服务渠道的 PR #127，并提交 HelloGitHub #3909；新增记录也不等于新增独立收录。开放状态不等于收录，自动关闭也不等于内容评审。
 
 ## TokenDos 服务收录申请
 
@@ -27,8 +27,8 @@
 | --- | --- | --- |
 | [carrot](https://github.com/xx025/carrot) | [#1027](https://github.com/xx025/carrot/issues/1027) | open；已修正；重复 #1048 已撤回 |
 | [relayAPI](https://github.com/zzsting88/relayAPI) | [#74](https://github.com/zzsting88/relayAPI/issues/74) | open |
-| [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | open，未合并 |
-| [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) | 服务条目 Issue/PR open；指南投稿另见下表 |
+| [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | 维护者回复 done；已确认[主分支 TokenDos 条目](https://github.com/peter123023/awesome-claude-api/blob/98019031798227bffc62761c36e3637a52d20f76/README.MD#L60)，PR 仍 open、未合并 |
+| [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) · [PR #127](https://github.com/howardpen9/awesome-ai-api-proxy/pull/127) | 三项均 open；#127 是本轮新观察到的服务结构化条目，未合并；指南投稿另见下表 |
 | [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) | [PR #2353](https://github.com/mahseema/awesome-ai-tools/pull/2353) | open，未合并，0 条评论 |
 | [Awesome-AITools](https://github.com/ikaijua/Awesome-AITools) | [PR #1225](https://github.com/ikaijua/Awesome-AITools/pull/1225) | open，未合并，1 条机器人回执，0 条人工评论，0 次 review；链接检查通过 |
 | [Claws-ZH/awesome-ai-api](https://github.com/Claws-ZH/awesome-ai-api) | [PR #50](https://github.com/Claws-ZH/awesome-ai-api/pull/50) | open，候选待审，未合并，0 条评论 |
@@ -42,9 +42,11 @@
 
 新增到状态表的历史申请只核对了状态，不代表本轮已重新核验其正文、模型清单或性能表述。howardpen9 的 Issue 与 PR 均保留在表中，属于同一服务的申请与变更记录，不计为两个独立收录结果。
 
+本轮核对 `awesome-claude-api` 的固定提交 `9801903`，确认 README 第 60 行含 TokenDos，且维护者于 2026-10-09 17:52 UTC 在 PR #24 回复 [done](https://github.com/peter123023/awesome-claude-api/pull/24#issuecomment-6086293484)。这能确认服务条目已出现，不能证明 PR 已合并、第三方价格或流量估算准确。该 README 未发现本指南仓库或 Pages 的链接，因此不计为指南收录或导流结果。本轮未向该维护者发送新评论或修订稿。
+
 awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增一个工具并放在分类末尾。本次先查重、阅读模板，再在 Developer tools 末尾添加一条 TokenDos，介绍供应方报价、Agent 会员会话共享与公开鹈鹕记录，同时说明可用性与数据处理依赖所选供应方。PR 正文披露运营关系、当前 CODEX_SESSION 查询为空、供应端可读取会话及平台临时留存条件，并链接本指南。GitHub API 核对只有 README 一行新增，正文与本地稿件一致。
 
-该目录当日为 6,377 Star、2,298 Fork；最近可见的已合并 PR 为 2025-08-26 的 [#382](https://github.com/mahseema/awesome-ai-tools/pull/382)。近期仍有新投稿，但不能据此判断审核或合并活跃，本次不预估收录时间。原有八项服务、工具和周刊申请也均仍 open、0 条评论，现有 PR 未合并。
+该目录当日为 6,377 Star、2,298 Fork；最近可见的已合并 PR 为 2025-08-26 的 [#382](https://github.com/mahseema/awesome-ai-tools/pull/382)。近期仍有新投稿，但不能据此判断审核或合并活跃，本次不预估收录时间。各申请的当前状态分别核对，不能用部分申请的 0 条评论概括所有渠道。
 
 ## 指南与成本工具分发
 
@@ -54,10 +56,19 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 | [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) | 双方案成本估算工具，[PR #925](https://github.com/tensorchord/Awesome-LLMOps/pull/925) | open，未合并，0 条评论；DCO 通过 |
 | [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) | 成本核算指南与中英文计算器，[PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) | open，未合并，0 条评论 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122)、[#125](https://github.com/howardpen9/awesome-ai-api-proxy/issues/125)、[#126](https://github.com/howardpen9/awesome-ai-api-proxy/issues/126) | 五项均被自动关闭；#126 是 #125 的重复重试，当前无待审指南申请 |
+| [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | 选型指南与双方案成本计算器，[#3909](https://github.com/521xueweihan/HelloGitHub/issues/3909) | 经明确授权，通过官方表单提交一次；open，0 条评论，尚未推荐；负责人由表单自动分配 |
+
+### 2026-10-10 HelloGitHub 推荐
+
+投稿前阅读官方表单与[审核标准](https://github.com/521xueweihan/HelloGitHub/issues/271)，在官网按项目地址搜索，并查询本账号的既有 Issue 与项目名，未发现重复推荐。官网公开结果为空且提示登录可查看更多，不能据此断言站内没有任何历史条目。官网月刊第 126 期的发布是近期内容维护依据，不构成本项目的收录或回复时限承诺。
+
+收到对完整稿件的明确授权后，于 2026-10-10 04:11:05 UTC 通过官方 `submit-cn.yaml` 表单创建一条 #3909。项目地址、类别、标题、描述、亮点与演示链接均与授权稿一致；空的可选示例代码由表单生成空 Markdown 代码块。正文披露 TokenDos 运营关系、虚构默认报价与未完成调用和页面交互实测的范围。提交后核对本账号仅有这一条申请，没有再次点击创建；自动分配负责人不算人工审核。
+
+### 既有工具与指南投稿
 
 向 awesome-generative-ai-apis 的成本工具申请按其 Issue-first 流程提交，披露 TokenDos 维护关系、中文界面与英文核算说明，并注明默认价格为虚构示例。它比较读者自行填写的方案；本次申请未把它描述成实时价格 API 或跨平台性能实测。
 
-五项指南 Issue 均被自动校验判定未使用规定 Issue Form；API 请求带 `new-provider`，公开创建结果仍为无标签，这不能证明标签曾写入后被删除。官方表单页面当前跳转到 GitHub 登录页。后续停止向这个目录重复 API 投稿；如需继续该申请，应使用已登录账号的官方表单。
+五项指南 Issue 均被自动校验判定未使用规定 Issue Form；API 请求带 `new-provider`，公开创建结果仍为无标签，这不能证明标签曾写入后被删除。早前访问其官方表单曾跳转到 GitHub 登录页，这只描述当次观察。后续停止向这个目录重复 API 投稿；如需继续该申请，应使用已登录账号的官方表单。
 
 ### 2026-10-10 授权提交结果
 
