@@ -810,7 +810,7 @@
   ],
   "last_updated_at": "2026-10-10T03:04:53Z",
   "publication": {
-    "commit": "6d1f26404584caef26d243fd3d389dd35d7b717c",
+    "commit": "b7bf7af3b6ba5a67569253aac075494bae3fd6cc",
     "release": {
       "tag_name": "v0.4.0",
       "html_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.4.0",
@@ -819,9 +819,9 @@
     },
     "pages": {
       "status": "built",
-      "commit": "6d1f26404584caef26d243fd3d389dd35d7b717c",
-      "created_at": "2026-10-09T16:48:35Z",
-      "updated_at": "2026-10-09T16:48:58Z",
+      "commit": "b7bf7af3b6ba5a67569253aac075494bae3fd6cc",
+      "created_at": "2026-10-10T03:17:06Z",
+      "updated_at": "2026-10-10T03:17:25Z",
       "error": {
         "message": null
       }
@@ -830,17 +830,17 @@
     "scope": "Previous v0.4.0 publication plus this snapshot's authorized external submission record; no new product tests, performance rankings or service acceptance."
   },
   "main_latest": {
-    "sha": "6d1f26404584caef26d243fd3d389dd35d7b717c",
-    "observed_at": "2026-10-10T03:04:53Z"
+    "sha": "b7bf7af3b6ba5a67569253aac075494bae3fd6cc",
+    "observed_at": "2026-10-10T03:17:25Z"
   },
   "pages_latest": {
     "status": "built",
-    "commit": "6d1f26404584caef26d243fd3d389dd35d7b717c",
-    "created_at": "2026-10-09T16:48:35Z",
-    "updated_at": "2026-10-09T16:48:58Z",
+    "commit": "b7bf7af3b6ba5a67569253aac075494bae3fd6cc",
+    "created_at": "2026-10-10T03:17:06Z",
+    "updated_at": "2026-10-10T03:17:25Z",
     "error": {
       "message": null
     },
-    "observed_at": "2026-10-10T03:04:53Z"
+    "observed_at": "2026-10-10T03:17:25Z"
   }
 }
