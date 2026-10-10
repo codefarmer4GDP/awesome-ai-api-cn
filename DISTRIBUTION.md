@@ -15,7 +15,7 @@
 | 最新发布 | [v0.4.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.4.0) | 引用信息、维护关系与证据日期说明 |
 | 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
 
-这些数字只描述查询时的状态，不构成增长预测。运营快照提交 `b7bf7af` 的 Pages 构建已于 2026-10-10 03:17:25 UTC 成功。相关既有 PR 均未合并；PR #1225 仍只有 1 条机器人回执、0 条人工评论、0 次 review，链接检查通过。Discussion #2 与 Issue #1 均没有评论。
+这些数字只描述查询时的状态，不构成增长预测。运营快照提交 `c4e4219` 的 Pages 构建已于 2026-10-10 03:26:51 UTC 成功。相关既有 PR 均未合并；PR #1225 仍只有 1 条机器人回执、0 条人工评论、0 次 review，链接检查通过。Discussion #2 与 Issue #1 均没有评论。
 
 本次快照在原有记录之外新增一次已授权的表单投稿尝试；开放状态不等于收录，自动关闭也不等于内容评审。以下表格列明导航运营相关申请，2026-10-10 的状态复查没有观察到合并。
 
