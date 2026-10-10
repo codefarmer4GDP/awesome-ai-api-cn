@@ -1,9 +1,9 @@
 {
   "schema_version": "1.1",
-  "captured_at": "2026-10-09T16:39:36.254020+00:00",
+  "captured_at": "2026-10-10T03:04:53Z",
   "local_date": "2026-10-10",
   "timezone": "Asia/Shanghai",
-  "scope": "Refreshed previously recorded submissions and repository metrics. Public activity and CI status do not prove human acceptance or service quality. No new external submissions in this snapshot.",
+  "scope": "Refreshed repository metrics and recorded one user-authorized API attempt to submit the selection guide through howardpen9/awesome-ai-api-proxy. Public activity and CI status do not prove human acceptance or service quality.",
   "metrics": {
     "repository": "codefarmer4GDP/awesome-ai-api-cn",
     "stars": 0,
@@ -13,23 +13,23 @@
     "unique_visitors_14_days": 0,
     "clones_14_days": 0,
     "unique_cloners_14_days": 0,
-    "observed_at": "2026-10-09T16:39:24.960798+00:00"
+    "observed_at": "2026-10-10T03:04:53Z"
   },
-  "main_sha_at_capture": "2e60ae946dc501f14b30c903ec9fcebe8b559da0",
+  "main_sha_at_capture": "6d1f26404584caef26d243fd3d389dd35d7b717c",
   "pages_at_capture": {
     "status": "built",
-    "commit": "2e60ae946dc501f14b30c903ec9fcebe8b559da0",
-    "created_at": "2026-10-09T16:27:03Z",
-    "updated_at": "2026-10-09T16:27:40Z",
+    "commit": "6d1f26404584caef26d243fd3d389dd35d7b717c",
+    "created_at": "2026-10-09T16:48:35Z",
+    "updated_at": "2026-10-09T16:48:58Z",
     "error": {
       "message": null
     }
   },
   "release_at_capture": {
-    "tag_name": "v0.3.0",
-    "html_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.3.0",
-    "published_at": "2026-10-09T12:08:55Z",
-    "target_commitish": "main"
+    "tag_name": "v0.4.0",
+    "html_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.4.0",
+    "published_at": "2026-10-09T16:43:34Z",
+    "target_commitish": "97662b547d4d7870a69f27fa07a23dc5e060a4a4"
   },
   "submissions": [
     {
@@ -311,6 +311,25 @@
       "author": "codefarmer4GDP",
       "observed_at": "2026-10-09T16:39:28.124202+00:00",
       "state_reason": "not_planned"
+    },
+    {
+      "repository": "howardpen9/awesome-ai-api-proxy",
+      "number": 126,
+      "kind": "issue",
+      "url": "https://github.com/howardpen9/awesome-ai-api-proxy/issues/126",
+      "title": "add: Claude / GPT / Gemini API Selection Guide (awesome-ai-api-cn)",
+      "state": "closed",
+      "comments": 1,
+      "created_at": "2026-10-10T03:00:12Z",
+      "updated_at": "2026-10-10T03:00:20Z",
+      "closed_at": "2026-10-10T03:00:20Z",
+      "author": "codefarmer4GDP",
+      "observed_at": "2026-10-10T03:04:53Z",
+      "state_reason": "not_planned",
+      "requested_labels": ["new-provider"],
+      "labels_after_creation": [],
+      "body_sha256": "aadbe298d9b0d1d576dce7a5f8f8d0e179bb4e87835a191530885179f8f1ac0e",
+      "result": "automatically_closed_as_out_of_spec"
     },
     {
       "repository": "ikaijua/Awesome-AITools",
@@ -789,9 +808,9 @@
     "Historical integration and APIs-guru submissions were status-checked only; their contents and possible duplicates were not adjudicated.",
     "Evidence and pricing snapshots retain their original source dates."
   ],
-  "last_updated_at": "2026-10-09T16:47:14.492380+00:00",
+  "last_updated_at": "2026-10-10T03:04:53Z",
   "publication": {
-    "commit": "97662b547d4d7870a69f27fa07a23dc5e060a4a4",
+    "commit": "6d1f26404584caef26d243fd3d389dd35d7b717c",
     "release": {
       "tag_name": "v0.4.0",
       "html_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.4.0",
@@ -800,28 +819,28 @@
     },
     "pages": {
       "status": "built",
-      "commit": "97662b547d4d7870a69f27fa07a23dc5e060a4a4",
-      "created_at": "2026-10-09T16:43:30Z",
-      "updated_at": "2026-10-09T16:43:49Z",
+      "commit": "6d1f26404584caef26d243fd3d389dd35d7b717c",
+      "created_at": "2026-10-09T16:48:35Z",
+      "updated_at": "2026-10-09T16:48:58Z",
       "error": {
         "message": null
       }
     },
-    "observed_at": "2026-10-09T16:47:14.492380+00:00",
-    "scope": "Citation metadata, version/evidence-date distinction and earlier operator disclosure only; no new product tests, performance rankings or external submissions."
+    "observed_at": "2026-10-10T03:04:53Z",
+    "scope": "Previous v0.4.0 publication plus this snapshot's authorized external submission record; no new product tests, performance rankings or service acceptance."
   },
   "main_latest": {
-    "sha": "97662b547d4d7870a69f27fa07a23dc5e060a4a4",
-    "observed_at": "2026-10-09T16:47:14.492380+00:00"
+    "sha": "6d1f26404584caef26d243fd3d389dd35d7b717c",
+    "observed_at": "2026-10-10T03:04:53Z"
   },
   "pages_latest": {
     "status": "built",
-    "commit": "97662b547d4d7870a69f27fa07a23dc5e060a4a4",
-    "created_at": "2026-10-09T16:43:30Z",
-    "updated_at": "2026-10-09T16:43:49Z",
+    "commit": "6d1f26404584caef26d243fd3d389dd35d7b717c",
+    "created_at": "2026-10-09T16:48:35Z",
+    "updated_at": "2026-10-09T16:48:58Z",
     "error": {
       "message": null
     },
-    "observed_at": "2026-10-09T16:47:14.492380+00:00"
+    "observed_at": "2026-10-10T03:04:53Z"
   }
 }
