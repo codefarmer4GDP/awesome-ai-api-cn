@@ -1,0 +1,54 @@
+{
+  "observed_at": "2026-10-10T04:39:06.889965+00:00",
+  "metrics": {
+    "stars": 0,
+    "forks": 0,
+    "views_14_days": 0,
+    "view_uniques_14_days": 0,
+    "clones_14_days": 0,
+    "clone_uniques_14_days": 0
+  },
+  "authorized_peter_comment": {
+    "comment_url": "https://github.com/peter123023/awesome-claude-api/pull/24#issuecomment-6093828349",
+    "comment_id": 6093828349,
+    "created_at": "2026-10-10T04:36:37Z",
+    "creation_attempts": 1,
+    "authorized_body_sha256": "c39437914654ff3e7d0c41a2f646d362d36b72975f4e4949f28f27f9b73f9ac5",
+    "public_body_sha256": "c39437914654ff3e7d0c41a2f646d362d36b72975f4e4949f28f27f9b73f9ac5",
+    "public_body_exactly_matches": true,
+    "result": "Comment submitted; proposed README correction and optional guide backlink not yet adopted",
+    "readme_blob_after_send": "7551408809d850925c018915a54948f5e9243bcf",
+    "pr_state_after_send": "open",
+    "pr_merged_after_send": false
+  },
+  "sharing_preview": {
+    "pages": [
+      "index.html",
+      "index.en.html"
+    ],
+    "image_dimensions": [
+      1200,
+      630
+    ],
+    "images": [
+      {
+        "path": "assets/share-preview.zh.png",
+        "sha256": "4f082b3759d4cb95c0549495f102ff09012d0bf289d0b8483cf58e83c1d93d55"
+      },
+      {
+        "path": "assets/share-preview.en.png",
+        "sha256": "a68867e7d1a1858a5b3d7a227b6371fcf812fea82433bfc65f39efb6b0d3674f"
+      }
+    ],
+    "metadata": [
+      "Open Graph image, dimensions, type, language and alternative text",
+      "Twitter large-image card and matching localized title, description, image and alternative text"
+    ],
+    "affiliation_disclosed_in_both_images": true,
+    "image_license": "CC BY 4.0",
+    "local_visual_review_completed": true,
+    "publication_status_at_record": "Prepared for publication; public deployment verified separately",
+    "social_network_crawler_preview_observed": false
+  },
+  "scope": "One authorized third-party comment; localized preview assets and metadata on the owned guide. No project tests, builds, development servers or paid model calls ran. The 10,000-Star objective remains incomplete."
+}

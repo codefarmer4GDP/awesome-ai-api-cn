@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-指标复核时间：2026-10-10 04:15 UTC（北京时间 2026-10-10 12:15）。Star、Fork、Views 与 Clones 仍为零。本轮复查此前 23 项开放记录，确认一个已公开的 TokenDos 服务条目，并按明确授权提交一条 HelloGitHub 指南推荐；不同来源保留各自观察时间，见[最新分发核对](data/operations/external-review-2026-10-10.json)。此前完整运营记录见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
+指标复核时间：2026-10-10 04:39 UTC（北京时间 2026-10-10 12:39）。Star、Fork、Views 与 Clones 仍为零。本轮按明确授权向 peter 的现有 PR 发送一条事实修订评论，并补齐中英文链接分享预览，见[本轮记录](data/operations/sharing-preview-2026-10-10.json)。此前复查 23 项开放记录、确认 TokenDos 服务条目与 HelloGitHub 投稿的结果见[分发核对](data/operations/external-review-2026-10-10.json)；完整历史见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -27,7 +27,7 @@
 | --- | --- | --- |
 | [carrot](https://github.com/xx025/carrot) | [#1027](https://github.com/xx025/carrot/issues/1027) | open；已修正；重复 #1048 已撤回 |
 | [relayAPI](https://github.com/zzsting88/relayAPI) | [#74](https://github.com/zzsting88/relayAPI/issues/74) | open |
-| [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | 维护者回复 done；已确认[主分支 TokenDos 条目](https://github.com/peter123023/awesome-claude-api/blob/98019031798227bffc62761c36e3637a52d20f76/README.MD#L60)，PR 仍 open、未合并 |
+| [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | 已有 TokenDos 条目，PR 仍 open、未合并；已授权发送[事实修订评论](https://github.com/peter123023/awesome-claude-api/pull/24#issuecomment-6093828349)，修订与指南链接尚未采纳 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) · [PR #127](https://github.com/howardpen9/awesome-ai-api-proxy/pull/127) | 三项均 open；#127 是本轮新观察到的服务结构化条目，未合并；指南投稿另见下表 |
 | [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) | [PR #2353](https://github.com/mahseema/awesome-ai-tools/pull/2353) | open，未合并，0 条评论 |
 | [Awesome-AITools](https://github.com/ikaijua/Awesome-AITools) | [PR #1225](https://github.com/ikaijua/Awesome-AITools/pull/1225) | open，未合并，1 条机器人回执，0 条人工评论，0 次 review；链接检查通过 |
@@ -42,11 +42,17 @@
 
 新增到状态表的历史申请只核对了状态，不代表本轮已重新核验其正文、模型清单或性能表述。howardpen9 的 Issue 与 PR 均保留在表中，属于同一服务的申请与变更记录，不计为两个独立收录结果。
 
-本轮核对 `awesome-claude-api` 的固定提交 `9801903`，确认 README 第 60 行含 TokenDos，且维护者于 2026-10-09 17:52 UTC 在 PR #24 回复 [done](https://github.com/peter123023/awesome-claude-api/pull/24#issuecomment-6086293484)。这能确认服务条目已出现，不能证明 PR 已合并、第三方价格或流量估算准确。该 README 未发现本指南仓库或 Pages 的链接，因此不计为指南收录或导流结果。本轮未向该维护者发送新评论或修订稿。
+核对 `awesome-claude-api` 的固定提交 `9801903`，确认 README 第 60 行含 TokenDos，且维护者于 2026-10-09 17:52 UTC 在 PR #24 回复 [done](https://github.com/peter123023/awesome-claude-api/pull/24#issuecomment-6086293484)。这能确认服务条目已出现，不能证明 PR 已合并、第三方价格或流量估算准确。该 README 未发现本指南仓库或 Pages 的链接，因此不计为指南收录或导流结果。
+
+准备完整修订稿、单行差异与六项公开来源后，经用户单独授权，于 2026-10-10 04:36:37 UTC 在同一 PR 提交[一条修订评论](https://github.com/peter123023/awesome-claude-api/pull/24#issuecomment-6093828349)，补齐会员会话共享、供应方报价、优惠条件、鹈鹕记录与数据处理限制，并建议加入运营方维护的选型资料链接。提交前查重，仅发送一次；公开正文与授权稿 SHA-256 相同。提交后 README blob 仍为 `7551408`，因此评论提出的修订与指南链接尚未采纳，不新计一个收录渠道。
 
 awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增一个工具并放在分类末尾。本次先查重、阅读模板，再在 Developer tools 末尾添加一条 TokenDos，介绍供应方报价、Agent 会员会话共享与公开鹈鹕记录，同时说明可用性与数据处理依赖所选供应方。PR 正文披露运营关系、当前 CODEX_SESSION 查询为空、供应端可读取会话及平台临时留存条件，并链接本指南。GitHub API 核对只有 README 一行新增，正文与本地稿件一致。
 
 该目录当日为 6,377 Star、2,298 Fork；最近可见的已合并 PR 为 2025-08-26 的 [#382](https://github.com/mahseema/awesome-ai-tools/pull/382)。近期仍有新投稿，但不能据此判断审核或合并活跃，本次不预估收录时间。各申请的当前状态分别核对，不能用部分申请的 0 条评论概括所有渠道。
+
+## 链接分享预览
+
+中英文页面各提供一张 1200 × 630 PNG，概括比较服务、核对来源和估算成本，并在图片中披露 TokenDos 运营关系。页面补齐 Open Graph 与 Twitter 大图卡片字段、语言、尺寸和图片替代文字；原创分享图适用 CC BY 4.0。已检查本地图片的布局与文字，具体社交平台的抓取和缓存展示尚未观察。分享预览改善链接展示，不作为访问或 Star 增长证据。
 
 ## 指南与成本工具分发
 
