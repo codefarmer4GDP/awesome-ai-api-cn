@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>When cache support costs more: an AI API budget example</title>
+  <meta name="description" content="A fictional two-plan example explains reusable-token hit rates, the 67.90% break-even point and top-up fees. Maintained by the TokenDos operator.">
+  <meta name="author" content="TokenDos operator">
+  <link rel="canonical" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.html">
+  <link rel="alternate" hreflang="en" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="When cache support costs more: an AI API budget example">
+  <meta property="og:description" content="A fictional two-plan example explains reusable-token hit rates, the 67.90% break-even point and top-up fees. Maintained by the TokenDos operator.">
+  <meta property="og:url" content="https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:image" content="https://codefarmer4gdp.github.io/awesome-ai-api-cn/assets/share-preview.en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AI API selection guide, maintained by the TokenDos operator.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="When cache support costs more: an AI API budget example">
+  <meta name="twitter:description" content="A fictional two-plan example explains reusable-token hit rates, the 67.90% break-even point and top-up fees. Maintained by the TokenDos operator.">
+  <meta name="twitter:image" content="https://codefarmer4gdp.github.io/awesome-ai-api-cn/assets/share-preview.en.png">
+  <meta name="theme-color" content="#154d3d">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="../index.en.html"><span class="brand-icon" aria-hidden="true">↗</span> AI API Selection Guide</a>
+    <nav aria-label="Main navigation">
+      <a href="../index.en.html#calculator">Cost calculator</a>
+      <a href="cache-cost.html" lang="zh-CN" hreflang="zh-CN">中文</a>
+      <a class="repo-link" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn">GitHub ↗</a>
+    </nav>
+  </header>
+  <main id="main" class="article-main">
+    <article>
+      <header class="article-heading">
+        <p class="eyebrow">Cost comparison / Fictional worked example</p>
+        <h1>When cache support<br>costs more.</h1>
+        <p class="article-lead">A cheap cache-read rate helps only when enough reusable tokens actually hit cache. Compare the full workload before choosing a plan.</p>
+        <p class="small muted">2026-10-10 · Maintained by the TokenDos operator · All prices are fictional, with no real-provider cost ranking.</p>
+      </header>
+      <aside class="notice">
+        <p>Here, A becomes cheaper above a <strong>67.90% reusable-token hit rate</strong>. If only A adds a 5.5% top-up fee, the threshold rises to <strong>about 76.91%</strong>.</p>
+        <p class="small">Rounded thresholds are specific to these prices and assumptions. Extra cache-write charges are excluded and all purchased credit is assumed used.</p>
+      </aside>
+      <section class="article-section" aria-labelledby="workload-title">
+        <h2 id="workload-title">Keep the workload fixed</h2>
+        <p>Run 1,000 tasks. Each has 2,000 fresh input tokens, 6,000 reusable input tokens and 1,000 output tokens: 8M input tokens and 1M output tokens in total.</p>
+        <div class="table-scroll"><table><caption>Fictional rates in USD per 1M tokens</caption><thead><tr><th scope="col">Component</th><th scope="col">Plan A</th><th scope="col">Plan B</th></tr></thead><tbody>
+          <tr><th scope="row">Ordinary input</th><td>$3.00</td><td>$2.00</td></tr>
+          <tr><th scope="row">Cache reads</th><td>$0.30</td><td>$2.00</td></tr>
+          <tr><th scope="row">Output</th><td>$15.00</td><td>$12.00</td></tr>
+        </tbody></table></div>
+        <p>B bills all input at its ordinary rate. A charges misses at $3 / 1M and hits at $0.30 / 1M. Extra cache writes, tools, retries, taxes and exchange costs are excluded; add them when applicable.</p>
+      </section>
+      <section class="article-section" aria-labelledby="hit-title">
+        <h2 id="hit-title">Count reusable tokens, then compare</h2>
+        <p>Let <code>h</code> be the fraction of the <strong>6M reusable tokens</strong> served from cache, from 0 to 1. The denominator is neither all input tokens nor the number of requests with any hit.</p>
+        <pre><code>A = 2 × 3 + 6 × [h × 0.30 + (1 − h) × 3] + 1 × 15
+  = 39 − 16.20 × h
+B = 8 × 2 + 1 × 12 = 28</code></pre>
+        <p>A costs less when <code>h &gt; 11 / 16.20</code>, or about 67.90%. At the exact boundary, the costs are equal.</p>
+        <div class="table-scroll" role="region" aria-label="Costs by cache-hit rate" tabindex="0"><table class="scenario-table"><caption>1,000 tasks · fictional USD costs · links exclude top-up fees</caption><thead><tr><th scope="col">Reusable-token hits</th><th scope="col">A model cost</th><th scope="col">A + 5.5% fee</th><th scope="col">B cost</th><th scope="col">Calculator</th></tr></thead><tbody>
+          <tr><th scope="row">0%</th><td>$39.00</td><td>$41.1450</td><td>$28.00</td><td><a href="../index.en.html#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=8000&amp;cached=0&amp;output=1000&amp;a_name=Fictional%20A%3A%200%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=0&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">Open example</a></td></tr>
+          <tr><th scope="row">50%</th><td>$30.90</td><td>$32.5995</td><td>$28.00</td><td><a href="../index.en.html#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=5000&amp;cached=3000&amp;output=1000&amp;a_name=Fictional%20A%3A%2050%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=0&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">Open example</a></td></tr>
+          <tr><th scope="row">70%</th><td>$27.66</td><td>$29.1813</td><td>$28.00</td><td><a href="../index.en.html#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=3800&amp;cached=4200&amp;output=1000&amp;a_name=Fictional%20A%3A%2070%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=0&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">Open example</a></td></tr>
+          <tr><th scope="row">100%</th><td>$22.80</td><td>$24.0540</td><td>$28.00</td><td><a href="../index.en.html#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=2000&amp;cached=6000&amp;output=1000&amp;a_name=Fictional%20A%3A%20100%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=0&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">Open example</a></td></tr>
+        </tbody></table></div>
+      </section>
+      <section class="article-section" aria-labelledby="fee-title">
+        <h2 id="fee-title">A top-up fee can reverse the result</h2>
+        <p>If only A adds a 5.5% fee on purchased credit, and all purchased credit is used, the condition becomes <code>(39 − 16.20 × h) × 1.055 &lt; 28</code>. A now needs a hit rate above about 76.91%.</p>
+        <p>At 70% hits, A's model charge is $27.66 versus B's $28.00. With A's fee, the required cash is $29.1813, so B costs less under these assumptions.</p>
+        <a class="button primary" href="../index.en.html#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=3800&amp;cached=4200&amp;output=1000&amp;a_name=Fictional%20A%3A%2070%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=5.5&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">Open the 70% example with A's fee →</a>
+      </section>
+      <section class="article-section" aria-labelledby="fill-title">
+        <h2 id="fill-title">Use your own quotes in the calculator</h2>
+        <ol>
+          <li>Put reusable misses into uncached input and hits into cache reads. At 70%, that is 3,800 uncached and 4,200 cached tokens per task.</li>
+          <li>For a plan billing all input normally, set its cache-read rate equal to its ordinary input rate. This keeps B's total input cost unchanged.</li>
+          <li>Replace fictional rates with one node's full quote in one currency. Include applicable cache writes and other charges in the workload's total extra charges.</li>
+          <li>Include only eligible bonus credit you can use. Record actual bills separately from estimates.</li>
+        </ol>
+        <p>The calculator uses the same token split for both plans. If both cache input at different hit rates, calculate each plan's usage separately before comparing. Changing the currency label does not convert exchange rates.</p>
+        <p>These links contain fictional rates and usage. Reading this article needs no JavaScript; the linked calculator requires it and runs in your browser without an API key.</p>
+      </section>
+      <section class="article-section" aria-labelledby="actual-title">
+        <h2 id="actual-title">Check real cache and task conditions</h2>
+        <p>Expiry, prefix length, request spacing, routing and cache-write rules affect actual hits and cost. Check usage-field definitions to avoid counting cached input twice. Keep task volume fixed and check that outputs meet the same task requirements.</p>
+        <p>This is an arithmetic example, without same-condition cross-provider calling tests. Estimates do not establish model identity, service reliability or actual billing.</p>
+        <div class="hero-actions"><a class="button" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/cost-comparison.en.md">Full cost guide ↗</a><a class="button" href="../examples/evaluation-record.template.json">Evaluation record template ↗</a></div>
+      </section>
+    </article>
+  </main>
+  <footer><span>Awesome AI API CN · 2026-10-10 · CC BY 4.0</span><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/new?template=factual-correction.md">Submit a correction ↗</a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/LICENSE">Document license ↗</a></footer>
+</body>
+</html>

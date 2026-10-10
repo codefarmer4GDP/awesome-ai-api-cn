@@ -1,0 +1,53 @@
+{
+  "recorded_at": "2026-10-10T06:47:08Z",
+  "repository": "codefarmer4GDP/awesome-ai-api-cn",
+  "scope": "Prepare bilingual static articles for the existing fictional cache-cost example, and link them from the calculator, READMEs, cost guides, llms.txt and sitemap.",
+  "pages": [
+    "https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.html",
+    "https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html"
+  ],
+  "content": {
+    "fictional_quotes": true,
+    "maintained_by_tokendos_operator": true,
+    "same_condition_cross_provider_calls_conducted": false,
+    "workload": {
+      "tasks": 1000,
+      "fresh_input_tokens_per_task": 2000,
+      "reusable_input_tokens_per_task": 6000,
+      "output_tokens_per_task": 1000
+    },
+    "model_cost_formula": {
+      "a_usd": "39 - 16.20 * h",
+      "b_usd": 28,
+      "h_definition": "Fraction of all reusable input tokens served from cache, from 0 to 1."
+    },
+    "rounded_break_even_reusable_token_hit_rate": {
+      "without_fees_percent": 67.9,
+      "only_a_with_5_5_percent_topup_fee_percent": 76.91
+    },
+    "scenarios_percent": [
+      0,
+      50,
+      70,
+      100
+    ],
+    "exclusions": [
+      "Extra cache-write charges",
+      "Tools and retries",
+      "Taxes and currency charges"
+    ],
+    "topup_fee_assumption": "Every purchased credit is used.",
+    "calculator_limit": "Both plans use the same token split; differing actual hit rates require separate usage calculations.",
+    "static_article_requires_javascript": false,
+    "linked_calculator_requires_javascript": true
+  },
+  "change_scope": "Static content, article styles and navigation. Calculation logic was not edited.",
+  "repository_metrics_observed": {
+    "stars": 0,
+    "forks": 0
+  },
+  "external_messages_sent_in_this_turn": 0,
+  "project_tests_builds_development_servers_or_interaction_checks_run": false,
+  "publication_status": "These files are prepared for publication. Remote commit, Pages deployment and byte comparisons are recorded separately after publishing.",
+  "growth_status": "No observed Star or Fork growth; the 10,000-Star goal remains incomplete."
+}

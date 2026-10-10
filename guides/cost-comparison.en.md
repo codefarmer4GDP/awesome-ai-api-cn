@@ -1,6 +1,6 @@
 # Comparing AI API costs: units, cache, credits and plans
 
-[简体中文](cost-comparison.md) · [Service selection guide](../README.en.md)
+[简体中文](cost-comparison.md) · [Service selection guide](../README.en.md) · [Cache-cost example webpage](https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html)
 
 Start with a fixed workload, then calculate what each service would charge to complete it. Preserve the model version, node, protocol, context and tool settings. Different conditions can support a budget comparison, but they cannot establish a quality ranking.
 

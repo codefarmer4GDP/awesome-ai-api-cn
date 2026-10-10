@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>支持缓存也可能更贵：AI API 成本算例</title>
+  <meta name="description" content="用虚构双方案报价说明可复用 Token 命中率、67.90% 费用临界值与充值费影响。由 TokenDos 运营方维护，附预填计算器链接。">
+  <meta name="author" content="TokenDos operator">
+  <link rel="canonical" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.html">
+  <link rel="alternate" hreflang="en" href="https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="支持缓存也可能更贵：AI API 成本算例">
+  <meta property="og:description" content="用虚构双方案报价说明可复用 Token 命中率、67.90% 费用临界值与充值费影响。由 TokenDos 运营方维护，附预填计算器链接。">
+  <meta property="og:url" content="https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.html">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="https://codefarmer4gdp.github.io/awesome-ai-api-cn/assets/share-preview.zh.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AI API 选型指南，由 TokenDos 运营方维护。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="支持缓存也可能更贵：AI API 成本算例">
+  <meta name="twitter:description" content="用虚构双方案报价说明可复用 Token 命中率、67.90% 费用临界值与充值费影响。由 TokenDos 运营方维护，附预填计算器链接。">
+  <meta name="twitter:image" content="https://codefarmer4gdp.github.io/awesome-ai-api-cn/assets/share-preview.zh.png">
+  <meta name="theme-color" content="#154d3d">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="../"><span class="brand-icon" aria-hidden="true">↗</span> AI API 选型指南</a>
+    <nav aria-label="主导航">
+      <a href="../#calculator">成本计算器</a>
+      <a href="cache-cost.en.html" lang="en" hreflang="en">English</a>
+      <a class="repo-link" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn">GitHub ↗</a>
+    </nav>
+  </header>
+  <main id="main" class="article-main">
+    <article>
+      <header class="article-heading">
+        <p class="eyebrow">成本核算 / 虚构报价算例</p>
+        <h1>支持缓存，<br>也可能更贵。</h1>
+        <p class="article-lead">缓存读取单价低，只有足够多的可复用 Token 真正命中时才省钱。选方案之前，先算完整任务。</p>
+        <p class="small muted">2026-10-10 · 由 TokenDos 运营方维护 · 全文为虚构报价，不构成真实平台的价格排名。</p>
+      </header>
+      <aside class="notice">
+        <p>本例中，可复用 Token 的命中率超过 <strong>约 67.90%</strong>，A 才更便宜；若只有 A 加收 5.5% 充值费，门槛升到 <strong>约 76.91%</strong>。</p>
+        <p class="small">门槛经过四舍五入，只适用于本例报价和假设。未计额外缓存写入费，并假定购买额度恰好全部用完。</p>
+      </aside>
+      <section class="article-section" aria-labelledby="workload-title">
+        <h2 id="workload-title">先固定任务量与报价</h2>
+        <p>一共执行 1,000 次任务。每次有 2,000 个新输入 Token、6,000 个可复用输入 Token，以及 1,000 个输出 Token；合计输入 8M、输出 1M。</p>
+        <div class="table-scroll"><table><caption>虚构报价 · 美元 / 百万 Token</caption><thead><tr><th scope="col">计费项目</th><th scope="col">方案 A</th><th scope="col">方案 B</th></tr></thead><tbody>
+          <tr><th scope="row">普通输入</th><td>$3.00</td><td>$2.00</td></tr>
+          <tr><th scope="row">缓存读取</th><td>$0.30</td><td>$2.00</td></tr>
+          <tr><th scope="row">输出</th><td>$15.00</td><td>$12.00</td></tr>
+        </tbody></table></div>
+        <p>B 的全部输入均按普通输入价计费。A 的未命中部分按 $3 / 1M、命中部分按 $0.30 / 1M 计费。这里未计额外缓存写入、工具、重试、税费和汇兑费用；实际适用时需补入。</p>
+      </section>
+      <section class="article-section" aria-labelledby="hit-title">
+        <h2 id="hit-title">按可复用 Token 算命中率</h2>
+        <p>设 <code>h</code> 为 <strong>6M 可复用 Token</strong> 中命中缓存的比例，取值 0 到 1。分母不是全部输入 Token，也不是命中请求的数量。</p>
+        <pre><code>A = 2 × 3 + 6 × [h × 0.30 + (1 − h) × 3] + 1 × 15
+  = 39 − 16.20 × h
+B = 8 × 2 + 1 × 12 = 28</code></pre>
+        <p>A 更便宜需要 <code>h &gt; 11 / 16.20</code>，即约 67.90%。在精确临界值处，两方案费用相同。</p>
+        <div class="table-scroll" role="region" aria-label="不同缓存命中率的费用" tabindex="0"><table class="scenario-table"><caption>1,000 次任务 · 虚构美元费用 · 示例链接未加充值费</caption><thead><tr><th scope="col">可复用部分命中率</th><th scope="col">A 模型费用</th><th scope="col">A 加 5.5% 费用</th><th scope="col">B 费用</th><th scope="col">计算器</th></tr></thead><tbody>
+          <tr><th scope="row">0%</th><td>$39.00</td><td>$41.1450</td><td>$28.00</td><td><a href="../#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=8000&amp;cached=0&amp;output=1000&amp;a_name=Fictional%20A%3A%200%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=0&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">打开示例</a></td></tr>
+          <tr><th scope="row">50%</th><td>$30.90</td><td>$32.5995</td><td>$28.00</td><td><a href="../#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=5000&amp;cached=3000&amp;output=1000&amp;a_name=Fictional%20A%3A%2050%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=0&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">打开示例</a></td></tr>
+          <tr><th scope="row">70%</th><td>$27.66</td><td>$29.1813</td><td>$28.00</td><td><a href="../#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=3800&amp;cached=4200&amp;output=1000&amp;a_name=Fictional%20A%3A%2070%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=0&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">打开示例</a></td></tr>
+          <tr><th scope="row">100%</th><td>$22.80</td><td>$24.0540</td><td>$28.00</td><td><a href="../#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=2000&amp;cached=6000&amp;output=1000&amp;a_name=Fictional%20A%3A%20100%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=0&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">打开示例</a></td></tr>
+        </tbody></table></div>
+      </section>
+      <section class="article-section" aria-labelledby="fee-title">
+        <h2 id="fee-title">充值费会改变结论</h2>
+        <p>如果只有 A 对购买额度加收 5.5%，且额度恰好全部用完，需要满足 <code>(39 − 16.20 × h) × 1.055 &lt; 28</code>。A 的命中率门槛随之升到约 76.91%。</p>
+        <p>70% 命中时，A 的模型费用为 $27.66，低于 B 的 $28.00；加上充值费，A 需要 $29.1813 现金，本例条件下 B 更便宜。</p>
+        <a class="button primary" href="../#v=1&amp;currency=USD&amp;tasks=1000&amp;fresh=3800&amp;cached=4200&amp;output=1000&amp;a_name=Fictional%20A%3A%2070%25%20hits&amp;a_input=3&amp;a_output=15&amp;a_cache=0.3&amp;a_extra=0&amp;a_fee=5.5&amp;a_bonus=0&amp;b_name=Fictional%20B%3A%20ordinary%20input&amp;b_input=2&amp;b_output=12&amp;b_cache=2&amp;b_extra=0&amp;b_fee=0&amp;b_bonus=0">打开 70% 命中、A 加充值费的示例 →</a>
+      </section>
+      <section class="article-section" aria-labelledby="fill-title">
+        <h2 id="fill-title">怎样填入自己的报价</h2>
+        <ol>
+          <li>将未命中的可复用 Token 加入「未缓存输入」，命中部分填入「缓存读取」。70% 命中时，每次分别为 3,800 和 4,200 Token。</li>
+          <li>对全部输入按普通价计费的方案，将缓存读取单价填成普通输入单价；这样 B 的总输入费用不变。</li>
+          <li>用同币种、同一个节点的完整报价替换虚构费率；适用的缓存写入等费用填入整个任务量的「其他项目」合计。</li>
+          <li>赠送额度只计入实际符合条件且能用完的部分。预算与真实账单分开记录。</li>
+        </ol>
+        <p>计算器对两方案使用相同的 Token 拆分。若两方案都支持缓存且实际命中率不同，需先分别计算各自用量再比较。切换币种标记不会进行汇兑。</p>
+        <p>预填链接里的报价与用量都是虚构示例。本文无需 JavaScript 即可阅读；计算器需要启用它，并在浏览器本地运行，无需 API Key。</p>
+      </section>
+      <section class="article-section" aria-labelledby="actual-title">
+        <h2 id="actual-title">再核对真实缓存与任务条件</h2>
+        <p>有效期、前缀长度、请求间隔、路由和写入规则会影响真实命中率与费用。先确认用量字段是否包含缓存，避免重复计算；同时固定任务量，确认输出满足相同业务要求。</p>
+        <p>本文是数学算例，尚未完成同条件跨平台调用实测。预算估算不能证明模型身份、服务可靠性或实际扣费。</p>
+        <div class="hero-actions"><a class="button" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/cost-comparison.md">完整成本核算指南 ↗</a><a class="button" href="../examples/evaluation-record.template.json">实测记录模板 ↗</a></div>
+      </section>
+    </article>
+  </main>
+  <footer><span>Awesome AI API CN · 2026-10-10 · CC BY 4.0</span><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/new?template=factual-correction.md">提交事实修订 ↗</a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/LICENSE">文档许可 ↗</a></footer>
+</body>
+</html>

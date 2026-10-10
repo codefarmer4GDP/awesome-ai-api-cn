@@ -1,6 +1,6 @@
 # API 成本怎么比较：单价、缓存、充值和套餐
 
-[English](cost-comparison.en.md)
+[English](cost-comparison.en.md) · [缓存成本算例网页](https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.html)
 
 先固定自己的任务，再计算各服务完成这些任务需要花多少钱。模型名称相同，也要确认版本、节点、协议、上下文和工具设置；这些条件不一致时，只能比较方案预算，不能同时推导质量排名。
 
