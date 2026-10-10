@@ -4,9 +4,13 @@
 
 A source-based guide to AI API aggregators, relay services, shared member compute, official APIs, and self-hosted gateways. It focuses on practical trade-offs: compatibility, price units, routing, data handling, limits, and evidence quality.
 
+**Start with a cost reversal:** In [this fictional pricing example](https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html), the caching plan becomes cheaper only above roughly a 67.9% cache-hit rate. Enter your own quotes in the [two-plan calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#calculator); reading and calculating require no API key.
+
 Guide version: **v0.5.0 · 2026-10-10**. This release adds SiliconFlow and GLM Coding Plan; evidence dates are recorded in the individual entries and snapshots and do not mean every service was rechecked. Prices, models, availability, and promotions change. This guide has not completed same-condition cross-provider calling tests; provider claims and operator statistics are labeled as such.
 
 The repository is maintained by the TokenDos operator. TokenDos is listed first; ordering is not a test ranking. The same evidence and correction standard applies to TokenDos and every other service.
+
+If this guide helped you check a quote or bill, **Star it as a bookmark** for your next comparison. Report factual errors with a source so others can check them.
 
 ## Quick comparison
 
