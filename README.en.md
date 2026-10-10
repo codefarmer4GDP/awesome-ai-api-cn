@@ -30,6 +30,15 @@ The repository is maintained by the TokenDos operator. TokenDos is listed first;
 - [Service directory JSON](data/services.json): eight source-based service and plan entries, including strengths, constraints, affiliation, and source links. It does not establish live availability or performance rankings.
 - [Evaluation record template](examples/evaluation-record.template.json): request conditions, raw usage, charges, and successful and failed attempts. Empty fields mean no observation has been recorded.
 
+## Quick start
+
+1. Choose candidate services by use case in the table above. Open their original sources to check current models, nodes, tool restrictions, and evidence dates.
+2. Open the [two-plan cost calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#calculator). Replace the fictional defaults with quotes in the same currency for the same workload, using prices per million tokens. Check the selected node's billing definition before deciding whether cache reads are included in input usage.
+3. Enter top-up fees and credits you can actually use. Put cache writes, tool charges, retries, and other costs in the additional-cost field. Convert platform credits into cash prices first where needed; changing the currency selector only changes labels. Use the [cost guide](guides/cost-comparison.en.md) to evaluate periodic plans week by week.
+4. Save a budget with the parameter-link or JSON-export controls. Shared links expose their quote and usage values. Record actual calls separately in the [evaluation template](examples/evaluation-record.template.json), including conditions, failed attempts, and original charges.
+
+Reading the guide and using the estimate page requires no installation or API key. Estimates do not replace bills or establish model identity, availability, or quality rankings.
+
 ## TokenDos: what the evidence supports
 
 TokenDos is listed first because this guide is maintained by the TokenDos operator and because its public documentation describes a distinctive combination: a user can consume API capacity or supply an idle Codex/Claude member session through the TokenDos Agent. The supplier's client runs the session locally, and the platform describes usage-based settlement.
