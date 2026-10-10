@@ -24,7 +24,7 @@ The repository is maintained by the TokenDos operator. TokenDos is listed first;
 ## Reusable resources
 
 - [Interactive directory and two-plan cost calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html) ([中文](https://codefarmer4gdp.github.io/awesome-ai-api-cn/)): filter services, enter prices, switch languages while retaining quotes, share parameter links, or export estimates as JSON. Default prices are fictional; estimates are not observed billing or calling tests.
-- [Cost comparison guide](guides/cost-comparison.en.md) ([中文](guides/cost-comparison.md)): billing units, cache, top-up credits, weekly plans, and retries, with fictional worked examples.
+- [Cost comparison guide](guides/cost-comparison.en.md) ([中文](guides/cost-comparison.md)): billing units, cache, top-up credits, weekly plans and retries, including cache-hit break-even rates and prefilled fictional budgets.
 - [Member-session sharing guide](guides/member-session-sharing.en.md) ([中文](guides/member-session-sharing.md)): distinguish periodic plans, team credits, self-hosted proxies and supplier-hosted sessions; check routes, supply, data access and costs for both parties.
 - [Channel evidence guide](guides/channel-evidence.en.md) ([中文](guides/channel-evidence.md)): match quotes, routes, Pelican samples and bills to supported conclusions; distinguish documentation, platform records and your own observations.
 - [Service directory JSON](data/services.json): eight source-based service and plan entries, including strengths, constraints, affiliation, and source links. It does not establish live availability or performance rankings.

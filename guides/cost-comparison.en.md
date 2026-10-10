@@ -47,6 +47,30 @@ Run a task 1,000 times, with 2,000 fresh input tokens, 6,000 reusable input toke
 
 If A adds a 5.5% fee on purchased credit and all that credit is used, cash required is $22.80 × 1.055 = $24.054. Add initial cache writes, minimum fees, taxes and currency charges where applicable. The example compares a full workload, without drawing a conclusion about any real provider.
 
+### How many cache hits make the caching plan cheaper?
+
+Keep the fictional prices and 1,000 tasks above: each task has 2,000 fresh input tokens, 6,000 reusable tokens and 1,000 output tokens. Let `h` be the fraction of **reusable tokens** served from cache, from 0 to 1. Assume A charges misses at $3 / 1M and hits at $0.30 / 1M, while B always charges all input at $2 / 1M.
+
+```text
+A model cost = 2M × $3 + 6M × [h × $0.30 + (1 − h) × $3] + 1M × $15
+             = $39 − $16.20 × h
+B model cost = 8M × $2 + 1M × $12 = $28
+A is cheaper when h > 11 / 16.20 ≈ 67.90%
+```
+
+| Reusable-token hit rate | A model cost | A with a 5.5% top-up fee | B cost | Prefilled example without fees |
+| --- | ---: | ---: | ---: | --- |
+| 0% | $39.00 | $41.1450 | $28.00 | [Open 0% example](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#v=1&currency=USD&tasks=1000&fresh=8000&cached=0&output=1000&a_name=Fictional%20A%3A%200%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=0&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0) |
+| 50% | $30.90 | $32.5995 | $28.00 | [Open 50% example](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#v=1&currency=USD&tasks=1000&fresh=5000&cached=3000&output=1000&a_name=Fictional%20A%3A%2050%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=0&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0) |
+| 70% | $27.66 | $29.1813 | $28.00 | [Open 70% example](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#v=1&currency=USD&tasks=1000&fresh=3800&cached=4200&output=1000&a_name=Fictional%20A%3A%2070%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=0&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0) |
+| 100% | $22.80 | $24.0540 | $28.00 | [Open 100% example](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#v=1&currency=USD&tasks=1000&fresh=2000&cached=6000&output=1000&a_name=Fictional%20A%3A%20100%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=0&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0) |
+
+If only A adds a 5.5% top-up fee and all purchased credit is used, the condition becomes `(39 − 16.20 × h) × 1.055 < 28`. The threshold rises to **about 76.91%**. [Open the 70%-hit example with A's 5.5% fee](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#v=1&currency=USD&tasks=1000&fresh=3800&cached=4200&output=1000&a_name=Fictional%20A%3A%2070%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=5.5&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0): A requires $29.1813 and B requires $28. Percentages are rounded; costs are equal at the exact boundary.
+
+Prefilled links put A's reusable misses into uncached input and hits into cache reads. B's cache-read rate is set to its ordinary input rate, leaving its total input cost unchanged. These links contain fictional budgets, not observations or real quotes.
+
+The denominator is all 6M reusable tokens, rather than all input tokens or the number of requests with any hit. Actual costs also depend on cache-write prices, expiry, prefix length, request spacing, routing and returned usage definitions. This example assumes misses incur only ordinary input charges without an extra write fee. Add any extra charges before applying a threshold to your own workload. Keep task volume fixed and check that outputs meet the same task requirements.
+
 ## 3. A bonus is different from a cash discount
 
 Paying $10 for $10 of balance plus a $1 voucher provides $11 of usable credit only if the voucher qualifies and is fully spent. The cash cost per credit dollar is then 10 / 11 ≈ 0.9091, a 9.09% reduction. A “10% bonus” does not mean a 10% cash discount.

@@ -24,7 +24,7 @@
 ## 可复用的选型资料
 
 - [在线目录与双方案成本计算器](https://codefarmer4gdp.github.io/awesome-ai-api-cn/)：按场景筛选服务，代入自己的报价比较成本，分享参数链接或导出估算 JSON。默认值为虚构示例，估算不代表实测或实际扣费。
-- [成本核算指南](guides/cost-comparison.md)（[English](guides/cost-comparison.en.md)）：统一单价单位，计算缓存、充值赠送、周期套餐与失败重试的影响。
+- [成本核算指南](guides/cost-comparison.md)（[English](guides/cost-comparison.en.md)）：统一单价单位，计算缓存、充值赠送、周期套餐与失败重试；含缓存命中率临界值与可打开的虚构预算示例。
 - [会员共享选型指南](guides/member-session-sharing.md)（[English](guides/member-session-sharing.en.md)）：区分周期套餐、团队额度、自建订阅代理与供应方远程会话，核对路由、供给、数据处理和双方成本。
 - [渠道证据核验指南](guides/channel-evidence.md)（[English](guides/channel-evidence.en.md)）：把报价、路由、鹈鹕样本和账单对应到可支持的结论，区分公开文档、平台记录和自己的调用观察。
 - [服务目录 JSON](data/services.json)：8 项服务与套餐的用途、优势、限制与来源；按公开资料整理，未建立实时可用性或性能排名。

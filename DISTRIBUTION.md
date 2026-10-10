@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-指标复核时间：2026-10-10 04:39 UTC（北京时间 2026-10-10 12:39）。Star、Fork、Views 与 Clones 仍为零。本轮按明确授权向 peter 的现有 PR 发送一条事实修订评论，并补齐中英文链接分享预览，见[本轮记录](data/operations/sharing-preview-2026-10-10.json)。此前复查 23 项开放记录、确认 TokenDos 服务条目与 HelloGitHub 投稿的结果见[分发核对](data/operations/external-review-2026-10-10.json)；完整历史见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
+指标复核时间：2026-10-10 06:09 UTC（北京时间 2026-10-10 14:09）。Star、Fork、Views 与 Clones 仍为零。本轮按明确授权提交 GitHubDaily 推荐 #1175，并补充中英文缓存命中率成本案例，见[本轮记录](data/operations/githubdaily-and-cache-cost-2026-10-10.json)。此前 peter 修订评论与分享预览见[上一轮记录](data/operations/sharing-preview-2026-10-10.json)，TokenDos 服务条目与 HelloGitHub 投稿见[分发核对](data/operations/external-review-2026-10-10.json)；完整历史见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
@@ -15,7 +15,7 @@
 | 最新资料版本 | [v0.5.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.5.0) | 新增硅基流动与智谱 Coding Plan 的有来源评价 |
 | 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
 
-这些数字只描述查询时的状态，不构成增长预测。快速开始提交 `75db1a1` 的 Pages 已于 2026-10-10 04:04:35 UTC 构建成功；本页记录发布前已核对的部署，不自引用包含本页的新提交。服务条目出现、指南被推荐和仓库 Star 增长是不同结果：本轮确认了服务条目，指南推荐仍待处理，Star 尚未增长。
+这些数字只描述查询时的状态，不构成增长预测。计算器截图提交 `f2a9e27` 的 Pages 已于 2026-10-10 05:02:58 UTC 构建成功；本页记录发布前已核对的部署，不自引用包含本页的新提交。服务条目出现、指南被推荐和仓库 Star 增长是不同结果：已有服务条目，指南推荐仍待处理，Star 尚未增长。
 
 用户此前授权的指南投稿产生了 #125，未先核对首次请求结果的重试又产生重复 #126，两项均自动关闭。此前完整快照共 33 项，包含重复、历史集成和 API 描述申请，不能当作 33 个独立分发渠道。本轮另观察到同一服务渠道的 PR #127，并提交 HelloGitHub #3909；新增记录也不等于新增独立收录。开放状态不等于收录，自动关闭也不等于内容评审。
 
@@ -63,12 +63,23 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 | [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) | 成本核算指南与中英文计算器，[PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) | open，未合并，0 条评论 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122)、[#125](https://github.com/howardpen9/awesome-ai-api-proxy/issues/125)、[#126](https://github.com/howardpen9/awesome-ai-api-proxy/issues/126) | 五项均被自动关闭；#126 是 #125 的重复重试，当前无待审指南申请 |
 | [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | 选型指南与双方案成本计算器，[#3909](https://github.com/521xueweihan/HelloGitHub/issues/3909) | 经明确授权，通过官方表单提交一次；open，0 条评论，尚未推荐；负责人由表单自动分配 |
+| [GitHubDaily](https://github.com/GitHubDaily/GitHubDaily) | 选型指南与双方案成本计算器，[#1175](https://github.com/GitHubDaily/GitHubDaily/issues/1175) | 经明确授权，通过官方表单提交一次；open，0 条评论，尚未推荐 |
 
 ### 2026-10-10 HelloGitHub 推荐
 
 投稿前阅读官方表单与[审核标准](https://github.com/521xueweihan/HelloGitHub/issues/271)，在官网按项目地址搜索，并查询本账号的既有 Issue 与项目名，未发现重复推荐。官网公开结果为空且提示登录可查看更多，不能据此断言站内没有任何历史条目。官网月刊第 126 期的发布是近期内容维护依据，不构成本项目的收录或回复时限承诺。
 
 收到对完整稿件的明确授权后，于 2026-10-10 04:11:05 UTC 通过官方 `submit-cn.yaml` 表单创建一条 #3909。项目地址、类别、标题、描述、亮点与演示链接均与授权稿一致；空的可选示例代码由表单生成空 Markdown 代码块。正文披露 TokenDos 运营关系、虚构默认报价与未完成调用和页面交互实测的范围。提交后核对本账号仅有这一条申请，没有再次点击创建；自动分配负责人不算人工审核。
+
+### 2026-10-10 GitHubDaily 推荐与缓存成本案例
+
+官方 README 欢迎推荐或自荐，Issue 模板要求简介 100 字以内、截图最多 6 张。本次采用四字段模板，简介 92 字，附两张公开页面截图；正文披露 TokenDos 运营关系、虚构默认报价和未完成同条件横向调用实测。读取官方 X 账号后观察到近期公开项目分享，以及将年度推荐汇总到仓库的置顶说明；这补充了此前仅依据仓库 push 日期暂缓的判断，但不证明 Issue 审核或本项目一定获推荐。
+
+按账号和项目名查重后，经用户对完整稿件明确授权，于 2026-10-10 05:38:13 UTC 通过官方表单创建一条 [#1175](https://github.com/GitHubDaily/GitHubDaily/issues/1175)。只点击创建一次；首次界面未立即切换时先查已创建记录，没有重复提交。公开正文与授权稿 SHA-256 相同，当前 open、0 条评论，尚未被推荐。
+
+中英文[成本指南](guides/cost-comparison.md)新增可复用 Token 的命中率比较：沿用虚构报价，A 的费用为 `39 − 16.2 × h` 美元，B 为 28 美元，无附加费时门槛约 67.90%；仅 A 加收 5.5% 充值费时约 76.91%。附 0%、50%、70%、100% 命中率和充值费场景的预填链接，明确分母、未命中计价及未包含的额外缓存写入费。仅复核算术和参数资料；没有运行页面交互验证、项目测试、构建或开发服务。
+
+其他目录的自荐条件也已核对：部分要求独立采用信号、六个月公开历史或实际 CLI 集成，当前不符合，未投稿。HN 官方规则禁止生成式文字和自动发帖，已取消 AI 代发计划。
 
 ### 既有工具与指南投稿
 

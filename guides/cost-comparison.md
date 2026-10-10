@@ -47,6 +47,30 @@ Token 单价都先换成每 1M，再把用量除以 1,000,000。若厂商将缓�
 
 如果 A 另收按充值额计算的 5.5% 费用，且本次额度恰好全部用完，所需现金为 $22.80 × 1.055 = $24.054。实际还应加入首次写缓存、最低手续费、税费及汇兑等适用项目。此例说明需要比较完整任务；没有替任一家平台作价格结论。
 
+### 缓存要命中多少，支持缓存的方案才更便宜？
+
+沿用上面的虚构报价与 1,000 次任务。每次 2,000 个新输入 Token、6,000 个可复用 Token、1,000 个输出 Token。设可复用部分按 **Token 数量**计算的缓存命中率为 `h`，取值 0 到 1；假定 A 的未命中部分按 $3 / 1M 普通输入计费，命中部分按 $0.30 / 1M 计费，B 的全部输入始终按 $2 / 1M 计费。
+
+```text
+A 模型费用 = 2M × $3 + 6M × [h × $0.30 + (1 − h) × $3] + 1M × $15
+           = $39 − $16.20 × h
+B 模型费用 = 8M × $2 + 1M × $12 = $28
+A 比 B 便宜的条件：h > 11 / 16.20 ≈ 67.90%
+```
+
+| 可复用部分的命中率 | A 模型费用 | A 另加 5.5% 充值费 | B 费用 | 无充值费的预填示例 |
+| --- | ---: | ---: | ---: | --- |
+| 0% | $39.00 | $41.1450 | $28.00 | [打开 0% 示例](https://codefarmer4gdp.github.io/awesome-ai-api-cn/#v=1&currency=USD&tasks=1000&fresh=8000&cached=0&output=1000&a_name=Fictional%20A%3A%200%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=0&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0) |
+| 50% | $30.90 | $32.5995 | $28.00 | [打开 50% 示例](https://codefarmer4gdp.github.io/awesome-ai-api-cn/#v=1&currency=USD&tasks=1000&fresh=5000&cached=3000&output=1000&a_name=Fictional%20A%3A%2050%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=0&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0) |
+| 70% | $27.66 | $29.1813 | $28.00 | [打开 70% 示例](https://codefarmer4gdp.github.io/awesome-ai-api-cn/#v=1&currency=USD&tasks=1000&fresh=3800&cached=4200&output=1000&a_name=Fictional%20A%3A%2070%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=0&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0) |
+| 100% | $22.80 | $24.0540 | $28.00 | [打开 100% 示例](https://codefarmer4gdp.github.io/awesome-ai-api-cn/#v=1&currency=USD&tasks=1000&fresh=2000&cached=6000&output=1000&a_name=Fictional%20A%3A%20100%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=0&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0) |
+
+如果只有 A 加收 5.5% 充值费，在额度恰好全部用完的假设下，要满足 `(39 − 16.20 × h) × 1.055 < 28`，门槛升至 **约 76.91%**。[打开 70% 命中、A 加收 5.5% 的示例](https://codefarmer4gdp.github.io/awesome-ai-api-cn/#v=1&currency=USD&tasks=1000&fresh=3800&cached=4200&output=1000&a_name=Fictional%20A%3A%2070%25%20hits&a_input=3&a_output=15&a_cache=0.3&a_extra=0&a_fee=5.5&a_bonus=0&b_name=Fictional%20B%3A%20ordinary%20input&b_input=2&b_output=12&b_cache=2&b_extra=0&b_fee=0&b_bonus=0)：A 此时需要 $29.1813，B 需要 $28。门槛数值已四舍五入；等式处两方案费用相同。
+
+预填链接把 A 未命中的可复用 Token 加入「未缓存输入」，命中部分加入「缓存读取」；B 的缓存读取价填普通输入价，因此 B 的总输入费用保持不变。这些链接只填入虚构预算，不是观测记录或真实报价。
+
+命中率的分母是全部可复用 Token，共 6M，既不是全部输入 Token 的比例，也不是命中请求占比。实际费用还取决于缓存写入价格、有效期、前缀长度、请求间隔、路由和返回的用量定义。示例假定未命中只收普通输入价，没有额外写入费；有额外费用时须逐项补入预算，不能直接套用本例门槛。比较费用时仍需固定任务量并确认输出满足同一任务要求。
+
 ## 3. 充值赠送不等于同百分比的现金折扣
 
 假设花 $10 得到 $10 余额与 $1 代金券，且券全部满足条件并用完，则 $11 可用额度对应 $10 现金，额度成本系数为 10 / 11 ≈ 0.9091，相当于约 9.09% 的现金成本下降。这里的“赠送 10%”与“打九折”是两个不同口径。

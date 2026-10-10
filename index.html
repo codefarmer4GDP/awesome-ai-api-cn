@@ -131,6 +131,7 @@
     <section id="calculator" class="section" aria-labelledby="calculator-title">
       <div class="section-heading"><div><p class="eyebrow">02 / 把用量代入自己的报价</p><h2 id="calculator-title">双方案成本估算</h2></div><a class="text-link" href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/cost-comparison.md">核算方法 ↗</a></div>
       <p class="section-description">默认值是虚构示例，分别演示「支持缓存」与「缓存按普通输入计价」。请换成当前节点的实际报价；两方案使用同一币种和相同任务量。平台额度若有兑换率，先把单价换成所选现金币种；切换币种只改变标记，不进行汇兑。</p>
+      <p class="small">默认示例假设可复用输入全部命中缓存。命中率下降时，费用优势可能反转：<a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/cost-comparison.md">查看 0%、50%、70%、100% 命中率的虚构预算与临界值</a>。</p>
       <noscript><p class="notice">成本计算和目录筛选需要启用 JavaScript。你仍可阅读上面的服务卡片与完整成本核算指南。</p></noscript>
       <form id="cost-form" aria-describedby="cost-assumptions" hidden>
         <fieldset class="workload"><legend>共同任务量</legend><div class="workload-grid">

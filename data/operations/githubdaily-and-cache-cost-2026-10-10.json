@@ -1,0 +1,62 @@
+{
+  "observed_at": "2026-10-10T06:09:25Z",
+  "metrics": {
+    "stars": 0,
+    "forks": 0,
+    "views_14_days": 0,
+    "view_uniques_14_days": 0,
+    "clones_14_days": 0,
+    "clone_uniques_14_days": 0
+  },
+  "githubdaily_submission": {
+    "issue_url": "https://github.com/GitHubDaily/GitHubDaily/issues/1175",
+    "issue_number": 1175,
+    "created_at": "2026-10-10T05:38:13Z",
+    "author": "codefarmer4GDP",
+    "creation_attempts": 1,
+    "authorization": "Explicit user authorization of the complete draft",
+    "body_sha256": "e1e17bcf9744b91d87b9c35e41ab7478c5d997bd0f3264c6270caa9020897bfb",
+    "public_body_exactly_matches": true,
+    "state": "open",
+    "comments": 0,
+    "recommended_or_featured": false,
+    "affiliation_disclosed": true,
+    "fictional_defaults_disclosed": true,
+    "same_condition_call_tests_not_completed_disclosed": true
+  },
+  "channel_selection": {
+    "githubdaily": "Official README welcomes self-recommendations. Official X profile displayed recent project posts on 2026-10-10; this does not prove issue review or recommendation.",
+    "deferred": [
+      "QuesmaOrg/awesome-ai-tokenomics: independent adoption not yet verified",
+      "ankitvirdi4/awesome-llm-cost: six months of public history required",
+      "hesreallyhim/awesome-claude-code: age/star threshold unmet, recommendations must be human-created",
+      "milisp/awesome-codex-cli: external usage and functional CLI integration required"
+    ],
+    "hacker_news": "Agent-generated and automated posting cancelled after reading official rules; no post, comment, login or account creation."
+  },
+  "cache_hit_case": {
+    "workload": {
+      "tasks": 1000,
+      "fresh_tokens_per_task": 2000,
+      "reusable_tokens_per_task": 6000,
+      "output_tokens_per_task": 1000
+    },
+    "prices": "Fictional A/B rates from existing cost guide, not actual provider quotes",
+    "hit_rate_definition": "Token-weighted share of reusable input only",
+    "A_formula_usd": "39 - 16.2 * h",
+    "B_cost_usd": 28,
+    "break_even_hit_rate_percent_approx": 67.9,
+    "break_even_with_A_5_5_percent_top_up_fee_approx": 76.91,
+    "scenarios": [
+      0,
+      50,
+      70,
+      100
+    ],
+    "missing_write_costs_explicit": true,
+    "prefilled_links_both_languages": true,
+    "calculator_logic_modified": false,
+    "calculator_interactions_verified": false
+  },
+  "scope": "One authorized third-party recommendation and a bilingual mathematical budget example. No project tests, builds, development servers or paid model calls. The 10,000-Star goal remains incomplete."
+}
