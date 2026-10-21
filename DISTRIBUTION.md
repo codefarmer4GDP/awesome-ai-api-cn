@@ -63,7 +63,7 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 | [awesome-LLM-resources](https://github.com/WangRongsheng/awesome-LLM-resources) | 成本核算指南与中英文计算器，[PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) | open，未合并，0 条评论 |
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122)、[#125](https://github.com/howardpen9/awesome-ai-api-proxy/issues/125)、[#126](https://github.com/howardpen9/awesome-ai-api-proxy/issues/126) | 五项均被自动关闭；#126 是 #125 的重复重试，当前无待审指南申请 |
 | [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | 选型指南与双方案成本计算器，[#3909](https://github.com/521xueweihan/HelloGitHub/issues/3909) | 经明确授权，通过官方表单提交一次；open，0 条评论，尚未推荐；负责人由表单自动分配 |
-| [GitHubDaily](https://github.com/GitHubDaily/GitHubDaily) | 选型指南与双方案成本计算器，[#1175](https://github.com/GitHubDaily/GitHubDaily/issues/1175) | 经明确授权，通过官方表单提交一次；open，0 条评论，尚未推荐 |
+| [GitHubDaily](https://github.com/GitHubDaily/GitHubDaily) | 选型指南与双方案成本计算器，[#1175](https://github.com/GitHubDaily/GitHubDaily/issues/1175) | 经明确授权，通过官方表单提交一次；2026-10-21 02:53 UTC 经授权补充评论；最新状态 open、1 条评论，尚未推荐 |
 
 ### 2026-10-10 HelloGitHub 推荐
 
@@ -75,7 +75,9 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 
 官方 README 欢迎推荐或自荐，Issue 模板要求简介 100 字以内、截图最多 6 张。本次采用四字段模板，简介 92 字，附两张公开页面截图；正文披露 TokenDos 运营关系、虚构默认报价和未完成同条件横向调用实测。读取官方 X 账号后观察到近期公开项目分享，以及将年度推荐汇总到仓库的置顶说明；这补充了此前仅依据仓库 push 日期暂缓的判断，但不证明 Issue 审核或本项目一定获推荐。
 
-按账号和项目名查重后，经用户对完整稿件明确授权，于 2026-10-10 05:38:13 UTC 通过官方表单创建一条 [#1175](https://github.com/GitHubDaily/GitHubDaily/issues/1175)。只点击创建一次；首次界面未立即切换时先查已创建记录，没有重复提交。公开正文与授权稿 SHA-256 相同，当前 open、0 条评论，尚未被推荐。
+按账号和项目名查重后，经用户对完整稿件明确授权，于 2026-10-10 05:38:13 UTC 通过官方表单创建一条 [#1175](https://github.com/GitHubDaily/GitHubDaily/issues/1175)。只点击创建一次；首次界面未立即切换时先查已创建记录，没有重复提交。公开正文与授权稿 SHA-256 相同；创建时为 open、0 条评论，尚未被推荐。
+
+2026-10-21 02:53:26 UTC，经用户对完整修订稿单独授权，在同一 Issue 增加[一条 v0.6.0 更新评论](https://github.com/GitHubDaily/GitHubDaily/issues/1175#issuecomment-6306844078)，附新版价格、会话供给与运营监测快照，并明确运营方身份、会员会话查询为空、监测数据并非独立横测及尚未完成跨平台调用实测。公开评论正文与授权稿一致，SHA-256 为 `8d3683f32041a4ad2d3cd8ae5f3cfe9ef2ccc53533661d3ce9af4be28e635f27`。评论后 Issue 仍 open，共 1 条评论，尚未获推荐；这次更新不代表已收录或带来导流。
 
 中英文[成本指南](guides/cost-comparison.md)新增可复用 Token 的命中率比较：沿用虚构报价，A 的费用为 `39 − 16.2 × h` 美元，B 为 28 美元，无附加费时门槛约 67.90%；仅 A 加收 5.5% 充值费时约 76.91%。附 0%、50%、70%、100% 命中率和充值费场景的预填链接，明确分母、未命中计价及未包含的额外缓存写入费。仅复核算术和参数资料；没有运行页面交互验证、项目测试、构建或开发服务。
 
