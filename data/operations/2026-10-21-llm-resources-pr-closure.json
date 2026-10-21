@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-21T05:46:04Z",
+  "repository": "WangRongsheng/awesome-LLM-resources",
+  "pull_request": {
+    "number": 256,
+    "url": "https://github.com/WangRongsheng/awesome-LLM-resources/pull/256",
+    "state": "closed",
+    "merged": false,
+    "closed_at": "2026-10-11T12:06:52Z",
+    "comments": 0,
+    "reviews": 0
+  },
+  "timeline": [
+    {
+      "event": "closed",
+      "actor": "WangRongsheng",
+      "created_at": "2026-10-11T12:06:52Z",
+      "public_reason": null
+    }
+  ],
+  "interpretation": "The PR was closed without merge. No public rationale or review was provided, so the closure reason is unknown and must not be characterized as a content rejection.",
+  "next_action": "Do not resubmit the same contribution unless the scope, directory rules or supporting evidence materially changes."
+}

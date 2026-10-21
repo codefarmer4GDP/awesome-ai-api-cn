@@ -10,6 +10,8 @@
 
 2026-10-21 03:31 UTC 向 IndexNow 提交 Sitemap 中的 10 个公开 URL，API 返回 HTTP `202`（已接收，密钥验证待处理）。验证文件已部署并在线返回 `200 text/plain`；这只表示通知被接收，不表示搜索引擎已收录、排名提升或产生访问和 Star。
 
+2026-10-21 05:45 UTC 复核大型资源目录投稿：awesome-LLM-resources 的 [PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) 已于 2026-10-11 12:06 UTC 被维护者关闭，未合并；GitHub 显示 0 条评论、0 次 Review，事件中没有说明原因。只能记录关闭事实，不推测拒绝理由。暂不重复提交同一指南，除非目录规则或稿件范围出现实质变化。
+
 2026-10-21 05:29 UTC 更正 robots 配置记录：实测主机根 `https://codefarmer4gdp.github.io/robots.txt` 为 404，先前部署的项目子路径文件不是爬虫标准 robots 地址，已从仓库删除。GitHub Pages 的项目路径仓库不能单独设置主机根 robots.txt；本项目仍可通过公开 Sitemap 和已发送的 IndexNow 通知提供 URL 发现线索。更正只调整了记录与无效文件，不声称搜索收录或增长。
 
 2026-10-21 03:04 UTC 将 GitHub 仓库简介补为中英文，以匹配英文 README 和计算器，并覆盖 AI API guide、pricing 与 cost calculator 等英文检索词。修改时仓库为 3 Star；GitHub Traffic API 最新窗口仍截至 10 月 19 日，为 14 次 Views / 13 位独立访客，来源仅见 `tokendos.com`（4 次 / 3 位）和 `github.com`（2 次 / 2 位）。这些是修改前基线，不证明简介修改带来增长；待后续流量窗口再复核。
@@ -115,7 +117,7 @@ Awesome-LLMOps 允许逐项提交 PR。阅读贡献规则并查重后，在其 O
 
 awesome-LLM-resources 的「技巧 Tips」已收录 LLM Pricing，适合补充任务成本核算方法。投稿前已阅读 README、CODE_OF_CONDUCT.md，并检查贡献规则、模板与既有申请；当前文件树未发现另设贡献文件或模板，也未发现本项目的重复投稿。该目录当日 9,012 Star，最近 push 为 2026-10-07；已确认一条教程投稿 [PR #215](https://github.com/WangRongsheng/awesome-LLM-resources/pull/215) 于 2026-09-02 合并。近期合并记录是筛选依据，不是本申请的收录承诺。
 
-[PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) 仅在 Tips 末尾新增第 39 项通用成本指南，说明单位、缓存、充值赠送、周期套餐与重试，并链接中英文计算器。正文披露 TokenDos 运营关系、虚构示例价格、用户自填报价、非实时价格/性能排名及未进行交互测试。GitHub API 核对正文与本地稿件一致，1 个文件、1 行新增、0 行删除；申请已提交，尚未收录。
+[PR #256](https://github.com/WangRongsheng/awesome-LLM-resources/pull/256) 仅在 Tips 末尾新增第 39 项通用成本指南，说明单位、缓存、充值赠送、周期套餐与重试，并链接中英文计算器。正文披露 TokenDos 运营关系、虚构示例价格、用户自填报价、非实时价格/性能排名及未进行交互测试。GitHub API 核对正文与本地稿件一致，1 个文件、1 行新增、0 行删除。维护者于 2026-10-11 12:06 UTC 关闭 PR；没有评论、Review 或公开关闭理由，因此不能判断具体原因，也不把它归类为内容拒绝。
 
 ## 会员共享专题
 
