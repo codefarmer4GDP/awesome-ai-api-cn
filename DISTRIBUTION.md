@@ -4,7 +4,7 @@
 
 ## 当前基线
 
-指标复核时间：2026-10-21 06:34 UTC（北京时间 2026-10-21 14:34）。最新提交为[中英文 README 介绍篇幅校准](https://github.com/codefarmer4GDP/awesome-ai-api-cn/commit/45e85ca62d48035aaf40bc636cc042f15d29d45a)；GitHub Pages 对应构建成功。v0.6.0 仍是最新发布，报价、会员会话供给和运营监测证据见[报价快照](data/pricing-snapshots/tokendos-2026-10-20.json)。最新 Star、流量、分发状态及其证据边界见[10 月 21 日分发更新](data/operations/2026-10-21-distribution-update.json)。截至本次复核，指南尚无可确认的第三方收录或导流；完整历史见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
+指标复核时间：2026-10-21 06:34 UTC（北京时间 2026-10-21 14:34）。本次 README 修订提交为[中英文介绍篇幅校准](https://github.com/codefarmer4GDP/awesome-ai-api-cn/commit/45e85ca62d48035aaf40bc636cc042f15d29d45a)；GitHub Pages 对应构建成功。v0.6.0 仍是最新发布，报价、会员会话供给和运营监测证据见[报价快照](data/pricing-snapshots/tokendos-2026-10-20.json)。Star、流量、分发状态及其证据边界见[10 月 21 日分发更新](data/operations/2026-10-21-distribution-update.json)。截至本次复核，指南尚无可确认的第三方收录或导流；完整历史见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
 
 2026-10-21 03:12 UTC 扩充 Sitemap：把中英文缓存成本、成本核算、会员共享和渠道证据指南加入，共 10 个 URL，并标注可用的语言替代关系。6 篇 Markdown 指南此前已能以 `200 text/markdown` 访问。曾在项目子路径添加 `robots.txt`，但后续核验确认标准地址是主机根 `/robots.txt`；项目页位于 GitHub Pages 子路径，子路径文件不能替代主机级 robots 规则。本仓库没有对应的用户站点仓库，因此这项 robots 配置不能用于声明 Sitemap。必应 RSS 的 `site:` 查询没有返回本站结果，Google 查询超时，不能据此确认收录状态。
 
