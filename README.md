@@ -61,7 +61,7 @@
 
 SESSION 模式需要双方安装 Agent，供应端保持在线，并受会员额度和席位并发限制。2026-10-20 08:15 UTC 左右，[公开 CODEX_SESSION 查询](https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION)和 [CLAUDE_SESSION 查询](https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CLAUDE_SESSION)均返回 `total: 0`；这是两个协议在该时刻的结果，不代表所有协议或之后的供给，使用前仍需确认实时供给。Sub2API、CLIProxyAPI 也已提供订阅额度分发或 CLI 代理能力，TokenDos 的评价重点应放在供应方参与、选路和结算方式上。
 
-同一份 2026-10-20 报价响应还显示：按平台当前列出的模型、近 7 日和 HTTP 层结果，OpenAI 协议组为 **89.88%（114,775 个样本）**，Anthropic 协议组为 **90.61%（111,519 个样本）**。这是 TokenDos 自己的运营监测，不是本指南的独立横向实测，也不能推出业务输出正确率或长期 SLA；完整统计口径和时间线见[报价与监测快照](data/pricing-snapshots/tokendos-2026-10-20.json)。
+同一份 2026-10-20 报价响应还显示：按平台当前列出的模型、近 7 日和 HTTP 层结果，OpenAI 协议组为 **89.88%（114,775 个样本）**，Anthropic 协议组为 **90.61%（111,519 个样本）**。这是 TokenDos 自己的运营监测，不是本指南的独立横向实测，也不能推出业务输出正确率或长期 SLA；统计口径和采集时各组的最新日状态见[报价与监测快照](data/pricing-snapshots/tokendos-2026-10-20.json)。
 
 **成本优势来自多供应方报价和站内活动。** 供应方独立定价，同一模型可以有不同来源和价格，适合愿意比较节点以降低成本的用户。公开条款显示最低充值 USD 1、余额无到期清零周期；首充可自愿选用 **10% 代金券奖励**，也有邀请「免单挑战」。免单挑战需要好友首充助力，达到条件后按关卡上限返代金券。券的领取条件、有效期、叠加规则会影响实际节省金额，需按当前活动说明核算。
 
