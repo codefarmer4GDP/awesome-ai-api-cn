@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-21T03:04:19Z",
+  "repository": "https://github.com/codefarmer4GDP/awesome-ai-api-cn",
+  "action": "update_repository_description",
+  "description_before": "中文 AI API 选型指南：Claude、GPT、Gemini、聚合平台、会员算力共享与自建网关；含来源、价格比较、限制和成本计算器。",
+  "description_after": "中文 AI API 选型指南：Claude、GPT、Gemini、聚合平台、会员算力共享与自建网关；含来源、价格比较、限制和成本计算器。 English: source-based AI API guide and cost calculator for Claude, GPT, Gemini, aggregators, member-session sharing, and self-hosted gateways.",
+  "baseline": {
+    "stargazers": 3,
+    "traffic_window_end": "2026-10-19",
+    "views": {
+      "count": 14,
+      "uniques": 13
+    },
+    "referrers": [
+      {
+        "name": "tokendos.com",
+        "count": 4,
+        "uniques": 3
+      },
+      {
+        "name": "github.com",
+        "count": 2,
+        "uniques": 2
+      }
+    ]
+  },
+  "hypothesis": "A bilingual repository description may improve relevance for English-language GitHub searches.",
+  "result_scope": "Baseline only. The change has not yet been linked to additional visits or stars."
+}
