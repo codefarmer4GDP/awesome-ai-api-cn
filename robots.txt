@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /awesome-ai-api-cn/
+
+Sitemap: https://codefarmer4gdp.github.io/awesome-ai-api-cn/sitemap.xml

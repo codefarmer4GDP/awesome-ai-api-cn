@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-21T03:12:43Z",
+  "repository": "https://github.com/codefarmer4GDP/awesome-ai-api-cn",
+  "site": "https://codefarmer4gdp.github.io/awesome-ai-api-cn/",
+  "changes": {
+    "robots_txt": "Added an Allow rule for the project path and a Sitemap directive.",
+    "sitemap_urls_before": 4,
+    "sitemap_urls_after": 10,
+    "localized_guides_added": [
+      "guides/cost-comparison.md",
+      "guides/cost-comparison.en.md",
+      "guides/member-session-sharing.md",
+      "guides/member-session-sharing.en.md",
+      "guides/channel-evidence.md",
+      "guides/channel-evidence.en.md"
+    ]
+  },
+  "observations_before_publish": {
+    "robots_txt_http_status": 404,
+    "guide_pages_http_status": 200,
+    "guide_pages_content_type": "text/markdown; charset=utf-8"
+  },
+  "indexing_check": {
+    "bing_site_query": "No result for this site was observed in the RSS response; response also contained unrelated results, so this is not conclusive evidence of deindexing.",
+    "google_site_query": "Timed out before a result could be observed."
+  },
+  "result_scope": "Crawler discovery metadata is improved. Search indexing, rankings, traffic and star growth remain unverified."
+}

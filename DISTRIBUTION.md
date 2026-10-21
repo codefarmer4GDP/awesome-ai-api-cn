@@ -6,6 +6,8 @@
 
 指标复核时间：2026-10-21 02:03 UTC（北京时间 2026-10-21 10:03）。本轮发布 v0.6.0，刷新 TokenDos 的公开报价、会员会话供给查询与运营监测快照，见[报价与监测记录](data/pricing-snapshots/tokendos-2026-10-20.json)及[本轮指标审计](data/operations/2026-10-21-maintenance-audit.json)。截至复核，第三方目录尚未产生可核实的收录或导流；完整历史见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
 
+2026-10-21 03:12 UTC 补充静态站点的爬虫入口：新增 `robots.txt` 指向 Sitemap，并把中英文缓存成本、成本核算、会员共享和渠道证据指南加入 Sitemap，带上可用的语言替代关系。此前 Pages 的 `robots.txt` 返回 404，Sitemap 只列 4 个页面；6 篇 Markdown 指南此前已能以 `200 text/markdown` 访问。必应 RSS 的 `site:` 查询没有返回本站结果，Google 查询超时，因此当前无法确认搜索引擎是否已收录；本次只改善发现路径，不代表索引、排名、流量或 Star 已增长。
+
 2026-10-21 03:04 UTC 将 GitHub 仓库简介补为中英文，以匹配英文 README 和计算器，并覆盖 AI API guide、pricing 与 cost calculator 等英文检索词。修改时仓库为 3 Star；GitHub Traffic API 最新窗口仍截至 10 月 19 日，为 14 次 Views / 13 位独立访客，来源仅见 `tokendos.com`（4 次 / 3 位）和 `github.com`（2 次 / 2 位）。这些是修改前基线，不证明简介修改带来增长；待后续流量窗口再复核。
 
 | 指标 | 数值 | 说明 |
