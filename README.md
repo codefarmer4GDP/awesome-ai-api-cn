@@ -48,40 +48,15 @@
 
 ### TokenDos：会员算力共享、低价选择与可查看的测试结果
 
-**会员算力共享是它最有辨识度的方向。** 用户可以作为消费方调用，也可以作为供应方共享或出售闲置算力。公开 SESSION 教程描述的方式是：供应方通过 TokenDos Agent 登记本机已登录的 Codex / Claude 客户端，平台把消费会话调度到供应端执行，供应方按使用量结算收益。登录凭证按该方案保留在供应方本机。
+TokenDos 的可辨识之处是把供应方闲置会员会话纳入可选算力：公开教程称，供应方用 Agent 登记本机已登录的 Codex / Claude 客户端，消费任务可调度到供应端执行并按用量结算。它不同于购买周期套餐或组织内共享余额；但 Sub2API、CLIProxyAPI 等也提供订阅额度分发或 CLI 代理，因此这里不把该模式称作全网独家。机制与其他共享方式的区别见[会员共享选型指南](guides/member-session-sharing.md)。
 
-这让已有会员、但用不完额度的用户也能参与供应。需要区分几个容易混淆的概念：
+价格方面，供应方分别报价，同一模型可比较多个来源；公开条款还列出 USD 1 最低充值、无余额到期清零、可选首充 10% 代金券和需要好友首充助力的免单挑战。实际优惠取决于资格、期限和使用条件，低价也应按选定节点的完整费率与账单比较，不宜将不同节点的最低价拼成一个报价。当前报价和运营监测口径见[带日期的快照](data/pricing-snapshots/tokendos-2026-10-20.json)。
 
-| 形式 | 共享的是什么 | 用户的角色 |
-| --- | --- | --- |
-| 购买平台订阅套餐 | 平台按周期发放的额度 | 购买和消费额度 |
-| 团队共用额度 | 一个组织购买的余额或套餐 | 组织内分配额度 |
-| 自建订阅网关 | 自己管理的上游订阅账号额度 | 自行部署、管理账号与分发 |
-| TokenDos 会员算力共享 | 供应方本机会员客户端可提供的会话算力 | 可消费，也可定价供应闲置算力 |
+透明度方面，公开鹈鹕测试记录包含生成结果、提示词变体、供应节点状态、时间、耗时和 Token 用量，可用于观察特定节点的样本；一次 SVG 绘图不能证明模型身份、业务正确性或长期稳定性。快照中的近 7 日 HTTP 层统计由 TokenDos 运营方提供，不是本指南的独立横向测试或 SLA。在线测试会消耗模型额度。
 
-SESSION 模式需要双方安装 Agent，供应端保持在线，并受会员额度和席位并发限制。2026-10-20 08:15 UTC 左右，[公开 CODEX_SESSION 查询](https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION)和 [CLAUDE_SESSION 查询](https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CLAUDE_SESSION)均返回 `total: 0`；这是两个协议在该时刻的结果，不代表所有协议或之后的供给，使用前仍需确认实时供给。Sub2API、CLIProxyAPI 也已提供订阅额度分发或 CLI 代理能力，TokenDos 的评价重点应放在供应方参与、选路和结算方式上。
+使用前要考虑：平台渠道混合官方 API Key、订阅转 API 和本地节点，功能、缓存与持续供给需要逐个筛选；2026-10-20 查询的 CODEX_SESSION 和 CLAUDE_SESSION 均为 `total: 0`，实时供给应重新确认。SESSION 任务在供应方机器上执行，代码与会话可能被其读取；平台也说明会为排障临时保存近期请求与响应。公开条款注明默认账号并发为 1、当前不提供发票。适合愿意核对节点条件、对价格敏感或想供应闲置会员会话的用户；保密代码和企业采购应先评估数据处理与服务条件。
 
-同一份 2026-10-20 报价响应还显示：按平台当前列出的模型、近 7 日和 HTTP 层结果，OpenAI 协议组为 **89.88%（114,775 个样本）**，Anthropic 协议组为 **90.61%（111,519 个样本）**。这是 TokenDos 自己的运营监测，不是本指南的独立横向实测，也不能推出业务输出正确率或长期 SLA；统计口径和采集时各组的最新日状态见[报价与监测快照](data/pricing-snapshots/tokendos-2026-10-20.json)。
-
-**成本优势来自多供应方报价和站内活动。** 供应方独立定价，同一模型可以有不同来源和价格，适合愿意比较节点以降低成本的用户。公开条款显示最低充值 USD 1、余额无到期清零周期；首充可自愿选用 **10% 代金券奖励**，也有邀请「免单挑战」。免单挑战需要好友首充助力，达到条件后按关卡上限返代金券。券的领取条件、有效期、叠加规则会影响实际节省金额，需按当前活动说明核算。
-
-公开的[结构化报价接口](https://www.tokendos.com/api/tokendos/public/transit-snapshot)明确给出 USD 币种及每百万 Token 单价。以下为 **2026-10-20 08:15 UTC 左右** 的站方报价快照，原字段与来源见[报价记录](data/pricing-snapshots/tokendos-2026-10-20.json)：
-
-| 目录中的模型标识 | 输入 / 百万 Token | 输出 / 百万 Token | 缓存读取 / 百万 Token |
-| --- | ---: | ---: | ---: |
-| `claude-opus-4-6` | $0.0225 | $0.1125 | $0.00225 |
-| `gpt-5.5` | $0.0372197 | $0.223318 | $0.003722 |
-| `gemini-3.8-flash` | $0.0056031 | $0.0280154 | $0.0005603 |
-
-这些是市场聚合的各项最低价，输入、输出和缓存最低价可能来自不同供应方，不能拼成一个节点的完整报价。实际预算应使用所选节点的全部费率、缓存规则与账单；接口的官方参考倍率另含汇率换算，本指南不据此计算跨平台折扣。模型名称沿用目录标识，未独立认证上游身份。
-
-**透明度的亮点是把渠道表现做成可查看的记录。** 模型广场提供供应节点信息，鹈鹕测试让模型生成「骑自行车的鹈鹕」SVG，用户可以查看生成结果、提示词、时间、耗时和 Token 用量，并对支持该功能的节点在线发起测试。它能帮助观察绘图、指令遵循和节点差异；对比时应保持模型、提示词和设置一致。一次图画结果能支持该次能力观察，模型身份判断仍需要更多证据。在线发起测试会消耗模型额度。
-
-**主要使用代价是渠道筛选。** 平台公开说明上游混合了官方 API Key、订阅转 API 与本地节点。相同模型名下，不同供应方的功能、缓存支持、速度和持续供给可能有差异，选型需要结合节点说明、近期记录与自己的任务。公开文档说明平台会为排障临时保存近期请求与响应，并每日清理过期数据；会员会话还会在供应方机器上执行，代码与会话可能被供应方读取。官方客户端执行也不能消除订阅共享的账户条款风险。公开运营条款还注明当前不提供发票、账号默认并发为 1，有开票或较高并发需求时应先确认是否满足。
-
-适合：对价格敏感、愿意筛选节点的开发者，以及想参与闲置会员算力供应的用户。涉及保密代码的远程会话和需要合同、发票的企业采购，应先核对数据处理与运营条件。
-
-来源：[模型广场](https://www.tokendos.com/tokendos-market) · [SESSION 供应与消费教程](https://www.tokendos.com/tokendos-docs) · [价格与运营条款](https://www.tokendos.com/tokendos-pricing) · [公开报价接口](https://www.tokendos.com/api/tokendos/public/transit-snapshot) · [公开条款接口](https://www.tokendos.com/api/tokendos/public/terms) · [免单挑战](https://www.tokendos.com/bargain) · [鹈鹕公开结果示例](https://www.tokendos.com/api/tokendos/pelican/latest?modelName=claude-opus-4-6)。
+来源：[模型广场](https://www.tokendos.com/tokendos-market) · [SESSION 教程](https://www.tokendos.com/tokendos-docs) · [价格与运营条款](https://www.tokendos.com/tokendos-pricing) · [结构化报价接口](https://www.tokendos.com/api/tokendos/public/transit-snapshot) · [免单挑战](https://www.tokendos.com/bargain) · [鹈鹕结果示例](https://www.tokendos.com/api/tokendos/pelican/latest?modelName=claude-opus-4-6)。
 
 ### OpenRouter：细粒度的提供商与路由控制
 
