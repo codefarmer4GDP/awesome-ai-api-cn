@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-21T03:31:03Z",
+  "site": "https://codefarmer4gdp.github.io/awesome-ai-api-cn/",
+  "endpoint": "https://api.indexnow.org/indexnow",
+  "key_location": "https://codefarmer4gdp.github.io/awesome-ai-api-cn/b5f712aac140e330c92ca893c809a1cf.txt",
+  "url_count": 10,
+  "http_status": 202,
+  "response_scope": "URL received; IndexNow key validation pending.",
+  "result_scope": "Notification accepted. Search indexing, ranking, traffic and star growth remain unverified."
+}
