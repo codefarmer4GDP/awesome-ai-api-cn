@@ -14,6 +14,8 @@
 
 2026-10-21 03:04 UTC 将 GitHub 仓库简介补为中英文，以匹配英文 README 和计算器，并覆盖 AI API guide、pricing 与 cost calculator 等英文检索词。修改时仓库为 3 Star；GitHub Traffic API 最新窗口仍截至 10 月 19 日，为 14 次 Views / 13 位独立访客，来源仅见 `tokendos.com`（4 次 / 3 位）和 `github.com`（2 次 / 2 位）。这些是修改前基线，不证明简介修改带来增长；待后续流量窗口再复核。
 
+2026-10-21 05:39 UTC 将仓库 Topics 从 15 项补到 GitHub 的 20 项上限，新增 `awesome-list`、`llm-pricing`、`llm-cost`、`api-cost-calculator` 和 `ai-api-guide`，覆盖项目形态、定价与估算工具等检索意图。修改时仓库为 3 Star，最近可用 Traffic 窗口仍为 14 次 Views / 13 位独立访客（截至 10 月 19 日），referrer 仍只有 `tokendos.com` 与 `github.com`。这是待观察的元数据调整，不构成流量或 Star 增长证据。
+
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
 | Star | 3 | `stargazers_count`；其中 1 个为维护账号，另 2 个公开账号有代码活动，不能据此判断自然增长比例 |

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-21T05:39:59Z",
+  "repository": "https://github.com/codefarmer4GDP/awesome-ai-api-cn",
+  "action": "update_repository_topics",
+  "topics_before": [
+    "ai-api",
+    "ai-gateway",
+    "api-pricing",
+    "chinese",
+    "ai-routing",
+    "anthropic-api",
+    "api-comparison",
+    "api-proxy",
+    "llm-api",
+    "llm-gateway",
+    "openai-compatible",
+    "self-hosted-ai",
+    "cost-calculator",
+    "prompt-caching",
+    "token-cost"
+  ],
+  "topics_added": [
+    "awesome-list",
+    "llm-pricing",
+    "llm-cost",
+    "api-cost-calculator",
+    "ai-api-guide"
+  ],
+  "baseline": {
+    "stargazers": 3,
+    "traffic_window_end": "2026-10-19",
+    "views": 14,
+    "unique_views": 13,
+    "referrers": ["tokendos.com", "github.com"]
+  },
+  "hypothesis": "More specific repository topics may improve discovery in GitHub topic and repository searches.",
+  "result_scope": "Metadata changed. The effect on search visibility, traffic and stars is not yet observed."
+}
