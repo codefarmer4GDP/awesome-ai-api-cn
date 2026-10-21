@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-21T05:29:50Z",
+  "site": "https://codefarmer4gdp.github.io/awesome-ai-api-cn/",
+  "verification": {
+    "host_root_robots_txt": {
+      "url": "https://codefarmer4gdp.github.io/robots.txt",
+      "http_status": 404
+    },
+    "project_path_robots_txt_before_removal": {
+      "url": "https://codefarmer4gdp.github.io/awesome-ai-api-cn/robots.txt",
+      "http_status": 200
+    },
+    "account_user_site_repository": "codefarmer4gdp/codefarmer4gdp.github.io not found"
+  },
+  "correction": "A project-page robots.txt is not the standard host-root robots.txt endpoint. It was removed to avoid presenting it as effective crawler configuration.",
+  "remaining_discovery_paths": [
+    "Public sitemap.xml containing 10 page URLs",
+    "IndexNow notification accepted with HTTP 202; key validation pending"
+  ],
+  "result_scope": "No search indexing, ranking, traffic or star growth is established by these checks."
+}
