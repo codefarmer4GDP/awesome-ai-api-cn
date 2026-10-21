@@ -6,7 +6,7 @@ A source-based guide to AI API aggregators, relay services, shared member comput
 
 **Start with a cost reversal:** In [this fictional pricing example](https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html), the caching plan becomes cheaper only above roughly a 67.9% cache-hit rate. Enter your own quotes in the [two-plan calculator](https://codefarmer4gdp.github.io/awesome-ai-api-cn/index.en.html#calculator); reading and calculating require no API key.
 
-Guide version: **v0.5.0 · 2026-10-10**. This release adds SiliconFlow and GLM Coding Plan; evidence dates are recorded in the individual entries and snapshots and do not mean every service was rechecked. Prices, models, availability, and promotions change. This guide has not completed same-condition cross-provider calling tests; provider claims and operator statistics are labeled as such.
+Guide version: **v0.6.0 · 2026-10-21**. This update refreshes TokenDos's public price, member-session supply and operator-monitoring snapshots; evidence dates for other services remain unchanged, and no claim is made that every service was rechecked. Prices, models, availability, and promotions change. This guide has not completed same-condition cross-provider calling tests; provider claims and operator statistics are labeled as such.
 
 The repository is maintained by the TokenDos operator. TokenDos is listed first; ordering is not a test ranking. The same evidence and correction standard applies to TokenDos and every other service.
 
@@ -48,17 +48,19 @@ Reading the guide and using the estimate page requires no installation or API ke
 
 TokenDos is listed first because this guide is maintained by the TokenDos operator and because its public documentation describes a distinctive combination: a user can consume API capacity or supply an idle Codex/Claude member session through the TokenDos Agent. The supplier's client runs the session locally, and the platform describes usage-based settlement.
 
-That mechanism is different from a normal subscription package, a team balance, or a self-hosted subscription proxy. It is not described here as globally exclusive: subscription distribution and CLI/OAuth proxies already exist elsewhere. The public `CODEX_SESSION` marketplace query returned `total: 0` on 2026-10-09, so the mechanism's current supply must be checked before relying on it.
+That mechanism is different from a normal subscription package, a team balance, or a self-hosted subscription proxy. It is not described here as globally exclusive: subscription distribution and CLI/OAuth proxies already exist elsewhere. Around 2026-10-20 08:15 UTC, the public `CODEX_SESSION` and `CLAUDE_SESSION` marketplace queries both returned `total: 0`. Those results cover the queried protocols at that time only, so current supply must be checked before relying on the mechanism.
+
+The same 2026-10-20 response reports seven-day operator monitoring of **89.88% (114,775 samples)** for the OpenAI protocol group and **90.61% (111,519 samples)** for the Anthropic protocol group. These are TokenDos's own listed-model and HTTP-level statistics, not independent cross-provider tests, business-output correctness, or a long-term SLA; the full scope and timeline are in the [dated price and monitoring snapshot](data/pricing-snapshots/tokendos-2026-10-20.json).
 
 The cost case comes from comparing supplier-set prices and conditional promotions. Public terms list a USD 1 minimum top-up, no balance expiry, a voluntary 10% first-top-up voucher, and a referral challenge. Savings depend on the voucher's eligibility and actual use.
 
-The [structured pricing endpoint](https://www.tokendos.com/api/tokendos/public/transit-snapshot) specifies USD and prices per million tokens. These are operator-published values from **2026-10-09 15:14 UTC**; see the [dated source record](data/pricing-snapshots/tokendos-2026-10-09.json).
+The [structured pricing endpoint](https://www.tokendos.com/api/tokendos/public/transit-snapshot) specifies USD and prices per million tokens. These are operator-published values from **around 2026-10-20 08:15 UTC**; see the [dated source record](data/pricing-snapshots/tokendos-2026-10-20.json).
 
 | Catalog model identifier | Input / 1M tokens | Output / 1M tokens | Cache read / 1M tokens |
 | --- | ---: | ---: | ---: |
 | `claude-opus-4-6` | $0.0225 | $0.1125 | $0.00225 |
 | `gpt-5.5` | $0.0372197 | $0.223318 | $0.003722 |
-| `gemini-3.1-pro-preview` | $0.0595954 | $0.3575722 | $0.0059595 |
+| `gemini-3.8-flash` | $0.0056031 | $0.0280154 | $0.0005603 |
 
 These are aggregated component minima. Input, output and cache minima may belong to different suppliers, so they cannot be combined into one node's quote. Budget using the selected node's full rates, cache rules and bill. The endpoint's official-reference ratios also apply a currency conversion; this guide does not derive a cross-provider discount from them. Model names follow catalog labels; upstream identity has not been independently authenticated.
 

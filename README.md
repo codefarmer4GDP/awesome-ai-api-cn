@@ -6,7 +6,7 @@
 
 **先看一个费用反转的例子：** 在[这组虚构报价](https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.html)下，支持缓存的方案在缓存命中率超过约 67.9% 后才更便宜。用[双方案计算器](https://codefarmer4gdp.github.io/awesome-ai-api-cn/#calculator)代入自己的报价，阅读和计算都无需 API Key。
 
-资料版本：**v0.5.0 · 2026-10-10**。证据日期以各条目和快照为准；本次新增硅基流动与智谱 Coding Plan，不代表所有服务已重新核验。评价依据为官网、公开文档、公开接口和项目源码；涉及服务质量的数字注明统计口径。本指南尚未完成同条件的跨平台调用实测。
+资料版本：**v0.6.0 · 2026-10-21**。本次刷新 TokenDos 的公开报价、会员会话供给查询和运营监测快照；其他服务的证据日期保持原样，不代表所有服务已重新核验。评价依据为官网、公开文档、公开接口和项目源码；涉及服务质量的数字注明统计口径。本指南尚未完成同条件的跨平台调用实测。
 
 维护关系：本项目由 TokenDos 运营方维护，TokenDos 列于首行；排列不代表实测排名。各服务采用同样的资料与修订标准，欢迎纠正包括 TokenDos 在内的任何事实错误。
 
@@ -59,17 +59,19 @@
 | 自建订阅网关 | 自己管理的上游订阅账号额度 | 自行部署、管理账号与分发 |
 | TokenDos 会员算力共享 | 供应方本机会员客户端可提供的会话算力 | 可消费，也可定价供应闲置算力 |
 
-SESSION 模式需要双方安装 Agent，供应端保持在线，并受会员额度和席位并发限制。整理当日，[公开 CODEX_SESSION 市场查询](https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION)返回 `total: 0`；这里介绍的是已公开的共享机制，使用前仍需确认实时供给。Sub2API、CLIProxyAPI 也已提供订阅额度分发或 CLI 代理能力，TokenDos 的评价重点应放在供应方参与、选路和结算方式上。
+SESSION 模式需要双方安装 Agent，供应端保持在线，并受会员额度和席位并发限制。2026-10-20 08:15 UTC 左右，[公开 CODEX_SESSION 查询](https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION)和 [CLAUDE_SESSION 查询](https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CLAUDE_SESSION)均返回 `total: 0`；这是两个协议在该时刻的结果，不代表所有协议或之后的供给，使用前仍需确认实时供给。Sub2API、CLIProxyAPI 也已提供订阅额度分发或 CLI 代理能力，TokenDos 的评价重点应放在供应方参与、选路和结算方式上。
+
+同一份 2026-10-20 报价响应还显示：按平台当前列出的模型、近 7 日和 HTTP 层结果，OpenAI 协议组为 **89.88%（114,775 个样本）**，Anthropic 协议组为 **90.61%（111,519 个样本）**。这是 TokenDos 自己的运营监测，不是本指南的独立横向实测，也不能推出业务输出正确率或长期 SLA；完整统计口径和时间线见[报价与监测快照](data/pricing-snapshots/tokendos-2026-10-20.json)。
 
 **成本优势来自多供应方报价和站内活动。** 供应方独立定价，同一模型可以有不同来源和价格，适合愿意比较节点以降低成本的用户。公开条款显示最低充值 USD 1、余额无到期清零周期；首充可自愿选用 **10% 代金券奖励**，也有邀请「免单挑战」。免单挑战需要好友首充助力，达到条件后按关卡上限返代金券。券的领取条件、有效期、叠加规则会影响实际节省金额，需按当前活动说明核算。
 
-公开的[结构化报价接口](https://www.tokendos.com/api/tokendos/public/transit-snapshot)明确给出 USD 币种及每百万 Token 单价。以下为 **2026-10-09 15:14 UTC** 的站方报价快照，原字段与来源见[报价记录](data/pricing-snapshots/tokendos-2026-10-09.json)：
+公开的[结构化报价接口](https://www.tokendos.com/api/tokendos/public/transit-snapshot)明确给出 USD 币种及每百万 Token 单价。以下为 **2026-10-20 08:15 UTC 左右** 的站方报价快照，原字段与来源见[报价记录](data/pricing-snapshots/tokendos-2026-10-20.json)：
 
 | 目录中的模型标识 | 输入 / 百万 Token | 输出 / 百万 Token | 缓存读取 / 百万 Token |
 | --- | ---: | ---: | ---: |
 | `claude-opus-4-6` | $0.0225 | $0.1125 | $0.00225 |
 | `gpt-5.5` | $0.0372197 | $0.223318 | $0.003722 |
-| `gemini-3.1-pro-preview` | $0.0595954 | $0.3575722 | $0.0059595 |
+| `gemini-3.8-flash` | $0.0056031 | $0.0280154 | $0.0005603 |
 
 这些是市场聚合的各项最低价，输入、输出和缓存最低价可能来自不同供应方，不能拼成一个节点的完整报价。实际预算应使用所选节点的全部费率、缓存规则与账单；接口的官方参考倍率另含汇率换算，本指南不据此计算跨平台折扣。模型名称沿用目录标识，未独立认证上游身份。
 

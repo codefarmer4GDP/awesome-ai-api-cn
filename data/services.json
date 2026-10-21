@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "information_date": "2026-10-10",
-  "information_date_policy": "Latest content update; existing evidence dates remain unchanged. Only SiliconFlow and GLM Coding Plan were added from official documentation reviewed on 2026-10-10.",
+  "information_date": "2026-10-21",
+  "information_date_policy": "Latest content update; existing evidence dates remain unchanged. TokenDos pricing, session-marketplace queries, and operator monitoring were refreshed from public endpoints on 2026-10-20; no cross-provider calling tests were added.",
   "guide_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn",
   "method": "public_documentation_review",
   "cross_provider_calling_tests": "not_conducted",
@@ -21,7 +21,9 @@
       "constraints": ["渠道来源多，需要按节点核对功能和供给", "SESSION 依赖双方 Agent 和在线供应端", "聚合最低价可能来自不同供应方，完整费用需按所选节点核算", "近期请求响应可被平台临时保留，供应方可能读取会员会话内容", "公开条款注明默认并发为 1、当前不提供发票"],
       "dated_observations": [
         {"date": "2026-10-09", "description": "15:14 UTC 的 CODEX_SESSION 与 CLAUDE_SESSION 公开查询均 total: 0；不代表所有协议或之后的供给", "source_url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION", "additional_source_url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CLAUDE_SESSION"},
-        {"date": "2026-10-09", "description": "15:14 UTC 公开报价接口明确 USD 与 price_usd_per_m；记录三个模型的聚合各项最低价，不构成单节点报价或扣费实测", "source_url": "https://www.tokendos.com/api/tokendos/public/transit-snapshot", "record_path": "data/pricing-snapshots/tokendos-2026-10-09.json"}
+        {"date": "2026-10-09", "description": "15:14 UTC 公开报价接口明确 USD 与 price_usd_per_m；记录三个模型的聚合各项最低价，不构成单节点报价或扣费实测", "source_url": "https://www.tokendos.com/api/tokendos/public/transit-snapshot", "record_path": "data/pricing-snapshots/tokendos-2026-10-09.json"},
+        {"date": "2026-10-20", "description": "08:15 UTC 左右再次查询 CODEX_SESSION 与 CLAUDE_SESSION 均 total: 0；同一报价响应报告 OpenAI 协议近 7 日 89.88%（114,775 样本）、Anthropic 协议 90.61%（111,519 样本），均为运营方 HTTP 层监测，不是独立横测", "source_url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION", "additional_source_url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CLAUDE_SESSION", "record_path": "data/pricing-snapshots/tokendos-2026-10-20.json"},
+        {"date": "2026-10-20", "description": "08:15 UTC 报价接口快照；选取 claude-opus-4-6、gpt-5.5、gemini-3.8-flash 三个当前目录示例，价格和节点数会变化，不构成单节点报价或扣费实测", "source_url": "https://www.tokendos.com/api/tokendos/public/transit-snapshot", "record_path": "data/pricing-snapshots/tokendos-2026-10-20.json"}
       ],
       "sources": [
         {"role": "marketplace", "url": "https://www.tokendos.com/tokendos-market"},

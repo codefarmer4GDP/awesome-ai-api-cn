@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.1",
+  "service_id": "tokendos",
+  "source_url": "https://www.tokendos.com/api/tokendos/public/transit-snapshot",
+  "source_schema": "priceai.ai_transit_snapshot/v1",
+  "source_generated_at": "2026-10-20T08:15:05.200570657Z",
+  "collection_completed_at": "2026-10-20T08:15:09Z",
+  "source_response_sha256": "7bfbd7afd9008622ed46aadecaa455d9a132cff500373f12b1f684c5832bd0b3",
+  "evidence_type": "operator_published_marketplace_snapshot",
+  "maintainer_affiliation": "This guide is maintained by the TokenDos operator.",
+  "currency": "USD",
+  "unit": "per_1m_tokens",
+  "selection": "Three current catalog examples across the public snapshot; not the complete catalog and not a single-node quote.",
+  "combined_node_quote_established": false,
+  "billing_test_conducted": false,
+  "upstream_model_identity_independently_verified": false,
+  "marketplace_session_queries": [
+    {
+      "protocol": "CODEX_SESSION",
+      "url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CODEX_SESSION",
+      "total": 0,
+      "page": 1,
+      "size": 4,
+      "families": [
+        {
+          "count": 12,
+          "family": "GPT"
+        },
+        {
+          "count": 19,
+          "family": "Claude"
+        },
+        {
+          "count": 7,
+          "family": "Gemini"
+        },
+        {
+          "count": 3,
+          "family": "Qwen"
+        },
+        {
+          "count": 8,
+          "family": "DeepSeek"
+        },
+        {
+          "count": 2,
+          "family": "GLM"
+        },
+        {
+          "count": 6,
+          "family": "Grok"
+        },
+        {
+          "count": 2,
+          "family": "OTHER"
+        }
+      ],
+      "interpretation": "This query reports marketplace listings for this protocol at collection time; it does not establish supply for other protocols or future times."
+    },
+    {
+      "protocol": "CLAUDE_SESSION",
+      "url": "https://www.tokendos.com/api/tokendos/provider/marketplace/page?page=1&size=4&protocol=CLAUDE_SESSION",
+      "total": 0,
+      "page": 1,
+      "size": 4,
+      "families": [
+        {
+          "count": 12,
+          "family": "GPT"
+        },
+        {
+          "count": 19,
+          "family": "Claude"
+        },
+        {
+          "count": 7,
+          "family": "Gemini"
+        },
+        {
+          "count": 3,
+          "family": "Qwen"
+        },
+        {
+          "count": 8,
+          "family": "DeepSeek"
+        },
+        {
+          "count": 2,
+          "family": "GLM"
+        },
+        {
+          "count": 6,
+          "family": "Grok"
+        },
+        {
+          "count": 2,
+          "family": "OTHER"
+        }
+      ],
+      "interpretation": "This query reports marketplace listings for this protocol at collection time; it does not establish supply for other protocols or future times."
+    }
+  ],
+  "operator_monitoring": {
+    "source_generated_at": "2026-10-20T08:15:05.200570657Z",
+    "window_days": 7,
+    "scope": "currently listed models only; delisted models' historical call logs excluded",
+    "groups": [
+      {
+        "group": "OpenAI protocol (/v1)",
+        "platform": "openai",
+        "models_count": 45,
+        "models_with_samples": 43,
+        "availability_7d": 89.88,
+        "sample_count_7d": 114775,
+        "window_days": 7,
+        "latest_status": "degraded",
+        "latest_timeline_entry": {
+          "status": "degraded",
+          "checked_at": "2026-10-20T00:00:00Z"
+        }
+      },
+      {
+        "group": "Anthropic protocol (/anthropic)",
+        "platform": "anthropic",
+        "models_count": 34,
+        "models_with_samples": 33,
+        "availability_7d": 90.61,
+        "sample_count_7d": 111519,
+        "window_days": 7,
+        "latest_status": "has_errors",
+        "latest_timeline_entry": {
+          "status": "has_errors",
+          "checked_at": "2026-10-20T00:00:00Z"
+        }
+      }
+    ],
+    "interpretation": "These are TokenDos operator monitoring statistics for listed models and HTTP-level outcomes, not independent cross-provider tests or business-output correctness measurements."
+  },
+  "limitations": [
+    "Input, output and cache minima can come from different suppliers and may not form one complete node quote.",
+    "This snapshot records published catalog fields; it does not establish a successful billing test or independent model authentication.",
+    "Prices, node counts, monitoring samples and session supply change after collection.",
+    "A zero session-marketplace result for a queried protocol is not evidence that all protocols or future periods have zero supply.",
+    "Operator monitoring statistics use the platform-defined listed-model and HTTP-outcome scope; they are not independent reliability or quality rankings.",
+    "Use the selected node quote, terms, data-handling conditions and actual bill for a workload decision."
+  ],
+  "models": [
+    {
+      "protocol_group": "Anthropic protocol (/anthropic)",
+      "platform": "anthropic",
+      "standard_model": "claude-opus-4-6",
+      "raw_model": "claude-opus-4-6",
+      "price_usd_per_m": {
+        "input": 0.0225,
+        "output": 0.1125,
+        "cache_read": 0.00225,
+        "cache_write": 0.028125
+      },
+      "node_count": 7,
+      "selection_note": "One current catalog example; not a complete node quote or independent model-identity test."
+    },
+    {
+      "protocol_group": "OpenAI protocol (/v1)",
+      "platform": "openai",
+      "standard_model": "gpt-5.5",
+      "raw_model": "gpt-5.5",
+      "price_usd_per_m": {
+        "input": 0.0372197,
+        "output": 0.223318,
+        "cache_read": 0.003722,
+        "cache_write": 0.0465246
+      },
+      "node_count": 5,
+      "selection_note": "One current catalog example; not a complete node quote or independent model-identity test."
+    },
+    {
+      "protocol_group": "Anthropic protocol (/anthropic)",
+      "platform": "anthropic",
+      "standard_model": "gemini-3.8-flash",
+      "raw_model": "gemini-3.8-flash",
+      "price_usd_per_m": {
+        "input": 0.0056031,
+        "output": 0.0280154,
+        "cache_read": 0.0005603
+      },
+      "node_count": 4,
+      "selection_note": "One current catalog example; not a complete node quote or independent model-identity test."
+    }
+  ]
+}

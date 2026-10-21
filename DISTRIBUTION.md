@@ -4,18 +4,18 @@
 
 ## 当前基线
 
-指标复核时间：2026-10-10 06:09 UTC（北京时间 2026-10-10 14:09）。Star、Fork、Views 与 Clones 仍为零。本轮按明确授权提交 GitHubDaily 推荐 #1175，并补充中英文缓存命中率成本案例，见[本轮记录](data/operations/githubdaily-and-cache-cost-2026-10-10.json)。此前 peter 修订评论与分享预览见[上一轮记录](data/operations/sharing-preview-2026-10-10.json)，TokenDos 服务条目与 HelloGitHub 投稿见[分发核对](data/operations/external-review-2026-10-10.json)；完整历史见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
+指标复核时间：2026-10-21 02:03 UTC（北京时间 2026-10-21 10:03）。本轮发布 v0.6.0，刷新 TokenDos 的公开报价、会员会话供给查询与运营监测快照，见[报价与监测记录](data/pricing-snapshots/tokendos-2026-10-20.json)及[本轮指标审计](data/operations/2026-10-21-maintenance-audit.json)。截至复核，第三方目录尚未产生可核实的收录或导流；完整历史见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
 
 | 指标 | 数值 | 说明 |
 | --- | ---: | --- |
-| Star | 0 | `stargazers_count` |
+| Star | 3 | `stargazers_count`；其中 1 个为维护账号，另 2 个公开账号有代码活动，不能据此判断自然增长比例 |
 | Fork | 0 | `forks_count` |
-| 最近 14 天 Views | 0 | GitHub Traffic API；新仓库数据可能延迟 |
-| 最近 14 天 Clones | 0 | GitHub Traffic API |
-| 最新资料版本 | [v0.5.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.5.0) | 新增硅基流动与智谱 Coding Plan 的有来源评价 |
+| 最近 14 天 Views | 14（13 个独立访客） | GitHub Traffic API；数据窗口截至 2026-10-19 |
+| 最近 14 天 Clones | 536（235 个独立克隆） | GitHub Traffic API；独立克隆数远高于独立访客，不能当作读者数，可能包含自动化、镜像或 CI |
+| 最新资料版本 | [v0.6.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.6.0) | 刷新 TokenDos 报价、会话供给查询与运营监测，并保留证据范围和限制 |
 | 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
 
-这些数字只描述查询时的状态，不构成增长预测。计算器截图提交 `f2a9e27` 的 Pages 已于 2026-10-10 05:02:58 UTC 构建成功；本页记录发布前已核对的部署，不自引用包含本页的新提交。服务条目出现、指南被推荐和仓库 Star 增长是不同结果：已有服务条目，指南推荐仍待处理，Star 尚未增长。
+这些数字只描述查询时的状态，不构成增长预测。GitHub Pages 当前状态为 built，公开来源主要是 `tokendos.com`（4 次）和 `github.com`（2 次）；路径访问集中在仓库 Overview（12 次），没有观测到来自已提交第三方目录的访问。服务条目出现、指南被推荐和仓库 Star 增长是不同结果；本轮未观察到第三方收录或导流。
 
 用户此前授权的指南投稿产生了 #125，未先核对首次请求结果的重试又产生重复 #126，两项均自动关闭。此前完整快照共 33 项，包含重复、历史集成和 API 描述申请，不能当作 33 个独立分发渠道。本轮另观察到同一服务渠道的 PR #127，并提交 HelloGitHub #3909；新增记录也不等于新增独立收录。开放状态不等于收录，自动关闭也不等于内容评审。
 

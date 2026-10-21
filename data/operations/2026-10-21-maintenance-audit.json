@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-10-21T02:03:18Z",
+  "repository": "https://github.com/codefarmer4GDP/awesome-ai-api-cn",
+  "release": {
+    "version": "v0.6.0",
+    "focus": "Refresh TokenDos public price, member-session supply queries and operator monitoring evidence.",
+    "cross_provider_calling_tests": "not_conducted"
+  },
+  "github": {
+    "stargazers_count": 3,
+    "forks_count": 0,
+    "open_issues_count": 1,
+    "stargazers_observed": [
+      {"login": "codefarmer4GDP", "role": "maintainer account"},
+      {"login": "Cu1ii", "role": "public profile has code activity; relationship to this guide not established"},
+      {"login": "it985", "role": "public profile has code activity; relationship to this guide not established"}
+    ],
+    "traffic_window": "GitHub Traffic API window ending 2026-10-19",
+    "views": {"count": 14, "uniques": 13},
+    "clones": {"count": 536, "uniques": 235},
+    "popular_referrers": [
+      {"referrer": "tokendos.com", "count": 4, "uniques": 3},
+      {"referrer": "github.com", "count": 2, "uniques": 2}
+    ],
+    "popular_paths": [
+      {"path": "/codefarmer4GDP/awesome-ai-api-cn", "count": 12, "uniques": 11},
+      {"path": "/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/channel-evidence.md", "count": 1, "uniques": 1},
+      {"path": "/codefarmer4GDP/awesome-ai-api-cn/blob/main/guides/cost-comparison.md", "count": 1, "uniques": 1}
+    ]
+  },
+  "interpretation": [
+    "Three stars and zero forks do not support a claim of organic growth.",
+    "The 235 unique clones are not equivalent to 235 readers because they are much higher than the 13 unique visitors and may include automation, mirrors or CI.",
+    "No third-party directory referral was visible in the public referrer sample; open submissions and listed entries are not counted as distribution results.",
+    "The next growth decision should prioritize a real external audience or a maintainer-accepted listing, then measure unique visitors and calculator use rather than adding more duplicate submissions."
+  ],
+  "evidence": {
+    "price_and_monitoring_snapshot": "data/pricing-snapshots/tokendos-2026-10-20.json",
+    "pages_status": "built",
+    "pages_url": "https://codefarmer4gdp.github.io/awesome-ai-api-cn/"
+  }
+}
