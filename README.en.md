@@ -134,6 +134,14 @@ Sources: [plan and deduction rules](https://docs.bigmodel.cn/cn/coding-plan/over
 
 These projects provide software. Operators still manage upstream credentials, deployment, quotas, and provider rules.
 
+### Benchmarking and verification tools
+
+Run real calls with your own workload before selecting a provider:
+
+| Tool | Primary use | Description |
+| --- | --- | --- |
+| [pelican-bench](https://github.com/codefarmer4GDP/pelican-bench) | Stream TTFB distribution (p50/p95), response integrity, cache-hit A/B probes, usage-field audit | Zero dependencies (Python 3.9+ standard library), runs locally, outputs Markdown/JSON reports and CI exit codes; endpoint-neutral. |
+
 ## Contributing
 
 Please submit sources, dates, applicable models/protocols, price units, limits, and any invitation, referral, sponsorship, or paid relationship. See [CONTRIBUTING.md](CONTRIBUTING.md), [MAINTENANCE.md](MAINTENANCE.md), [ROADMAP.md](ROADMAP.md), or open a [correction issue](https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/new?template=factual-correction.md).
