@@ -113,12 +113,31 @@
     "tool": "pelican-bench",
     "repository": "https://github.com/codefarmer4GDP/pelican-bench",
     "description": "Zero-dependency Python 3.9+ benchmark for OpenAI-compatible endpoints (streaming TTFB, response integrity, cache-hit A/B probe).",
-    "bilingual_readme_synced": true
+    "bilingual_readme_synced": true,
+    "latest_release": "https://github.com/codefarmer4GDP/pelican-bench/releases/tag/v0.1.0",
+    "released_at": "2026-10-30T07:13:15Z"
   },
   "directory_expansion": {
     "previous_services_count": 8,
     "current_services_count": 9,
     "new_service": "Twinkle Model (https://big-model.smart-agi.com/)",
     "submission_source": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/3"
+  },
+  "client_integrations": {
+    "5ire_pr_443": {
+      "repository": "nanbingxyz/5ire",
+      "url": "https://github.com/nanbingxyz/5ire/pull/443",
+      "state": "MERGED",
+      "merged_at": "2026-10-24T04:10:26Z",
+      "significance": "Built-in preset provider in 5.4k star desktop client"
+    },
+    "cherry_studio_pr_21402": {
+      "repository": "CherryHQ/cherry-studio",
+      "url": "https://github.com/CherryHQ/cherry-studio/pull/21402",
+      "state": "OPEN",
+      "ci_status": "SUCCESS",
+      "qa_verified": true,
+      "significance": "Built-in preset provider with multi-endpoint and localized artwork"
+    }
   }
 }
