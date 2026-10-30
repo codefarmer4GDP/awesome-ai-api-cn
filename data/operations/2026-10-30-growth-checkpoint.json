@@ -101,6 +101,12 @@
       "title": "检测工具：新增 pelican-bench（零依赖流式 TTFB 分布与缓存 A/B 探测脚本）",
       "target_section": "🛠️ 检测工具 / Detection Tools",
       "created_at": "2026-10-30T06:30:00Z"
+    },
+    "howardpen9_issue_84": {
+      "url": "https://github.com/howardpen9/awesome-ai-api-proxy/issues/84",
+      "state": "CLOSED",
+      "reason": "TokenDos integrated into main in #154; closed with comment.",
+      "comment_url": "https://github.com/howardpen9/awesome-ai-api-proxy/issues/84#issuecomment-6516798705"
     }
   },
   "benchmarking_tool_addition": {
