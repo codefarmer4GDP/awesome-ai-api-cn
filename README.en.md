@@ -24,6 +24,7 @@ If this guide helped you check a quote or bill, **Star it as a bookmark** for yo
 | [DeepSeek API](https://api-docs.deepseek.com/) | Direct DeepSeek usage | Official model, cache, peak/off-peak pricing, and version rules | Model scope is concentrated on DeepSeek |
 | [SiliconFlow](https://siliconflow.cn/) | Multimodal integrations; invoice or dedicated-deployment needs | OpenAI/Anthropic chat protocols, multimodal and vector APIs, reserved instances and private-deployment options | Account-level per-model limits; free models require identity verification; only consumed amounts are invoiceable |
 | [GLM Coding Plan](https://docs.bigmodel.cn/cn/coding-plan/overview) | Periodic GLM use within supported coding tools | Points-based quotas, cache/off-peak deduction rules and MCP tools | Both five-hour and weekly caps; specified tools/endpoints only; no account sharing; subscriptions are non-refundable |
+| [Twinkle Model](https://big-model.smart-agi.com/) | Low-multiplier GPT & multimodal relay with small RMB top-up | Built on Sub2API, multi-group rates (GPT from 0.1x), ¥1 minimum Alipay top-up, invoices available | Launched March 2026; test with small amounts first; no independent third-party benchmark score yet |
 
 ## Reusable resources
 
@@ -32,7 +33,7 @@ If this guide helped you check a quote or bill, **Star it as a bookmark** for yo
 - [Cache-hit cost example webpage](https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html) ([中文](https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.html)): read fictional rates, break-even points and fee effects, then open prefilled calculator scenarios from the cost table.
 - [Member-session sharing guide](guides/member-session-sharing.en.md) ([中文](guides/member-session-sharing.md)): distinguish periodic plans, team credits, self-hosted proxies and supplier-hosted sessions; check routes, supply, data access and costs for both parties.
 - [Channel evidence guide](guides/channel-evidence.en.md) ([中文](guides/channel-evidence.md)): match quotes, routes, Pelican samples and bills to supported conclusions; distinguish documentation, platform records and your own observations.
-- [Service directory JSON](data/services.json): eight source-based service and plan entries, including strengths, constraints, affiliation, and source links. It does not establish live availability or performance rankings.
+- [Service directory JSON](data/services.json): nine source-based service and plan entries, including strengths, constraints, affiliation, and source links. It does not establish live availability or performance rankings.
 - [Evaluation record template](examples/evaluation-record.template.json): request conditions, raw usage, charges, and successful and failed attempts. Empty fields mean no observation has been recorded.
 
 ## Quick start

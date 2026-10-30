@@ -24,6 +24,7 @@
 | [DeepSeek 官方 API](https://api-docs.deepseek.com/) | 主要使用 DeepSeek，直接按厂商规则接入 | 原厂模型和计费文档，缓存与峰谷价格公开 | 模型范围集中于 DeepSeek；具体能力及并发按官方模型规则确认 |
 | [硅基流动 SiliconFlow](https://siliconflow.cn/) | 多模态模型接入；有开票或专属部署需求 | OpenAI / Anthropic 对话协议、多模态与向量接口、预留实例和私有化方案 | 逐模型且账户级限流；免费模型需实名认证；仅已消费金额可开票 |
 | [智谱 GLM Coding Plan](https://docs.bigmodel.cn/cn/coding-plan/overview) | 在支持的编程工具中按周期使用 GLM | 套餐积分、缓存与非高峰抵扣规则、配套 MCP 工具 | 5 小时和周限额同时生效；限指定工具与端点，禁止多人共享；订阅不支持退款 |
+| [Twinkle Model](https://big-model.smart-agi.com/) | 寻找低倍率 GPT 与多模态中转，支持人民币小额起充 | 基于 Sub2API 聚合，多分组倍率（GPT 最低 0.1 倍），1 元起充支持支付宝并可开票 | 2026-03 上线新站，建议小额试用；暂无独立第三方横测评分 |
 
 ## 可复用的选型资料
 
@@ -32,7 +33,7 @@
 - [缓存命中率成本算例网页](https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.html)（[English](https://codefarmer4gdp.github.io/awesome-ai-api-cn/guides/cache-cost.en.html)）：直接阅读虚构报价、临界值与充值费影响，从费用表打开预填计算器。
 - [会员共享选型指南](guides/member-session-sharing.md)（[English](guides/member-session-sharing.en.md)）：区分周期套餐、团队额度、自建订阅代理与供应方远程会话，核对路由、供给、数据处理和双方成本。
 - [渠道证据核验指南](guides/channel-evidence.md)（[English](guides/channel-evidence.en.md)）：把报价、路由、鹈鹕样本和账单对应到可支持的结论，区分公开文档、平台记录和自己的调用观察。
-- [服务目录 JSON](data/services.json)：8 项服务与套餐的用途、优势、限制与来源；按公开资料整理，未建立实时可用性或性能排名。
+- [服务目录 JSON](data/services.json)：9 项服务与套餐的用途、优势、限制与来源；按公开资料整理，未建立实时可用性或性能排名。
 - [实测记录模板](examples/evaluation-record.template.json)：记录节点、请求条件、原始用量与扣费，供读者脱敏后投稿。
 
 ## 快速开始

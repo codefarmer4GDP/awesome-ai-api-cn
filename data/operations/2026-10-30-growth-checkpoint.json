@@ -1,0 +1,109 @@
+{
+  "observed_at": "2026-10-30T06:15:00Z",
+  "repository": "codefarmer4GDP/awesome-ai-api-cn",
+  "repository_state": {
+    "stars": 4,
+    "operator_confirmed_stars": 1,
+    "stargazers": [
+      {
+        "login": "codefarmer4GDP",
+        "starred_at": "2026-10-10T07:23:21Z",
+        "role": "operator"
+      },
+      {
+        "login": "Cu1ii",
+        "starred_at": "2026-10-10T08:14:36Z",
+        "role": "external_developer"
+      },
+      {
+        "login": "it985",
+        "starred_at": "2026-10-10T16:48:14Z",
+        "role": "external_developer"
+      },
+      {
+        "login": "Liutuimi",
+        "starred_at": "2026-10-23T03:25:57Z",
+        "role": "external_developer"
+      }
+    ],
+    "forks": 0,
+    "open_issues": 2,
+    "community_submissions": [
+      {
+        "issue": 3,
+        "title": "补充资源：Twinkle Model（OpenAI 兼容中转，站方自荐）",
+        "author": "bendangmi",
+        "created_at": "2026-10-25T14:57:11Z",
+        "status": "verified_and_added_to_directory",
+        "verified_at": "2026-10-30T06:05:00Z",
+        "http_status": 200
+      }
+    ]
+  },
+  "github_traffic": {
+    "available_period": {
+      "start": "2026-10-16",
+      "end": "2026-10-29"
+    },
+    "views": {
+      "count": 35,
+      "uniques": 14,
+      "top_referrers": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 3
+        },
+        {
+          "referrer": "tokendos.com",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "referrer": "Google",
+          "count": 1,
+          "uniques": 1
+        }
+      ]
+    },
+    "clones": {
+      "count": 147,
+      "uniques": 62
+    }
+  },
+  "external_submissions_status": {
+    "awesome_llm_apps_pr_1250": {
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps/pull/1250",
+      "state": "CLOSED",
+      "closed_at": "2026-10-23T18:43:29Z",
+      "reason": "Maintainer accepts only self-contained LLM app tutorials with runnable code in their own folder in the repo; external tool README link declined.",
+      "action": "Recorded; do not resubmit external link."
+    },
+    "hellogithub_issue_3909": {
+      "url": "https://github.com/521xueweihan/HelloGitHub/issues/3909",
+      "state": "OPEN",
+      "comments": 0
+    },
+    "githubdaily_issue_1175": {
+      "url": "https://github.com/GitHubDaily/GitHubDaily/issues/1175",
+      "state": "OPEN",
+      "comments": 1
+    },
+    "peter123023_awesome_claude_api_pr_24": {
+      "url": "https://github.com/peter123023/awesome-claude-api/pull/24",
+      "state": "OPEN"
+    }
+  },
+  "benchmarking_tool_addition": {
+    "tool": "pelican-bench",
+    "repository": "https://github.com/codefarmer4GDP/pelican-bench",
+    "description": "Zero-dependency Python 3.9+ benchmark for OpenAI-compatible endpoints (streaming TTFB, response integrity, cache-hit A/B probe).",
+    "bilingual_readme_synced": true
+  },
+  "directory_expansion": {
+    "previous_services_count": 8,
+    "current_services_count": 9,
+    "new_service": "Twinkle Model (https://big-model.smart-agi.com/)",
+    "submission_source": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/3"
+  }
+}

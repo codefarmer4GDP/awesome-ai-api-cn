@@ -4,6 +4,26 @@
 
 ## 当前基线
 
+指标复核时间：2026-10-30 06:15 UTC（北京时间 2026-10-30 14:15）。当前 Star 为 4（新增 1 颗来自外部账号 Liutuimi 于 2026-10-23 点亮）。最近 14 天（10-16 至 10-29）Traffic 窗口为 35 次 Views / 14 位独立访客，Referrers 包含 github.com（3 次）、tokendos.com（2 次）、Google（1 次）。
+
+2026-10-22 投稿至 Shubhamsaboo/awesome-llm-apps 的 PR #1250 于 2026-10-23 被维护者关闭，理由为该仓库仅收录带独立代码的完整 LLM 应用目录，不接受外部工具 README 链接；已记录结果，不重复投稿。
+
+2026-10-25 仓库新增中立开源基准工具 pelican-bench（流式首字延迟、响应完整性与缓存 A/B 探测）；中英文 README 已双语同步。
+
+2026-10-25 收到外部中转站长在 Issue #3 自荐提交的 Twinkle Model，已按规范核验其官网与模型广场可访问性（HTTP 200），将其纳入对比表与 JSON 数据，目录服务扩充至 9 项。完整快照见 [10 月 30 日增长快照](data/operations/2026-10-30-growth-checkpoint.json)。
+
+| 指标 | 数值 | 说明 |
+| --- | ---: | --- |
+| Star | 4 | `stargazers_count`；1 个为维护账号，另 3 个为外部开发者账号 |
+| Fork | 0 | `forks_count` |
+| 最近 14 天 Views | 35（14 个独立访客） | GitHub Traffic API；数据窗口截至 2026-10-29 |
+| 最近 14 天 Clones | 147（62 个独立克隆） | GitHub Traffic API；数据窗口截至 2026-10-29 |
+| 收录服务数 | 9 | 覆盖聚合中转、会员共享、官方 API 与编程套餐 |
+| 最新资料版本 | [v0.6.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.6.0) | 刷新 TokenDos 报价、会话供给查询与运营监测，并保留证据范围和限制 |
+| 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
+
+### 历史记录（2026-10-21 基线）
+
 指标复核时间：2026-10-21 06:34 UTC（北京时间 2026-10-21 14:34）。本次 README 修订提交为[中英文介绍篇幅校准](https://github.com/codefarmer4GDP/awesome-ai-api-cn/commit/45e85ca62d48035aaf40bc636cc042f15d29d45a)；GitHub Pages 对应构建成功。v0.6.0 仍是最新发布，报价、会员会话供给和运营监测证据见[报价快照](data/pricing-snapshots/tokendos-2026-10-20.json)。Star、流量、分发状态及其证据边界见[10 月 21 日分发更新](data/operations/2026-10-21-distribution-update.json)。截至本次复核，指南尚无可确认的第三方收录或导流；完整历史见[10 月 10 日快照](data/operations/2026-10-10.json)与[10 月 9 日快照](data/operations/2026-10-09.json)。
 
 2026-10-21 03:12 UTC 扩充 Sitemap：把中英文缓存成本、成本核算、会员共享和渠道证据指南加入，共 10 个 URL，并标注可用的语言替代关系。6 篇 Markdown 指南此前已能以 `200 text/markdown` 访问。曾在项目子路径添加 `robots.txt`，但后续核验确认标准地址是主机根 `/robots.txt`；项目页位于 GitHub Pages 子路径，子路径文件不能替代主机级 robots 规则。本仓库没有对应的用户站点仓库，因此这项 robots 配置不能用于声明 Sitemap。必应 RSS 的 `site:` 查询没有返回本站结果，Google 查询超时，不能据此确认收录状态。
@@ -18,14 +38,7 @@
 
 2026-10-21 05:39 UTC 将仓库 Topics 从 15 项补到 GitHub 的 20 项上限，新增 `awesome-list`、`llm-pricing`、`llm-cost`、`api-cost-calculator` 和 `ai-api-guide`，覆盖项目形态、定价与估算工具等检索意图。修改时仓库为 3 Star，最近可用 Traffic 窗口仍为 14 次 Views / 13 位独立访客（截至 10 月 19 日），referrer 仍只有 `tokendos.com` 与 `github.com`。这是待观察的元数据调整，不构成流量或 Star 增长证据。
 
-| 指标 | 数值 | 说明 |
-| --- | ---: | --- |
-| Star | 3 | `stargazers_count`；其中 1 个为维护账号，另 2 个公开账号有代码活动，不能据此判断自然增长比例 |
-| Fork | 0 | `forks_count` |
-| 最近 14 天 Views | 14（13 个独立访客） | GitHub Traffic API；数据窗口截至 2026-10-19 |
-| 最近 14 天 Clones | 536（235 个独立克隆） | GitHub Traffic API；独立克隆数远高于独立访客，不能当作读者数，可能包含自动化、镜像或 CI |
-| 最新资料版本 | [v0.6.0](https://github.com/codefarmer4GDP/awesome-ai-api-cn/releases/tag/v0.6.0) | 刷新 TokenDos 报价、会话供给查询与运营监测，并保留证据范围和限制 |
-| 在线页面 | 已构建 | [GitHub Pages](https://codefarmer4gdp.github.io/awesome-ai-api-cn/) |
+
 
 这些数字只描述查询时的状态，不构成增长预测。GitHub Pages 当前状态为 built，公开来源主要是 `tokendos.com`（4 次）和 `github.com`（2 次）；路径访问集中在仓库 Overview（12 次），没有观测到来自已提交第三方目录的访问。服务条目出现、指南被推荐和仓库 Star 增长是不同结果；本轮未观察到第三方收录或导流。
 

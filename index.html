@@ -64,7 +64,7 @@
       <div class="filter-row" id="directory-filters" hidden>
         <label class="search-label">查找服务或能力<input id="service-search" type="search" placeholder="例如：缓存、会员、团队" autocomplete="off"></label>
         <label>使用场景<select id="service-category"><option value="all">全部场景</option><option value="sharing">会员算力共享</option><option value="routing">路由与提供商选择</option><option value="multimodal">多模态接入</option><option value="coding">编程与团队额度</option><option value="official">官方 API</option></select></label>
-        <p id="filter-count" class="muted small" role="status">显示 8 项服务</p>
+        <p id="filter-count" class="muted small" role="status">显示 9 项服务</p>
       </div>
       <div class="service-grid">
         <article class="service-card" data-category="sharing coding" id="tokendos">
@@ -122,6 +122,13 @@
           <h4>值得关注</h4><p>公开输入、缓存与输出的积分抵扣系数、非高峰模型抵扣规则，以及视觉理解、搜索和网页读取等 MCP 能力。</p>
           <h4>选用条件</h4><p>5 小时与周限额同时生效，模型和 MCP 共用额度；限指定工具与套餐端点，用尽不接续余额。禁止多人共享、倒卖和中转。订阅自动续费且不退款，当前取消续订需至少提前 3 天。Anthropic 兼容接口使用 GLM 模型。文档核对日期 2026-10-10，未订阅或调用实测。</p>
           <div class="card-sources"><a href="https://docs.bigmodel.cn/cn/coding-plan/overview">积分规则</a><a href="https://docs.bigmodel.cn/cn/coding-plan/faq">工具与端点</a><a href="https://docs.bigmodel.cn/cn/coding-plan/usage-notes">账号与续费条件</a></div>
+        </article>
+        <article class="service-card" data-category="multimodal routing" id="twinkle-model">
+          <div class="card-heading"><h3><a href="https://big-model.smart-agi.com/">Twinkle Model ↗</a></h3><span class="tag">低倍率中转</span></div>
+          <p class="card-intro">适合低倍率 GPT 与多模态中转，支持人民币 ¥1 起充并可开票。</p>
+          <h4>值得关注</h4><p>基于 Sub2API 聚合，多分组倍率可选（GPT 最低 0.1 倍）；同一 API Key 接入 GPT、Claude、Gemini、Grok 及多模态模型；支持支付宝小额起充并可开具发票。</p>
+          <h4>选用条件</h4><p>2026-03 上线的新站，第三方中转稳定性请先小额试用；仅支持支付宝，暂无国际信用卡；暂无第三方独立实测评分与 SLA 保证。</p>
+          <div class="card-sources"><a href="https://big-model.smart-agi.com/">官方网站</a><a href="https://big-model.smart-agi.com/model-plaza">模型广场与价格</a><a href="https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/3">Issue #3 申报记录</a></div>
         </article>
       </div>
       <p id="no-results" class="empty-state" hidden>没有匹配项。可以换一个关键词，或选择「全部场景」。</p>
