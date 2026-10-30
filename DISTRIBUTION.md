@@ -53,7 +53,7 @@
 | [carrot](https://github.com/xx025/carrot) | [#1027](https://github.com/xx025/carrot/issues/1027) | open；已修正；重复 #1048 已撤回 |
 | [relayAPI](https://github.com/zzsting88/relayAPI) | [#74](https://github.com/zzsting88/relayAPI/issues/74) | open |
 | [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | [PR #24](https://github.com/peter123023/awesome-claude-api/pull/24) | 已有 TokenDos 条目，PR 仍 open、未合并；已授权发送[事实修订评论](https://github.com/peter123023/awesome-claude-api/pull/24#issuecomment-6093828349)，修订与指南链接尚未采纳 |
-| [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #110](https://github.com/howardpen9/awesome-ai-api-proxy/pull/110) · [PR #127](https://github.com/howardpen9/awesome-ai-api-proxy/pull/127) | 三项均 open；#127 是本轮新观察到的服务结构化条目，未合并；指南投稿另见下表 |
+| [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | [TokenDos #84](https://github.com/howardpen9/awesome-ai-api-proxy/issues/84) · [PR #127](https://github.com/howardpen9/awesome-ai-api-proxy/pull/127) | **已收录上线**；维护者于 2026-10-22 通过 [PR #154](https://github.com/howardpen9/awesome-ai-api-proxy/pull/154) 整合合入 main，主表已上线 TokenDos（标记为 aggregator） |
 | [awesome-ai-tools](https://github.com/mahseema/awesome-ai-tools) | [PR #2353](https://github.com/mahseema/awesome-ai-tools/pull/2353) | open，未合并，0 条评论 |
 | [Awesome-AITools](https://github.com/ikaijua/Awesome-AITools) | [PR #1225](https://github.com/ikaijua/Awesome-AITools/pull/1225) | open，未合并，1 条机器人回执，0 条人工评论，0 次 review；链接检查通过 |
 | [Claws-ZH/awesome-ai-api](https://github.com/Claws-ZH/awesome-ai-api) | [PR #50](https://github.com/Claws-ZH/awesome-ai-api/pull/50) | open，候选待审，未合并，0 条评论 |
