@@ -89,6 +89,8 @@ awesome-ai-tools 的 README 明确邀请免费 PR，模板要求每次仅新增�
 | [awesome-ai-api-proxy](https://github.com/howardpen9/awesome-ai-api-proxy) | 选型指南，[#120](https://github.com/howardpen9/awesome-ai-api-proxy/issues/120)、[#121](https://github.com/howardpen9/awesome-ai-api-proxy/issues/121)、[#122](https://github.com/howardpen9/awesome-ai-api-proxy/issues/122)、[#125](https://github.com/howardpen9/awesome-ai-api-proxy/issues/125)、[#126](https://github.com/howardpen9/awesome-ai-api-proxy/issues/126) | 五项均被自动关闭；#126 是 #125 的重复重试，当前无待审指南申请 |
 | [HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | 选型指南与双方案成本计算器，[#3909](https://github.com/521xueweihan/HelloGitHub/issues/3909) | 经明确授权，通过官方表单提交一次；open，0 条评论，尚未推荐；负责人由表单自动分配 |
 | [GitHubDaily](https://github.com/GitHubDaily/GitHubDaily) | 选型指南与双方案成本计算器，[#1175](https://github.com/GitHubDaily/GitHubDaily/issues/1175) | 经明确授权，通过官方表单提交一次；2026-10-21 02:53 UTC 经授权补充评论；最新状态 open、1 条评论，尚未推荐 |
+| [awesome-claude-api](https://github.com/peter123023/awesome-claude-api) | 检测工具 pelican-bench 投稿，[PR #40](https://github.com/peter123023/awesome-claude-api/pull/40) | open，未合并，0 条评论；已提交至中英文「检测工具」表格 |
+| [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 双方案成本计算器工具，[PR #1250](https://github.com/Shubhamsaboo/awesome-llm-apps/pull/1250) | **CLOSED**；维护者于 2026-10-23 关闭，说明仓库仅收录带独立代码的 LLM 应用，不收外部 README 链接；不重复申请 |
 
 ### 2026-10-10 HelloGitHub 推荐
 
@@ -254,6 +256,14 @@ PR 在 General LLM Applications 的 OpenRouter 后添加 TokenDos，修改中英
 4. 不购买、交换或批量制造 Star、Fork、Issue、评论或虚假使用记录。
 5. 不把供应商自述、一次鹈鹕测试或流量估算写成横向性能结论。
 6. 任何价格、活动、模型和可用性变化都附来源与日期，并同步中英文 README、服务 JSON 和网页卡片。
+
+
+## 开源客户端与 Provider 集成
+
+| 客户端 / 项目 | 投稿对象与申请 | 状态（北京时间 2026-10-30 复查） |
+| --- | --- | --- |
+| [5ire](https://github.com/nanbingxyz/5ire) | 内置预置 Provider 集成，[PR #443](https://github.com/nanbingxyz/5ire/pull/443) | **已合并 (MERGED)**；维护者于 2026-10-24 合并入库，TokenDos 成为 5.4k★ 桌面客户端预置服务商之一 |
+| [Cherry Studio](https://github.com/CherryHQ/cherry-studio) | 内置 Provider 集成，[PR #21402](https://github.com/CherryHQ/cherry-studio/pull/21402) | open；已 rebase 至 main，CI 全绿，`cherry-qa` 机器人实机验证通过，等待维护者人工 review |
 
 ## 每周运营动作
 
