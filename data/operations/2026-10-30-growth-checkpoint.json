@@ -27,16 +27,18 @@
       }
     ],
     "forks": 0,
-    "open_issues": 2,
+    "open_issues": 1,
     "community_submissions": [
       {
         "issue": 3,
         "title": "补充资源：Twinkle Model（OpenAI 兼容中转，站方自荐）",
         "author": "bendangmi",
         "created_at": "2026-10-25T14:57:11Z",
-        "status": "verified_and_added_to_directory",
+        "status": "commented_and_closed_completed",
         "verified_at": "2026-10-30T06:05:00Z",
-        "http_status": 200
+        "http_status": 200,
+        "closed_at": "2026-10-30T06:28:00Z",
+        "comment_url": "https://github.com/codefarmer4GDP/awesome-ai-api-cn/issues/3#issuecomment-6516389112"
       }
     ]
   },
@@ -92,6 +94,13 @@
     "peter123023_awesome_claude_api_pr_24": {
       "url": "https://github.com/peter123023/awesome-claude-api/pull/24",
       "state": "OPEN"
+    },
+    "peter123023_pelican_bench_pr_40": {
+      "url": "https://github.com/peter123023/awesome-claude-api/pull/40",
+      "state": "OPEN",
+      "title": "检测工具：新增 pelican-bench（零依赖流式 TTFB 分布与缓存 A/B 探测脚本）",
+      "target_section": "🛠️ 检测工具 / Detection Tools",
+      "created_at": "2026-10-30T06:30:00Z"
     }
   },
   "benchmarking_tool_addition": {
